@@ -14,6 +14,34 @@ interface Env {
   };
 }
 
+function withExtensionHeaders(response: Response, url: URL) {
+  const headers = new Headers(response.headers);
+  headers.delete("X-Frame-Options");
+
+  const contentType = headers.get("Content-Type") ?? "";
+  if (contentType.includes("text/html")) {
+    headers.set(
+      "Content-Security-Policy",
+      "frame-ancestors 'self' https://www.owlbear.rodeo https://owlbear.rodeo https://*.owlbear.rodeo"
+    );
+  }
+
+  if (
+    url.pathname === "/manifest.json" ||
+    url.pathname === "/extension-icon.svg" ||
+    url.pathname === "/default-token.svg"
+  ) {
+    headers.set("Access-Control-Allow-Origin", "*");
+    headers.set("Cross-Origin-Resource-Policy", "cross-origin");
+  }
+
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 interface ExecutionContext {
   waitUntil(promise: Promise<unknown>): void;
   passThroughOnException(): void;
@@ -40,7 +68,8 @@ const worker = {
       }, allowedWidths);
     }
 
-    return handler.fetch(request, env, ctx);
+    const response = await handler.fetch(request, env, ctx);
+    return withExtensionHeaders(response, url);
   },
 };
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent, type FormEvent } from "react";
 import {
   abilityModifier,
   armorValue,
@@ -10,6 +10,7 @@ import {
 } from "./types";
 
 const META_KEY = "com.shen.owlbear-bestiary/monster";
+const ADMIN_KEY_STORAGE = "bestiary-forge/admin-key";
 
 interface TokenStatus {
   monsterIndex: string;
@@ -118,7 +119,17 @@ export function BestiaryApp() {
   const [notice, setNotice] = useState("");
   const [demoTokens, setDemoTokens] = useState<DemoToken[]>([]);
   const [activeTab, setActiveTab] = useState<"stats" | "actions">("stats");
+  const [adminKey, setAdminKey] = useState("");
+  const [adminKeyDraft, setAdminKeyDraft] = useState("");
+  const [showAdminDialog, setShowAdminDialog] = useState(false);
+  const [adminKeyBusy, setAdminKeyBusy] = useState(false);
   const uploadRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const saved = window.localStorage.getItem(ADMIN_KEY_STORAGE) ?? "";
+    setAdminKey(saved);
+    setAdminKeyDraft(saved);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -211,6 +222,54 @@ export function BestiaryApp() {
       : "/default-token.svg"
     : "/default-token.svg";
 
+  function openUploadPicker() {
+    if (!adminKey) {
+      setShowAdminDialog(true);
+      return;
+    }
+    uploadRef.current?.click();
+  }
+
+  async function saveAdminKey(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const nextKey = adminKeyDraft.trim();
+    if (!nextKey) {
+      setNotice("请输入管理员口令");
+      return;
+    }
+    setAdminKeyBusy(true);
+    try {
+      const response = await fetch("/api/admin/verify", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${nextKey}` },
+      });
+      if (!response.ok) throw new Error("管理员口令不正确");
+      window.localStorage.setItem(ADMIN_KEY_STORAGE, nextKey);
+      setAdminKey(nextKey);
+      setShowAdminDialog(false);
+      setNotice("管理功能已解锁；现在可以上传或重置图片");
+    } catch (error) {
+      setNotice(error instanceof Error ? error.message : "无法验证管理员口令");
+    } finally {
+      setAdminKeyBusy(false);
+    }
+  }
+
+  function forgetAdminKey() {
+    window.localStorage.removeItem(ADMIN_KEY_STORAGE);
+    setAdminKey("");
+    setAdminKeyDraft("");
+    setShowAdminDialog(false);
+    setNotice("已锁定图片管理功能");
+  }
+
+  function handleUnauthorized() {
+    window.localStorage.removeItem(ADMIN_KEY_STORAGE);
+    setAdminKey("");
+    setAdminKeyDraft("");
+    setShowAdminDialog(true);
+  }
+
   async function handleUpload(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     if (!file || !monster) return;
@@ -221,12 +280,14 @@ export function BestiaryApp() {
       const response = await fetch(`/api/tokens/${monster.index}`, {
         method: "POST",
         headers: {
+          Authorization: `Bearer ${adminKey}`,
           "Content-Type": "image/png",
           "X-Original-Filename": encodeURIComponent(file.name),
         },
         body: tokenBlob,
       });
       const payload = (await response.json()) as { error?: string };
+      if (response.status === 401) handleUnauthorized();
       if (!response.ok) throw new Error(payload.error ?? "上传失败");
       setTokenRecords((records) => ({ ...records, [monster.index]: new Date().toISOString() }));
       setNotice(`${monster.name} 的圆形棋子已经保存`);
@@ -240,9 +301,17 @@ export function BestiaryApp() {
 
   async function resetToken() {
     if (!monster) return;
+    if (!adminKey) {
+      setShowAdminDialog(true);
+      return;
+    }
     setBusy("reset");
     try {
-      const response = await fetch(`/api/tokens/${monster.index}`, { method: "DELETE" });
+      const response = await fetch(`/api/tokens/${monster.index}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${adminKey}` },
+      });
+      if (response.status === 401) handleUnauthorized();
       if (!response.ok) throw new Error("无法恢复默认图片");
       setTokenRecords((records) => {
         const next = { ...records };
@@ -332,6 +401,14 @@ export function BestiaryApp() {
             <p className="eyebrow">OWLBEAR RODEO EXTENSION</p>
             <h1>Bestiary Forge</h1>
           </div>
+          <button
+            className={`admin-key-button ${adminKey ? "unlocked" : "locked"}`}
+            onClick={() => setShowAdminDialog(true)}
+            aria-label={adminKey ? "管理功能已解锁" : "输入管理员口令"}
+            title={adminKey ? "管理功能已解锁" : "输入管理员口令"}
+          >
+            {adminKey ? "解锁" : "管理"}
+          </button>
           <span className={`connection-dot ${connection}`} title={connection === "connected" ? "已连接 Owlbear Rodeo" : "独立预览模式"} />
         </header>
 
@@ -447,7 +524,7 @@ export function BestiaryApp() {
 
                 <div className="detail-actions">
                   <input ref={uploadRef} type="file" accept="image/*" onChange={handleUpload} hidden />
-                  <button className="secondary-action" onClick={() => uploadRef.current?.click()} disabled={busy !== null}>
+                  <button className="secondary-action" onClick={openUploadPicker} disabled={busy !== null}>
                     <span aria-hidden="true">↥</span>{busy === "upload" ? "处理中…" : uploaded ? "更换图片" : "上传图片"}
                   </button>
                   {uploaded && <button className="reset-action" onClick={resetToken} disabled={busy !== null} title="恢复黑色默认图片">↺</button>}
@@ -500,6 +577,33 @@ export function BestiaryApp() {
           安装到 Owlbear Rodeo 后，在移动工具中选择“鉴定怪物”，悬停 Token 即可查看资料卡
         </footer>
       </section>
+
+      {showAdminDialog && (
+        <div className="admin-dialog-backdrop" role="presentation">
+          <form className="admin-dialog" onSubmit={saveAdminKey} aria-labelledby="admin-dialog-title">
+            <p className="section-kicker">GM ONLY</p>
+            <h2 id="admin-dialog-title">解锁图片管理</h2>
+            <p>公开扩展允许所有玩家查看资料，但只有持有管理员口令的人可以上传、更换或重置 Token 图片。</p>
+            <label>
+              管理员口令
+              <input
+                type="password"
+                value={adminKeyDraft}
+                onChange={(event) => setAdminKeyDraft(event.target.value)}
+                autoComplete="current-password"
+                autoFocus
+              />
+            </label>
+            <div>
+              {adminKey && <button type="button" className="dialog-forget" onClick={forgetAdminKey}>锁定</button>}
+              <button type="button" className="dialog-cancel" onClick={() => setShowAdminDialog(false)}>取消</button>
+              <button type="submit" className="dialog-confirm" disabled={adminKeyBusy}>
+                {adminKeyBusy ? "验证中…" : "验证并保存"}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
 
       {notice && <div className="toast" role="status">{notice}</div>}
     </main>

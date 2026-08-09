@@ -4,6 +4,7 @@ import {
   getTokenBucket,
   saveTokenRecord,
 } from "../../../../db/token-storage";
+import { hasValidAdminKey, unauthorizedResponse } from "../../../admin-auth";
 
 const CORS_HEADERS = {
   "Access-Control-Allow-Origin": "*",
@@ -53,6 +54,7 @@ export async function POST(
   request: Request,
   context: { params: Promise<{ index: string }> }
 ) {
+  if (!hasValidAdminKey(request)) return unauthorizedResponse();
   const { index } = await context.params;
   if (!safeIndex(index)) {
     return Response.json({ error: "Invalid monster index" }, { status: 400 });
@@ -91,9 +93,10 @@ export async function POST(
 }
 
 export async function DELETE(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ index: string }> }
 ) {
+  if (!hasValidAdminKey(request)) return unauthorizedResponse();
   const { index } = await context.params;
   if (!safeIndex(index)) {
     return Response.json({ error: "Invalid monster index" }, { status: 400 });
