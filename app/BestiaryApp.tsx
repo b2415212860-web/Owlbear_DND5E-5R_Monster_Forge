@@ -1,73 +1,17 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState, type ChangeEvent, type FormEvent } from "react";
-import {
-  abilityModifier,
-  armorValue,
-  sizeInCells,
-  type MonsterDetail,
-  type MonsterListEntry,
-} from "./types";
+import { useEffect, useMemo, useState } from "react";
+import { abilityModifier, armorValue, type MonsterDetail, type MonsterListEntry } from "./types";
 
-const META_KEY = "com.shen.owlbear-bestiary/monster";
-const ADMIN_KEY_STORAGE = "bestiary-forge/admin-key";
-
-interface TokenStatus {
-  monsterIndex: string;
-  updatedAt: string;
-}
-
-interface DemoToken {
-  id: number;
-  monster: MonsterDetail;
-  image: string;
-  left: number;
-  top: number;
-}
-
-function tokenUrl(index: string, version?: string) {
-  const query = version ? `?v=${encodeURIComponent(version)}` : "";
-  return `/api/tokens/${index}${query}`;
-}
-
-async function circularizeImage(file: File) {
-  const bitmap = await createImageBitmap(file);
-  const size = 512;
-  const canvas = document.createElement("canvas");
-  canvas.width = size;
-  canvas.height = size;
-  const context = canvas.getContext("2d");
-  if (!context) throw new Error("浏览器无法处理这张图片");
-
-  const scale = Math.max(size / bitmap.width, size / bitmap.height);
-  const width = bitmap.width * scale;
-  const height = bitmap.height * scale;
-  const x = (size - width) / 2;
-  const y = (size - height) / 2;
-
-  context.save();
-  context.beginPath();
-  context.arc(size / 2, size / 2, size / 2 - 8, 0, Math.PI * 2);
-  context.clip();
-  context.fillStyle = "#050505";
-  context.fillRect(0, 0, size, size);
-  context.drawImage(bitmap, x, y, width, height);
-  context.restore();
-  context.beginPath();
-  context.arc(size / 2, size / 2, size / 2 - 8, 0, Math.PI * 2);
-  context.lineWidth = 12;
-  context.strokeStyle = "#d97836";
-  context.stroke();
-  bitmap.close();
-
-  return new Promise<Blob>((resolve, reject) =>
-    canvas.toBlob(
-      (blob) => (blob ? resolve(blob) : reject(new Error("图片处理失败"))),
-      "image/png",
-      0.94
-    )
-  );
-}
+const FAVORITES_STORAGE = "bestiary-forge/favorites-v1";
+const ABILITIES = [
+  ["力量", "strength"],
+  ["敏捷", "dexterity"],
+  ["体质", "constitution"],
+  ["智力", "intelligence"],
+  ["感知", "wisdom"],
+  ["魅力", "charisma"],
+] as const;
 
 function speedText(monster: MonsterDetail) {
   return Object.entries(monster.speed)
@@ -76,536 +20,303 @@ function speedText(monster: MonsterDetail) {
     .join(" · ");
 }
 
-function monsterSnapshot(monster: MonsterDetail) {
-  return {
-    index: monster.index,
-    name: monster.name,
-    size: monster.size,
-    type: monster.type,
-    alignment: monster.alignment,
-    armorClass: armorValue(monster),
-    hitPoints: monster.hit_points,
-    maxHitPoints: monster.hit_points,
-    hitDice: monster.hit_dice,
-    speed: monster.speed,
-    challengeRating: monster.challenge_rating,
-    xp: monster.xp,
-    abilities: {
-      str: monster.strength,
-      dex: monster.dexterity,
-      con: monster.constitution,
-      int: monster.intelligence,
-      wis: monster.wisdom,
-      cha: monster.charisma,
-    },
-    senses: monster.senses,
-    languages: monster.languages,
-    traits: monster.special_abilities ?? [],
-    actions: monster.actions ?? [],
-  };
+function listText(values?: string[]) {
+  return values?.length ? values.join("、") : "—";
+}
+
+function sensesText(monster: MonsterDetail) {
+  return Object.entries(monster.senses)
+    .map(([key, value]) => `${key.replaceAll("_", " ")} ${value}`)
+    .join(" · ");
+}
+
+function FeatureList({ title, items }: { title: string; items?: MonsterDetail["actions"] }) {
+  if (!items?.length) return null;
+  return (
+    <section className="feature-section">
+      <div className="section-rule"><span>{title}</span></div>
+      <div className="feature-list">
+        {items.map((item, index) => (
+          <article className="feature" key={`${item.name}-${index}`}>
+            <h4>{item.name}</h4>
+            <p>{item.desc}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function MonsterSheet({ monster }: { monster: MonsterDetail }) {
+  const proficiencies = monster.proficiencies?.map((item) => `${item.proficiency.name.replace("Saving Throw: ", "").replace("Skill: ", "")} +${item.value}`).join(" · ");
+
+  return (
+    <article className="monster-sheet">
+      <header className="sheet-heading">
+        <div>
+          <p className="eyebrow">收藏资料卡</p>
+          <h2>{monster.name}</h2>
+          <p className="monster-kind">{monster.size} {monster.type}{monster.subtype ? ` (${monster.subtype})` : ""}，{monster.alignment}</p>
+        </div>
+        <div className="cr-seal" aria-label={`挑战等级 ${monster.challenge_rating}`}>
+          <small>CR</small>
+          <strong>{monster.challenge_rating}</strong>
+        </div>
+      </header>
+
+      <div className="vital-grid">
+        <div><span>护甲等级</span><strong>{armorValue(monster)}</strong></div>
+        <div><span>生命值</span><strong>{monster.hit_points}</strong><small>{monster.hit_dice}</small></div>
+        <div><span>经验值</span><strong>{monster.xp.toLocaleString()}</strong><small>XP</small></div>
+      </div>
+
+      <dl className="quick-facts">
+        <div><dt>速度</dt><dd>{speedText(monster) || "—"}</dd></div>
+        <div><dt>感官</dt><dd>{sensesText(monster) || "—"}</dd></div>
+        <div><dt>语言</dt><dd>{monster.languages || "—"}</dd></div>
+        {proficiencies ? <div><dt>熟练项</dt><dd>{proficiencies}</dd></div> : null}
+      </dl>
+
+      <div className="ability-grid" aria-label="属性值">
+        {ABILITIES.map(([label, key]) => (
+          <div key={key}>
+            <span>{label}</span>
+            <strong>{monster[key]}</strong>
+            <small>{abilityModifier(monster[key])}</small>
+          </div>
+        ))}
+      </div>
+
+      <dl className="defense-list">
+        <div><dt>伤害易伤</dt><dd>{listText(monster.damage_vulnerabilities)}</dd></div>
+        <div><dt>伤害抗性</dt><dd>{listText(monster.damage_resistances)}</dd></div>
+        <div><dt>伤害免疫</dt><dd>{listText(monster.damage_immunities)}</dd></div>
+        <div><dt>状态免疫</dt><dd>{monster.condition_immunities?.length ? monster.condition_immunities.map((item) => item.name).join("、") : "—"}</dd></div>
+      </dl>
+
+      <FeatureList title="特性" items={monster.special_abilities} />
+      <FeatureList title="动作" items={monster.actions} />
+      <FeatureList title="传奇动作" items={monster.legendary_actions} />
+    </article>
+  );
 }
 
 export function BestiaryApp() {
-  const [catalog, setCatalog] = useState<MonsterListEntry[]>([]);
+  const [monsters, setMonsters] = useState<MonsterListEntry[]>([]);
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<MonsterListEntry | null>(null);
-  const [monster, setMonster] = useState<MonsterDetail | null>(null);
-  const [detailLoading, setDetailLoading] = useState(false);
-  const [catalogError, setCatalogError] = useState("");
-  const [tokenRecords, setTokenRecords] = useState<Record<string, string>>({});
-  const [connection, setConnection] = useState<"checking" | "connected" | "preview">("checking");
-  const [sceneReady, setSceneReady] = useState(false);
-  const [busy, setBusy] = useState<"upload" | "spawn" | "reset" | null>(null);
+  const [catalogState, setCatalogState] = useState<"loading" | "ready" | "error">("loading");
+  const [favorites, setFavorites] = useState<MonsterListEntry[]>([]);
+  const [activeIndex, setActiveIndex] = useState<string | null>(null);
+  const [details, setDetails] = useState<Record<string, MonsterDetail>>({});
+  const [detailState, setDetailState] = useState<"idle" | "loading" | "error">("idle");
+  const [favoritesReady, setFavoritesReady] = useState(false);
   const [notice, setNotice] = useState("");
-  const [demoTokens, setDemoTokens] = useState<DemoToken[]>([]);
-  const [activeTab, setActiveTab] = useState<"stats" | "actions">("stats");
-  const [adminKey, setAdminKey] = useState("");
-  const [adminKeyDraft, setAdminKeyDraft] = useState("");
-  const [showAdminDialog, setShowAdminDialog] = useState(false);
-  const [adminKeyBusy, setAdminKeyBusy] = useState(false);
-  const uploadRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const saved = window.localStorage.getItem(ADMIN_KEY_STORAGE) ?? "";
-    setAdminKey(saved);
-    setAdminKeyDraft(saved);
-  }, []);
-
-  useEffect(() => {
-    let cancelled = false;
-    fetch("/api/monsters")
-      .then(async (response) =>
-        (await response.json()) as { results?: MonsterListEntry[]; degraded?: boolean }
-      )
-      .then((payload) => {
-        if (cancelled) return;
-        const results = payload.results ?? [];
-        setCatalog(results);
-        const first = results.find((entry) => entry.index === "owlbear") ?? results[0] ?? null;
-        setSelected(first);
-        if (payload.degraded) setCatalogError("怪物源暂时离线，当前显示离线精选列表");
-      })
-      .catch(() => setCatalogError("怪物目录加载失败，请稍后重试"));
-
-    fetch("/api/tokens")
-      .then(async (response) => (await response.json()) as { tokens?: TokenStatus[] })
-      .then((payload) => {
-        const next: Record<string, string> = {};
-        for (const token of payload.tokens ?? []) next[token.monsterIndex] = token.updatedAt;
-        if (!cancelled) setTokenRecords(next);
-      })
-      .catch(() => undefined);
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  useEffect(() => {
-    let disposed = false;
-    let stopScene: () => void = () => {};
-    void import("@owlbear-rodeo/sdk").then(({ default: OBR }) => {
-      if (disposed) return;
-      if (!OBR.isAvailable) {
-        setConnection("preview");
-        return;
-      }
-      OBR.onReady(async () => {
-        if (disposed) return;
-        setConnection("connected");
-        setSceneReady(await OBR.scene.isReady());
-        stopScene = OBR.scene.onReadyChange((ready) => setSceneReady(ready));
-      });
-    });
-    return () => {
-      disposed = true;
-      stopScene();
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!selected) return;
     const controller = new AbortController();
-    setDetailLoading(true);
-    setMonster(null);
-    setActiveTab("stats");
-    fetch(`/api/monsters/${selected.index}`, { signal: controller.signal })
+    fetch("/api/monsters", { signal: controller.signal })
       .then(async (response) => {
-        if (!response.ok) throw new Error("detail unavailable");
-        return (await response.json()) as MonsterDetail;
+        if (!response.ok) throw new Error("catalog");
+        return response.json() as Promise<{ results: MonsterListEntry[] }>;
       })
-      .then(setMonster)
-      .catch((error) => {
-        if (error instanceof DOMException && error.name === "AbortError") return;
-        setNotice("无法读取这个怪物的资料，请重试");
+      .then((payload) => {
+        setMonsters(payload.results);
+        setCatalogState("ready");
       })
-      .finally(() => setDetailLoading(false));
+      .catch((error: unknown) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) setCatalogState("error");
+      });
     return () => controller.abort();
-  }, [selected]);
+  }, []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      try {
+        const stored = window.localStorage.getItem(FAVORITES_STORAGE);
+        const parsed = stored ? JSON.parse(stored) as MonsterListEntry[] : [];
+        if (Array.isArray(parsed)) {
+          const safe = parsed.filter((item) => item && typeof item.index === "string" && typeof item.name === "string");
+          setFavorites(safe);
+          setActiveIndex(safe[0]?.index ?? null);
+        }
+      } catch {
+        window.localStorage.removeItem(FAVORITES_STORAGE);
+      } finally {
+        setFavoritesReady(true);
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (favoritesReady) window.localStorage.setItem(FAVORITES_STORAGE, JSON.stringify(favorites));
+  }, [favorites, favoritesReady]);
+
+  useEffect(() => {
+    if (!activeIndex || details[activeIndex]) return;
+    const selectedIndex = activeIndex;
+    const controller = new AbortController();
+    async function loadDetail() {
+      await Promise.resolve();
+      if (controller.signal.aborted) return;
+      setDetailState("loading");
+      try {
+        const response = await fetch(`/api/monsters/${encodeURIComponent(selectedIndex)}`, { signal: controller.signal });
+        if (!response.ok) throw new Error("detail");
+        const monster = await response.json() as MonsterDetail;
+        setDetails((current) => ({ ...current, [selectedIndex]: monster }));
+        setDetailState("idle");
+      } catch (error: unknown) {
+        if (!(error instanceof DOMException && error.name === "AbortError")) setDetailState("error");
+      }
+    }
+    void loadDetail();
+    return () => controller.abort();
+  }, [activeIndex, details]);
 
   useEffect(() => {
     if (!notice) return;
-    const timer = window.setTimeout(() => setNotice(""), 3200);
+    const timer = window.setTimeout(() => setNotice(""), 2800);
     return () => window.clearTimeout(timer);
   }, [notice]);
 
-  const filteredCatalog = useMemo(() => {
-    const needle = query.trim().toLocaleLowerCase();
-    if (!needle) return catalog;
-    return catalog.filter((entry) => entry.name.toLocaleLowerCase().includes(needle));
-  }, [catalog, query]);
+  const favoriteIndexes = useMemo(() => new Set(favorites.map((item) => item.index)), [favorites]);
+  const filteredMonsters = useMemo(() => {
+    const normalized = query.trim().toLocaleLowerCase();
+    return normalized ? monsters.filter((monster) => monster.name.toLocaleLowerCase().includes(normalized)) : monsters;
+  }, [monsters, query]);
+  const activeMonster = activeIndex ? details[activeIndex] : undefined;
 
-  const uploaded = monster ? Boolean(tokenRecords[monster.index]) : false;
-  const currentImage = monster
-    ? uploaded
-      ? tokenUrl(monster.index, tokenRecords[monster.index])
-      : "/default-token.svg"
-    : "/default-token.svg";
-
-  function openUploadPicker() {
-    if (!adminKey) {
-      setShowAdminDialog(true);
-      return;
-    }
-    uploadRef.current?.click();
+  function addFavorite(monster: MonsterListEntry) {
+    setFavorites((current) => current.some((item) => item.index === monster.index) ? current : [...current, monster]);
+    setActiveIndex(monster.index);
+    setNotice(`已收藏 ${monster.name}`);
   }
 
-  async function saveAdminKey(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const nextKey = adminKeyDraft.trim();
-    if (!nextKey) {
-      setNotice("请输入管理员口令");
-      return;
-    }
-    setAdminKeyBusy(true);
-    try {
-      const response = await fetch("/api/admin/verify", {
-        method: "POST",
-        headers: { Authorization: `Bearer ${nextKey}` },
-      });
-      if (!response.ok) throw new Error("管理员口令不正确");
-      window.localStorage.setItem(ADMIN_KEY_STORAGE, nextKey);
-      setAdminKey(nextKey);
-      setShowAdminDialog(false);
-      setNotice("管理功能已解锁；现在可以上传或重置图片");
-    } catch (error) {
-      setNotice(error instanceof Error ? error.message : "无法验证管理员口令");
-    } finally {
-      setAdminKeyBusy(false);
-    }
+  function removeFavorite(index: string) {
+    setFavorites((current) => {
+      const position = current.findIndex((item) => item.index === index);
+      const next = current.filter((item) => item.index !== index);
+      if (activeIndex === index) setActiveIndex(next[Math.min(position, next.length - 1)]?.index ?? null);
+      return next;
+    });
+    setNotice("已从收藏中移除");
   }
 
-  function forgetAdminKey() {
-    window.localStorage.removeItem(ADMIN_KEY_STORAGE);
-    setAdminKey("");
-    setAdminKeyDraft("");
-    setShowAdminDialog(false);
-    setNotice("已锁定图片管理功能");
+  function toggleFavorite(monster: MonsterListEntry) {
+    if (favoriteIndexes.has(monster.index)) removeFavorite(monster.index);
+    else addFavorite(monster);
   }
 
-  function handleUnauthorized() {
-    window.localStorage.removeItem(ADMIN_KEY_STORAGE);
-    setAdminKey("");
-    setAdminKeyDraft("");
-    setShowAdminDialog(true);
-  }
-
-  async function handleUpload(event: ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0];
-    if (!file || !monster) return;
-    setBusy("upload");
-    try {
-      if (!file.type.startsWith("image/")) throw new Error("请选择图片文件");
-      const tokenBlob = await circularizeImage(file);
-      const response = await fetch(`/api/tokens/${monster.index}`, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${adminKey}`,
-          "Content-Type": "image/png",
-          "X-Original-Filename": encodeURIComponent(file.name),
-        },
-        body: tokenBlob,
-      });
-      const payload = (await response.json()) as { error?: string };
-      if (response.status === 401) handleUnauthorized();
-      if (!response.ok) throw new Error(payload.error ?? "上传失败");
-      setTokenRecords((records) => ({ ...records, [monster.index]: new Date().toISOString() }));
-      setNotice(`${monster.name} 的圆形棋子已经保存`);
-    } catch (error) {
-      setNotice(error instanceof Error ? error.message : "图片上传失败");
-    } finally {
-      setBusy(null);
-      event.target.value = "";
-    }
-  }
-
-  async function resetToken() {
-    if (!monster) return;
-    if (!adminKey) {
-      setShowAdminDialog(true);
-      return;
-    }
-    setBusy("reset");
-    try {
-      const response = await fetch(`/api/tokens/${monster.index}`, {
-        method: "DELETE",
-        headers: { Authorization: `Bearer ${adminKey}` },
-      });
-      if (response.status === 401) handleUnauthorized();
-      if (!response.ok) throw new Error("无法恢复默认图片");
-      setTokenRecords((records) => {
-        const next = { ...records };
-        delete next[monster.index];
-        return next;
-      });
-      setNotice("已恢复为黑色默认图片");
-    } catch (error) {
-      setNotice(error instanceof Error ? error.message : "操作失败");
-    } finally {
-      setBusy(null);
-    }
-  }
-
-  async function spawnToken() {
-    if (!monster) return;
-    setBusy("spawn");
-    try {
-      if (connection !== "connected") {
-        const count = demoTokens.length;
-        setDemoTokens((tokens) => [
-          ...tokens,
-          {
-            id: Date.now(),
-            monster,
-            image: currentImage,
-            left: 18 + ((count * 21) % 58),
-            top: 18 + ((count * 17) % 56),
-          },
-        ]);
-        setNotice("已投放到右侧预览地图；在 Owlbear Rodeo 中安装后会投放到真实场景");
-        return;
-      }
-      if (!sceneReady) throw new Error("请先在 Owlbear Rodeo 打开一个场景");
-
-      const { default: OBR, buildImage } = await import("@owlbear-rodeo/sdk");
-
-      const [width, height] = await Promise.all([
-        OBR.viewport.getWidth(),
-        OBR.viewport.getHeight(),
-      ]);
-      const position = await OBR.viewport.inverseTransformPoint({ x: width / 2, y: height / 2 });
-      const cells = sizeInCells(monster.size);
-      const imageUrl = new URL(
-        tokenUrl(monster.index, tokenRecords[monster.index]),
-        window.location.origin
-      ).toString();
-      const token = buildImage(
-        {
-          width: 512,
-          height: 512,
-          url: imageUrl,
-          mime: uploaded ? "image/png" : "image/svg+xml",
-        },
-        { dpi: 512 / cells, offset: { x: 256, y: 256 } }
-      )
-        .name(monster.name)
-        .description(`${monster.name} · HP ${monster.hit_points} · AC ${armorValue(monster)}`)
-        .position(position)
-        .layer("CHARACTER")
-        .metadata({ [META_KEY]: monsterSnapshot(monster) })
-        .plainText(`${monster.name}  ·  HP ${monster.hit_points}  ·  AC ${armorValue(monster)}`)
-        .textItemType("LABEL")
-        .fontSize(18)
-        .fontWeight(700)
-        .textFillColor("#fff7e8")
-        .textStrokeColor("#17120f")
-        .textStrokeWidth(4)
-        .build();
-
-      await OBR.scene.items.addItems([token]);
-      await OBR.notification.show(`${monster.name} 已投放到地图中心`, "SUCCESS");
-      setNotice("Token 已生成：生命与护甲已写入棋子资料");
-    } catch (error) {
-      setNotice(error instanceof Error ? error.message : "无法生成 Token");
-    } finally {
-      setBusy(null);
+  function openMonster(monster: MonsterListEntry) {
+    if (favoriteIndexes.has(monster.index)) {
+      setActiveIndex(monster.index);
+      setNotice("");
+    } else {
+      setNotice(`点击 ${monster.name} 右侧的星标，将它加入资料卡`);
     }
   }
 
   return (
     <main className="bestiary-app">
-      <section className="extension-frame" aria-label="Bestiary Forge 扩展面板">
-        <header className="app-header">
-          <div className="brand-mark" aria-hidden="true">BF</div>
-          <div className="brand-copy">
-            <p className="eyebrow">OWLBEAR RODEO EXTENSION</p>
-            <h1>Bestiary Forge</h1>
-          </div>
-          <button
-            className={`admin-key-button ${adminKey ? "unlocked" : "locked"}`}
-            onClick={() => setShowAdminDialog(true)}
-            aria-label={adminKey ? "管理功能已解锁" : "输入管理员口令"}
-            title={adminKey ? "管理功能已解锁" : "输入管理员口令"}
-          >
-            {adminKey ? "解锁" : "管理"}
-          </button>
-          <span className={`connection-dot ${connection}`} title={connection === "connected" ? "已连接 Owlbear Rodeo" : "独立预览模式"} />
-        </header>
-
-        <div className="workspace">
-          <aside className="monster-library">
-            <div className="library-heading">
-              <div>
-                <p className="section-kicker">D&amp;D 5e · SRD 2014</p>
-                <h2>怪物目录</h2>
-              </div>
-              <span>{catalog.length || "—"}</span>
-            </div>
-            <label className="search-box">
-              <span aria-hidden="true">⌕</span>
-              <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="搜索怪物…"
-                aria-label="搜索怪物"
-              />
-            </label>
-            {catalogError && <p className="catalog-note">{catalogError}</p>}
-            <div className="monster-list" role="listbox" aria-label="怪物列表">
-              {filteredCatalog.map((entry) => {
-                const hasToken = Boolean(tokenRecords[entry.index]);
-                return (
-                  <button
-                    key={entry.index}
-                    className={`monster-row ${selected?.index === entry.index ? "selected" : ""}`}
-                    onClick={() => setSelected(entry)}
-                    role="option"
-                    aria-selected={selected?.index === entry.index}
-                  >
-                    <span className="row-thumb">
-                      <img
-                        src={hasToken ? tokenUrl(entry.index, tokenRecords[entry.index]) : "/default-token.svg"}
-                        alt=""
-                      />
-                    </span>
-                    <span className="row-name">{entry.name}</span>
-                    {hasToken && <span className="image-ready" aria-label="已上传图片">●</span>}
-                  </button>
-                );
-              })}
-              {!filteredCatalog.length && <p className="empty-list">没有找到匹配的怪物</p>}
-            </div>
-            <p className="license-note">规则数据来自开放的 5e SRD；可上传自有授权图片。</p>
-          </aside>
-
-          <section className="monster-detail" aria-live="polite">
-            {detailLoading && (
-              <div className="detail-loading">
-                <span className="loading-rune">✦</span>
-                <p>翻阅怪物图鉴…</p>
-              </div>
-            )}
-            {!detailLoading && monster && (
-              <>
-                <div className="detail-hero">
-                  <div className={`token-portrait ${uploaded ? "uploaded" : "default"}`}>
-                    <img src={currentImage} alt={`${monster.name} 棋子`} />
-                    <span>{uploaded ? "已配图" : "默认"}</span>
-                  </div>
-                  <div className="monster-title">
-                    <p>CR {monster.challenge_rating} · {monster.size} {monster.type}</p>
-                    <h2>{monster.name}</h2>
-                    <p>{monster.alignment}</p>
-                  </div>
-                </div>
-
-                <div className="core-stats">
-                  <div><span>HP</span><strong>{monster.hit_points}</strong><small>{monster.hit_dice}</small></div>
-                  <div><span>AC</span><strong>{armorValue(monster)}</strong><small>{monster.armor_class[0]?.type ?? "armor"}</small></div>
-                  <div><span>XP</span><strong>{monster.xp.toLocaleString()}</strong><small>challenge</small></div>
-                </div>
-
-                <div className="detail-tabs" role="tablist">
-                  <button className={activeTab === "stats" ? "active" : ""} onClick={() => setActiveTab("stats")} role="tab">属性</button>
-                  <button className={activeTab === "actions" ? "active" : ""} onClick={() => setActiveTab("actions")} role="tab">特性 / 动作</button>
-                </div>
-
-                <div className="detail-scroll">
-                  {activeTab === "stats" ? (
-                    <>
-                      <div className="ability-grid">
-                        {([
-                          ["STR", monster.strength], ["DEX", monster.dexterity], ["CON", monster.constitution],
-                          ["INT", monster.intelligence], ["WIS", monster.wisdom], ["CHA", monster.charisma],
-                        ] as Array<[string, number]>).map(([label, score]) => (
-                          <div key={label}><span>{label}</span><strong>{score}</strong><small>{abilityModifier(score)}</small></div>
-                        ))}
-                      </div>
-                      <dl className="fact-list">
-                        <div><dt>速度</dt><dd>{speedText(monster)}</dd></div>
-                        <div><dt>感官</dt><dd>{Object.entries(monster.senses).map(([key, value]) => `${key.replaceAll("_", " ")} ${value}`).join(" · ")}</dd></div>
-                        <div><dt>语言</dt><dd>{monster.languages || "—"}</dd></div>
-                        {!!monster.damage_resistances?.length && <div><dt>抗性</dt><dd>{monster.damage_resistances.join(", ")}</dd></div>}
-                        {!!monster.damage_immunities?.length && <div><dt>免疫</dt><dd>{monster.damage_immunities.join(", ")}</dd></div>}
-                      </dl>
-                    </>
-                  ) : (
-                    <div className="feature-list">
-                      {[...(monster.special_abilities ?? []), ...(monster.actions ?? []), ...(monster.legendary_actions ?? [])].map((feature, index) => (
-                        <article key={`${feature.name}-${index}`}>
-                          <h3>{feature.name}</h3>
-                          <p>{feature.desc}</p>
-                        </article>
-                      ))}
-                      {!monster.special_abilities?.length && !monster.actions?.length && <p className="empty-list">没有可显示的动作资料</p>}
-                    </div>
-                  )}
-                </div>
-
-                <div className="detail-actions">
-                  <input ref={uploadRef} type="file" accept="image/*" onChange={handleUpload} hidden />
-                  <button className="secondary-action" onClick={openUploadPicker} disabled={busy !== null}>
-                    <span aria-hidden="true">↥</span>{busy === "upload" ? "处理中…" : uploaded ? "更换图片" : "上传图片"}
-                  </button>
-                  {uploaded && <button className="reset-action" onClick={resetToken} disabled={busy !== null} title="恢复黑色默认图片">↺</button>}
-                  <button className="primary-action" onClick={spawnToken} disabled={busy !== null || !monster}>
-                    <span aria-hidden="true">✦</span>{busy === "spawn" ? "投放中…" : "生成 TOKEN"}
-                  </button>
-                </div>
-              </>
-            )}
-          </section>
+      <header className="app-header">
+        <div className="brand-mark" aria-hidden="true">BF</div>
+        <div className="brand-copy">
+          <h1>Bestiary Forge</h1>
+          <p>D&amp;D 5e SRD 怪物收藏图鉴</p>
         </div>
-      </section>
+        <div className="header-badge"><span>★</span>{favorites.length} 个收藏</div>
+      </header>
 
-      <section className="map-preview" aria-label="Token 地图预览">
-        <div className="map-toolbar">
-          <span>荒野遭遇 · GM 视图</span>
-          <span className="map-hint">地图中心预览</span>
-        </div>
-        <div className="map-canvas">
-          <div className="map-water" />
-          <div className="map-path" />
-          <div className="map-label">NORTHWATCH<br />WILDS</div>
-          {demoTokens.map((token) => (
-            <div
-              className="demo-token"
-              key={token.id}
-              style={{ left: `${token.left}%`, top: `${token.top}%` }}
-              tabIndex={0}
-            >
-              <img src={token.image} alt={token.monster.name} />
-              <span className="demo-hp">HP {token.monster.hit_points}</span>
-              <span className="demo-ac">{armorValue(token.monster)}</span>
-              <article className="demo-card">
-                <p>CR {token.monster.challenge_rating} · {token.monster.type}</p>
-                <h3>{token.monster.name}</h3>
-                <div><b>HP {token.monster.hit_points}</b><b>AC {armorValue(token.monster)}</b></div>
-                <small>{token.monster.size} · {token.monster.alignment}</small>
-              </article>
-            </div>
-          ))}
-          {!demoTokens.length && (
-            <div className="map-empty">
-              <span>✦</span>
-              <p>从左侧选择怪物并生成 TOKEN</p>
-            </div>
-          )}
-        </div>
-        <footer className="preview-footer">
-          <span className="hover-tool-dot">◉</span>
-          安装到 Owlbear Rodeo 后，在移动工具中选择“鉴定怪物”，悬停 Token 即可查看资料卡
-        </footer>
-      </section>
-
-      {showAdminDialog && (
-        <div className="admin-dialog-backdrop" role="presentation">
-          <form className="admin-dialog" onSubmit={saveAdminKey} aria-labelledby="admin-dialog-title">
-            <p className="section-kicker">GM ONLY</p>
-            <h2 id="admin-dialog-title">解锁图片管理</h2>
-            <p>公开扩展允许所有玩家查看资料，但只有持有管理员口令的人可以上传、更换或重置 Token 图片。</p>
-            <label>
-              管理员口令
-              <input
-                type="password"
-                value={adminKeyDraft}
-                onChange={(event) => setAdminKeyDraft(event.target.value)}
-                autoComplete="current-password"
-                autoFocus
-              />
-            </label>
+      <div className="bestiary-workspace">
+        <aside className="catalog-panel" aria-label="怪物目录">
+          <div className="catalog-heading">
             <div>
-              {adminKey && <button type="button" className="dialog-forget" onClick={forgetAdminKey}>锁定</button>}
-              <button type="button" className="dialog-cancel" onClick={() => setShowAdminDialog(false)}>取消</button>
-              <button type="submit" className="dialog-confirm" disabled={adminKeyBusy}>
-                {adminKeyBusy ? "验证中…" : "验证并保存"}
-              </button>
+              <p className="eyebrow">Monster index</p>
+              <h2>怪物目录</h2>
             </div>
-          </form>
-        </div>
-      )}
+            <span>{filteredMonsters.length} / {monsters.length}</span>
+          </div>
 
-      {notice && <div className="toast" role="status">{notice}</div>}
+          <label className="search-box">
+            <span aria-hidden="true">⌕</span>
+            <span className="sr-only">搜索怪物</span>
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索怪物名称…" />
+            {query ? <button type="button" aria-label="清除搜索" onClick={() => setQuery("")}>×</button> : null}
+          </label>
+
+          <p className="catalog-tip">点击星标收藏；资料卡会在右侧新增标签页。</p>
+
+          <div className="monster-list" role="list">
+            {catalogState === "loading" ? <div className="catalog-message"><span className="spinner" />正在翻阅图鉴…</div> : null}
+            {catalogState === "error" ? <div className="catalog-message error">目录加载失败，请稍后刷新。</div> : null}
+            {catalogState === "ready" && !filteredMonsters.length ? <div className="catalog-message">没有找到匹配的怪物。</div> : null}
+            {filteredMonsters.map((monster, index) => {
+              const favorite = favoriteIndexes.has(monster.index);
+              return (
+                <div className={`monster-row${activeIndex === monster.index ? " active" : ""}`} role="listitem" key={monster.index}>
+                  <button className="monster-name-button" type="button" onClick={() => openMonster(monster)}>
+                    <span className="catalog-number">{String(index + 1).padStart(3, "0")}</span>
+                    <span>{monster.name}</span>
+                  </button>
+                  <button
+                    className={`favorite-button${favorite ? " favorite" : ""}`}
+                    type="button"
+                    aria-label={favorite ? `取消收藏 ${monster.name}` : `收藏 ${monster.name}`}
+                    aria-pressed={favorite}
+                    title={favorite ? "取消收藏" : "加入收藏"}
+                    onClick={() => toggleFavorite(monster)}
+                  >
+                    <span aria-hidden="true">{favorite ? "★" : "☆"}</span>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </aside>
+
+        <section className="card-browser" aria-label="收藏怪物资料卡">
+          <div className="browser-chrome">
+            <div className="window-dots" aria-hidden="true"><i /><i /><i /></div>
+            <nav className="tab-strip" aria-label="收藏资料卡导航">
+              {favorites.map((favorite) => (
+                <div className={`browser-tab${activeIndex === favorite.index ? " active" : ""}`} key={favorite.index}>
+                  <button className="tab-select" type="button" onClick={() => setActiveIndex(favorite.index)}>
+                    <span aria-hidden="true">★</span>
+                    <span>{favorite.name}</span>
+                  </button>
+                  <button className="tab-close" type="button" onClick={() => removeFavorite(favorite.index)} aria-label={`关闭 ${favorite.name} 资料卡`}>×</button>
+                </div>
+              ))}
+              {!favorites.length ? <span className="empty-tab-label">收藏标签页</span> : null}
+            </nav>
+            <span className="local-label" title="收藏仅保存在当前浏览器">本机</span>
+          </div>
+
+          <div className="browser-toolbar">
+            <button type="button" disabled aria-label="后退">‹</button>
+            <button type="button" disabled aria-label="前进">›</button>
+            <div className="address-bar"><span aria-hidden="true">✦</span>{activeIndex ? `bestiary.local/monster/${activeIndex}` : "bestiary.local/favorites"}</div>
+          </div>
+
+          <div className="card-viewport">
+            {!favorites.length ? (
+              <div className="empty-state">
+                <div className="empty-emblem" aria-hidden="true">☆</div>
+                <p className="eyebrow">Your field notes</p>
+                <h2>这里还没有收藏</h2>
+                <p>从左侧怪物目录点击星标，怪物资料卡会像浏览器标签页一样依次打开在这里。</p>
+                <span>收藏会保存在当前浏览器与设备中</span>
+              </div>
+            ) : null}
+            {favorites.length && detailState === "loading" ? <div className="sheet-message"><span className="spinner" />正在展开资料卡…</div> : null}
+            {favorites.length && detailState === "error" ? <div className="sheet-message error">资料卡加载失败，请切换标签页后重试。</div> : null}
+            {activeMonster ? <MonsterSheet monster={activeMonster} /> : null}
+          </div>
+        </section>
+      </div>
+
+      <div className={`toast${notice ? " visible" : ""}`} role="status" aria-live="polite">{notice}</div>
     </main>
   );
 }

@@ -55,7 +55,3 @@ export function abilityModifier(score: number) {
   const value = Math.floor((score - 10) / 2);
   return value >= 0 ? `+${value}` : String(value);
 }
-
-export function sizeInCells(size: string) {
-  return ({ Tiny: 0.5, Small: 1, Medium: 1, Large: 2, Huge: 3, Gargantuan: 4 } as Record<string, number>)[size] ?? 1;
-}

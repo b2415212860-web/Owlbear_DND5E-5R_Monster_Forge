@@ -4,7 +4,6 @@ import handler from "vinext/server/app-router-entry";
 
 interface Env {
   ASSETS: Fetcher;
-  DB: D1Database;
   IMAGES: {
     input(stream: ReadableStream): {
       transform(options: Record<string, unknown>): {
@@ -28,8 +27,7 @@ function withExtensionHeaders(response: Response, url: URL) {
 
   if (
     url.pathname === "/manifest.json" ||
-    url.pathname === "/extension-icon.svg" ||
-    url.pathname === "/default-token.svg"
+    url.pathname === "/extension-icon.svg"
   ) {
     headers.set("Access-Control-Allow-Origin", "*");
     headers.set("Cross-Origin-Resource-Policy", "cross-origin");

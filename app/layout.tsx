@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Bestiary Forge · Owlbear Rodeo 5e 怪物图鉴";
-const description = "上传怪物棋子图片，把带有生命、护甲与资料卡的 D&D 5e SRD Token 一键投放到 Owlbear Rodeo。";
+const title = "Bestiary Forge · Owlbear Rodeo 5e 怪物收藏图鉴";
+const description = "浏览并收藏 D&D 5e SRD 怪物，在浏览器式标签页中快速切换完整资料卡。";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
   const host = requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const imageUrl = `${protocol}://${host}/og.png`;
+  const imageUrl = `${protocol}://${host}/og-favorites.png`;
   return {
     title,
     description,
@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      images: [{ url: imageUrl, width: 1536, height: 864, alt: "Bestiary Forge 的圆形枭熊 Token 与怪物资料卡" }],
+      images: [{ url: imageUrl, width: 1674, height: 941, alt: "Bestiary Forge 怪物收藏与标签页资料卡" }],
     },
     twitter: {
       card: "summary_large_image",
