@@ -1,9 +1,28 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { abilityModifier, armorValue, type MonsterDetail, type MonsterListEntry } from "./types";
+import { abilityModifier, armorValue, type MonsterDetail, type MonsterListEntry, type RulesEdition } from "./types";
 
-const FAVORITES_STORAGE = "bestiary-forge/favorites-v1";
+const FAVORITES_STORAGE = "bestiary-forge/favorites-v3";
+const LEGACY_FAVORITES_STORAGE = "bestiary-forge/favorites-v2";
+const EDITIONS = {
+  "5e": {
+    short: "5E",
+    edition: "D&D 2014 / 5E",
+    source: "DND5e不全书",
+    switchLabel: "2014 · 中文图鉴",
+    count: 424,
+    license: "GPL-3.0",
+  },
+  "5r": {
+    short: "5R",
+    edition: "D&D 2024 / 5R",
+    source: "SRD 5.2",
+    switchLabel: "2024 · SRD 5.2",
+    count: 328,
+    license: "CC BY 4.0",
+  },
+} as const;
 const ABILITIES = [
   ["力量", "strength"],
   ["敏捷", "dexterity"],
@@ -25,9 +44,17 @@ function listText(values?: string[]) {
 }
 
 function sensesText(monster: MonsterDetail) {
+  if (monster.senses_text) return monster.senses_text;
   return Object.entries(monster.senses)
     .map(([key, value]) => `${key.replaceAll("_", " ")} ${value}`)
     .join(" · ");
+}
+
+function armorDetailText(monster: MonsterDetail) {
+  const details = monster.armor_class
+    .map((entry) => entry.desc || entry.type)
+    .filter((value) => value && value !== "数值");
+  return [...new Set(details)].join(" · ");
 }
 
 function FeatureList({ title, items }: { title: string; items?: MonsterDetail["actions"] }) {
@@ -38,7 +65,7 @@ function FeatureList({ title, items }: { title: string; items?: MonsterDetail["a
       <div className="feature-list">
         {items.map((item, index) => (
           <article className="feature" key={`${item.name}-${index}`}>
-            <h4>{item.name}</h4>
+            <h4>{item.name}{item.name_en ? <span>{item.name_en}</span> : null}</h4>
             <p>{item.desc}</p>
           </article>
         ))}
@@ -47,16 +74,23 @@ function FeatureList({ title, items }: { title: string; items?: MonsterDetail["a
   );
 }
 
+function favoriteKey(monster: Pick<MonsterListEntry, "ruleset" | "index">) {
+  return `${monster.ruleset}:${monster.index}`;
+}
+
 function MonsterSheet({ monster }: { monster: MonsterDetail }) {
   const proficiencies = monster.proficiencies?.map((item) => `${item.proficiency.name.replace("Saving Throw: ", "").replace("Skill: ", "")} +${item.value}`).join(" · ");
+  const edition = EDITIONS[monster.ruleset];
 
   return (
     <article className="monster-sheet">
       <header className="sheet-heading">
         <div>
-          <p className="eyebrow">收藏资料卡</p>
+          <p className="eyebrow">{edition.edition} · {edition.source}</p>
           <h2>{monster.name}</h2>
+          {monster.name_en ? <p className="sheet-name-en">{monster.name_en}</p> : null}
           <p className="monster-kind">{monster.size} {monster.type}{monster.subtype ? ` (${monster.subtype})` : ""}，{monster.alignment}</p>
+          <div className="sheet-tags"><span>中文资料</span><span>{edition.license}</span></div>
         </div>
         <div className="cr-seal" aria-label={`挑战等级 ${monster.challenge_rating}`}>
           <small>CR</small>
@@ -65,15 +99,20 @@ function MonsterSheet({ monster }: { monster: MonsterDetail }) {
       </header>
 
       <div className="vital-grid">
-        <div><span>护甲等级</span><strong>{armorValue(monster)}</strong></div>
+        <div><span>护甲等级</span><strong>{armorValue(monster)}</strong>{armorDetailText(monster) ? <small>{armorDetailText(monster)}</small> : null}</div>
         <div><span>生命值</span><strong>{monster.hit_points}</strong><small>{monster.hit_dice}</small></div>
         <div><span>经验值</span><strong>{monster.xp.toLocaleString()}</strong><small>XP</small></div>
       </div>
 
       <dl className="quick-facts">
         <div><dt>速度</dt><dd>{speedText(monster) || "—"}</dd></div>
+        {monster.initiative ? <div><dt>先攻</dt><dd>{monster.initiative}</dd></div> : null}
         <div><dt>感官</dt><dd>{sensesText(monster) || "—"}</dd></div>
         <div><dt>语言</dt><dd>{monster.languages || "—"}</dd></div>
+        {monster.proficiency_bonus ? <div><dt>熟练加值</dt><dd>+{monster.proficiency_bonus}</dd></div> : null}
+        {monster.saving_throws ? <div><dt>豁免</dt><dd>{monster.saving_throws}</dd></div> : null}
+        {monster.skills ? <div><dt>技能</dt><dd>{monster.skills}</dd></div> : null}
+        {monster.gear ? <div><dt>装备</dt><dd>{monster.gear}</dd></div> : null}
         {proficiencies ? <div><dt>熟练项</dt><dd>{proficiencies}</dd></div> : null}
       </dl>
 
@@ -94,19 +133,33 @@ function MonsterSheet({ monster }: { monster: MonsterDetail }) {
         <div><dt>状态免疫</dt><dd>{monster.condition_immunities?.length ? monster.condition_immunities.map((item) => item.name).join("、") : "—"}</dd></div>
       </dl>
 
-      <FeatureList title="特性" items={monster.special_abilities} />
+      <FeatureList title="特质" items={monster.special_abilities} />
       <FeatureList title="动作" items={monster.actions} />
+      <FeatureList title="附赠动作" items={monster.bonus_actions} />
+      <FeatureList title="反应" items={monster.reactions} />
       <FeatureList title="传奇动作" items={monster.legendary_actions} />
+      <FeatureList title="巢穴动作" items={monster.lair_actions} />
+
+      <footer className="source-note">
+        <strong>{monster.ruleset === "5e" ? "原页可逐条核对" : "开放规则资料"}</strong>
+        <span>{monster.ruleset === "5e"
+          ? `本资料卡由 DND5e不全书旧式中文 HTML 规范化生成；源提交 ${monster.source_commit?.slice(0, 7) ?? "190ba73"}，仓库标注 GPL-3.0。`
+          : "本资料卡来自 SRD 5.2 的非官方中文整理，以 CC BY 4.0 使用。"}</span>
+        {monster.source_file ? <span>源文件：{monster.source_file}{monster.source_block ? ` · 第 ${monster.source_block} 个资料块` : ""}</span> : null}
+        {monster.source_url ? <a href={monster.source_url} target="_blank" rel="noreferrer">核对这张资料卡的原始 HTML →</a> : null}
+        <a href="/sources" target="_blank" rel="noreferrer">查看数据范围、勘误与完整署名 →</a>
+      </footer>
     </article>
   );
 }
 
 export function BestiaryApp() {
+  const [ruleset, setRuleset] = useState<RulesEdition>("5r");
   const [monsters, setMonsters] = useState<MonsterListEntry[]>([]);
   const [query, setQuery] = useState("");
   const [catalogState, setCatalogState] = useState<"loading" | "ready" | "error">("loading");
   const [favorites, setFavorites] = useState<MonsterListEntry[]>([]);
-  const [activeIndex, setActiveIndex] = useState<string | null>(null);
+  const [activeKey, setActiveKey] = useState<string | null>(null);
   const [details, setDetails] = useState<Record<string, MonsterDetail>>({});
   const [detailState, setDetailState] = useState<"idle" | "loading" | "error">("idle");
   const [favoritesReady, setFavoritesReady] = useState(false);
@@ -114,7 +167,7 @@ export function BestiaryApp() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("/api/monsters", { signal: controller.signal })
+    fetch(`/api/monsters?edition=${ruleset}`, { signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) throw new Error("catalog");
         return response.json() as Promise<{ results: MonsterListEntry[] }>;
@@ -127,17 +180,19 @@ export function BestiaryApp() {
         if (!(error instanceof DOMException && error.name === "AbortError")) setCatalogState("error");
       });
     return () => controller.abort();
-  }, []);
+  }, [ruleset]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
       try {
-        const stored = window.localStorage.getItem(FAVORITES_STORAGE);
+        const stored = window.localStorage.getItem(FAVORITES_STORAGE) ?? window.localStorage.getItem(LEGACY_FAVORITES_STORAGE);
         const parsed = stored ? JSON.parse(stored) as MonsterListEntry[] : [];
         if (Array.isArray(parsed)) {
-          const safe = parsed.filter((item) => item && typeof item.index === "string" && typeof item.name === "string");
+          const safe = parsed
+            .filter((item) => item && typeof item.index === "string" && typeof item.name === "string")
+            .map((item) => ({ ...item, ruleset: item.ruleset === "5e" ? "5e" as const : "5r" as const }));
           setFavorites(safe);
-          setActiveIndex(safe[0]?.index ?? null);
+          setActiveKey(safe[0] ? favoriteKey(safe[0]) : null);
         }
       } catch {
         window.localStorage.removeItem(FAVORITES_STORAGE);
@@ -153,18 +208,19 @@ export function BestiaryApp() {
   }, [favorites, favoritesReady]);
 
   useEffect(() => {
-    if (!activeIndex || details[activeIndex]) return;
-    const selectedIndex = activeIndex;
+    const selected = favorites.find((favorite) => favoriteKey(favorite) === activeKey);
+    if (!selected || !activeKey || details[activeKey]) return;
+    const selectedKey = activeKey;
     const controller = new AbortController();
     async function loadDetail() {
       await Promise.resolve();
       if (controller.signal.aborted) return;
       setDetailState("loading");
       try {
-        const response = await fetch(`/api/monsters/${encodeURIComponent(selectedIndex)}`, { signal: controller.signal });
+        const response = await fetch(`/api/monsters/${encodeURIComponent(selected.index)}?edition=${selected.ruleset}`, { signal: controller.signal });
         if (!response.ok) throw new Error("detail");
         const monster = await response.json() as MonsterDetail;
-        setDetails((current) => ({ ...current, [selectedIndex]: monster }));
+        setDetails((current) => ({ ...current, [selectedKey]: monster }));
         setDetailState("idle");
       } catch (error: unknown) {
         if (!(error instanceof DOMException && error.name === "AbortError")) setDetailState("error");
@@ -172,7 +228,7 @@ export function BestiaryApp() {
     }
     void loadDetail();
     return () => controller.abort();
-  }, [activeIndex, details]);
+  }, [activeKey, details, favorites]);
 
   useEffect(() => {
     if (!notice) return;
@@ -180,37 +236,53 @@ export function BestiaryApp() {
     return () => window.clearTimeout(timer);
   }, [notice]);
 
-  const favoriteIndexes = useMemo(() => new Set(favorites.map((item) => item.index)), [favorites]);
+  const favoriteIndexes = useMemo(() => new Set(favorites.map(favoriteKey)), [favorites]);
   const filteredMonsters = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase();
-    return normalized ? monsters.filter((monster) => monster.name.toLocaleLowerCase().includes(normalized)) : monsters;
+    return normalized
+      ? monsters.filter((monster) => `${monster.name} ${monster.name_en ?? ""}`.toLocaleLowerCase().includes(normalized))
+      : monsters;
   }, [monsters, query]);
-  const activeMonster = activeIndex ? details[activeIndex] : undefined;
+  const activeFavorite = activeKey ? favorites.find((favorite) => favoriteKey(favorite) === activeKey) : undefined;
+  const activeMonster = activeKey ? details[activeKey] : undefined;
 
   function addFavorite(monster: MonsterListEntry) {
-    setFavorites((current) => current.some((item) => item.index === monster.index) ? current : [...current, monster]);
-    setActiveIndex(monster.index);
-    setNotice(`已收藏 ${monster.name}`);
+    const key = favoriteKey(monster);
+    setFavorites((current) => current.some((item) => favoriteKey(item) === key) ? current : [...current, monster]);
+    setActiveKey(key);
+    setNotice(`已收藏 ${monster.name}（${EDITIONS[monster.ruleset].short}）`);
   }
 
-  function removeFavorite(index: string) {
+  function changeRuleset(nextRuleset: RulesEdition) {
+    if (nextRuleset === ruleset) return;
+    setCatalogState("loading");
+    setMonsters([]);
+    setRuleset(nextRuleset);
+  }
+
+  function removeFavorite(key: string) {
     setFavorites((current) => {
-      const position = current.findIndex((item) => item.index === index);
-      const next = current.filter((item) => item.index !== index);
-      if (activeIndex === index) setActiveIndex(next[Math.min(position, next.length - 1)]?.index ?? null);
+      const position = current.findIndex((item) => favoriteKey(item) === key);
+      const next = current.filter((item) => favoriteKey(item) !== key);
+      if (activeKey === key) {
+        const replacement = next[Math.min(position, next.length - 1)];
+        setActiveKey(replacement ? favoriteKey(replacement) : null);
+      }
       return next;
     });
     setNotice("已从收藏中移除");
   }
 
   function toggleFavorite(monster: MonsterListEntry) {
-    if (favoriteIndexes.has(monster.index)) removeFavorite(monster.index);
+    const key = favoriteKey(monster);
+    if (favoriteIndexes.has(key)) removeFavorite(key);
     else addFavorite(monster);
   }
 
   function openMonster(monster: MonsterListEntry) {
-    if (favoriteIndexes.has(monster.index)) {
-      setActiveIndex(monster.index);
+    const key = favoriteKey(monster);
+    if (favoriteIndexes.has(key)) {
+      setActiveKey(key);
       setNotice("");
     } else {
       setNotice(`点击 ${monster.name} 右侧的星标，将它加入资料卡`);
@@ -223,8 +295,9 @@ export function BestiaryApp() {
         <div className="brand-mark" aria-hidden="true">BF</div>
         <div className="brand-copy">
           <h1>Bestiary Forge</h1>
-          <p>D&amp;D 5e SRD 怪物收藏图鉴</p>
+          <p>D&amp;D 2014 / 5E + 2024 / 5R 中文怪物图鉴</p>
         </div>
+        <a className="source-link" href="/sources" target="_blank" rel="noreferrer">来源与许可</a>
         <div className="header-badge"><span>★</span>{favorites.length} 个收藏</div>
       </header>
 
@@ -232,32 +305,48 @@ export function BestiaryApp() {
         <aside className="catalog-panel" aria-label="怪物目录">
           <div className="catalog-heading">
             <div>
-              <p className="eyebrow">Monster index</p>
+              <p className="eyebrow">{EDITIONS[ruleset].source} · ZH-CN</p>
               <h2>怪物目录</h2>
             </div>
             <span>{filteredMonsters.length} / {monsters.length}</span>
           </div>
 
+          <div className="edition-switch" role="group" aria-label="切换怪物图鉴规则版本">
+            {(Object.keys(EDITIONS) as RulesEdition[]).map((editionKey) => (
+              <button
+                type="button"
+                className={ruleset === editionKey ? "active" : ""}
+                aria-pressed={ruleset === editionKey}
+                onClick={() => changeRuleset(editionKey)}
+                key={editionKey}
+              >
+                <strong>{EDITIONS[editionKey].short}</strong>
+                <span>{EDITIONS[editionKey].switchLabel}</span>
+              </button>
+            ))}
+          </div>
+
           <label className="search-box">
             <span aria-hidden="true">⌕</span>
             <span className="sr-only">搜索怪物</span>
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索怪物名称…" />
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索中文或英文名称…" />
             {query ? <button type="button" aria-label="清除搜索" onClick={() => setQuery("")}>×</button> : null}
           </label>
 
-          <p className="catalog-tip">点击星标收藏；资料卡会在右侧新增标签页。</p>
+          <p className="catalog-tip">{ruleset === "5e" ? "424 张来自指定不全书提交的 2014 / 5E 中文资料卡" : "328 个 2024 / 5R SRD 怪物"}。点击星标收藏，资料卡会在右侧新增标签页。</p>
 
           <div className="monster-list" role="list">
             {catalogState === "loading" ? <div className="catalog-message"><span className="spinner" />正在翻阅图鉴…</div> : null}
-            {catalogState === "error" ? <div className="catalog-message error">目录加载失败，请稍后刷新。</div> : null}
+            {catalogState === "error" ? <div className="catalog-message error">本地中文数据库加载失败，请刷新重试。</div> : null}
             {catalogState === "ready" && !filteredMonsters.length ? <div className="catalog-message">没有找到匹配的怪物。</div> : null}
             {filteredMonsters.map((monster, index) => {
-              const favorite = favoriteIndexes.has(monster.index);
+              const key = favoriteKey(monster);
+              const favorite = favoriteIndexes.has(key);
               return (
-                <div className={`monster-row${activeIndex === monster.index ? " active" : ""}`} role="listitem" key={monster.index}>
+                <div className={`monster-row${activeKey === key ? " active" : ""}`} role="listitem" key={key}>
                   <button className="monster-name-button" type="button" onClick={() => openMonster(monster)}>
                     <span className="catalog-number">{String(index + 1).padStart(3, "0")}</span>
-                    <span>{monster.name}</span>
+                    <span className="catalog-monster-copy"><strong>{monster.name}</strong>{monster.name_en ? <small>{monster.name_en}</small> : null}</span>
                   </button>
                   <button
                     className={`favorite-button${favorite ? " favorite" : ""}`}
@@ -280,12 +369,13 @@ export function BestiaryApp() {
             <div className="window-dots" aria-hidden="true"><i /><i /><i /></div>
             <nav className="tab-strip" aria-label="收藏资料卡导航">
               {favorites.map((favorite) => (
-                <div className={`browser-tab${activeIndex === favorite.index ? " active" : ""}`} key={favorite.index}>
-                  <button className="tab-select" type="button" onClick={() => setActiveIndex(favorite.index)}>
+                <div className={`browser-tab${activeKey === favoriteKey(favorite) ? " active" : ""}`} key={favoriteKey(favorite)}>
+                  <button className="tab-select" type="button" onClick={() => setActiveKey(favoriteKey(favorite))}>
                     <span aria-hidden="true">★</span>
+                    <small>{EDITIONS[favorite.ruleset].short}</small>
                     <span>{favorite.name}</span>
                   </button>
-                  <button className="tab-close" type="button" onClick={() => removeFavorite(favorite.index)} aria-label={`关闭 ${favorite.name} 资料卡`}>×</button>
+                  <button className="tab-close" type="button" onClick={() => removeFavorite(favoriteKey(favorite))} aria-label={`关闭 ${favorite.name} 资料卡`}>×</button>
                 </div>
               ))}
               {!favorites.length ? <span className="empty-tab-label">收藏标签页</span> : null}
@@ -296,7 +386,7 @@ export function BestiaryApp() {
           <div className="browser-toolbar">
             <button type="button" disabled aria-label="后退">‹</button>
             <button type="button" disabled aria-label="前进">›</button>
-            <div className="address-bar"><span aria-hidden="true">✦</span>{activeIndex ? `bestiary.local/monster/${activeIndex}` : "bestiary.local/favorites"}</div>
+            <div className="address-bar"><span aria-hidden="true">✦</span>{activeFavorite ? `bestiary.local/${activeFavorite.ruleset}/monster/${activeFavorite.index}` : "bestiary.local/favorites"}</div>
           </div>
 
           <div className="card-viewport">
@@ -306,7 +396,7 @@ export function BestiaryApp() {
                 <p className="eyebrow">Your field notes</p>
                 <h2>这里还没有收藏</h2>
                 <p>从左侧怪物目录点击星标，怪物资料卡会像浏览器标签页一样依次打开在这里。</p>
-                <span>收藏会保存在当前浏览器与设备中</span>
+                <span>424 张 5E 中文图鉴 + 328 张 5R 中文 SRD 资料卡均已内置 · 收藏保存在当前设备</span>
               </div>
             ) : null}
             {favorites.length && detailState === "loading" ? <div className="sheet-message"><span className="spinner" />正在展开资料卡…</div> : null}

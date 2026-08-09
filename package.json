@@ -9,6 +9,9 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
+    "data:build": "npm run data:build:5e && npm run data:build:5r",
+    "data:build:5e": "node scripts/build-srd51-monsters.mjs",
+    "data:build:5r": "node scripts/build-srd52-monsters.mjs",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
