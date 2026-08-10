@@ -1,8 +1,8 @@
 export const extensionManifest = {
-  name: "Bestiary Forge · 5e",
-  version: "2.0.0",
+  name: "Bestiary Forge · 5E / 5R 中文图鉴",
+  version: "5.0.0",
   manifest_version: 1,
-  description: "收藏 D&D 5e SRD 怪物，并在标签页资料卡中快速切换",
+  description: "切换并收藏 D&D 2014 / 5E 不全书与 2024 / 5R SRD 中文怪物资料卡",
   icon: "/extension-icon.svg",
   action: {
     title: "怪物收藏图鉴",
