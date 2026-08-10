@@ -2927,3 +2927,47 @@ body {
   .directory-category > .directory-row strong { font-size: 13px; }
   .catalog-monster-copy strong { font-size: 13.5px; }
 }
+
+/* Owlbear popovers commonly render between phone and desktop widths.
+   Stack both panes before the two-column grid can squeeze the card viewport. */
+@media (max-width: 900px) {
+  .bestiary-app {
+    min-height: 100dvh;
+    overflow: auto;
+  }
+
+  .app-header {
+    height: 70px;
+    padding: 10px 14px;
+  }
+
+  .source-link { display: none; }
+
+  .bestiary-workspace {
+    height: auto;
+    min-height: calc(100dvh - 70px);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(420px, 48dvh) minmax(620px, 72dvh);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .catalog-panel,
+  .card-browser {
+    width: 100%;
+    min-width: 0;
+    border-radius: 18px;
+  }
+
+  .catalog-panel { padding: 18px 14px 11px; }
+  .browser-chrome { border-radius: 18px 18px 0 0; }
+}
+
+@media (max-width: 520px) {
+  .brand-copy h1 { font-size: 17px; }
+  .header-badge { padding-inline: 10px; }
+  .bestiary-workspace {
+    grid-template-rows: minmax(400px, 52dvh) minmax(600px, 78dvh);
+    padding: 8px;
+  }
+}
