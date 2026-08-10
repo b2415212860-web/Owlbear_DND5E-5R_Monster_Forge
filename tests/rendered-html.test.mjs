@@ -58,6 +58,8 @@ test("ships switchable local Chinese 5E and 5R monster catalogs", async () => {
   assert.equal(catalog5e.results.find((item) => item.index === "owlbear")?.name, "枭熊");
   assert.equal(catalog5e.results.find((item) => item.index === "owlbear")?.catalog_category, "怪兽");
   assert.equal(catalog5r.results.find((item) => item.index === "owlbear")?.catalog_category, "怪兽");
+  assert.deepEqual(catalog5e.results.find((item) => item.index === "owlbear")?.catalog_path, ["怪兽"]);
+  assert.deepEqual(catalog5r.results.find((item) => item.index === "adult-white-dragon")?.catalog_path, ["龙类", "白龙"]);
   const [owlbear5r, owlbear5e] = await Promise.all([owlbear5rResponse.json(), owlbear5eResponse.json()]);
   assert.equal(owlbear5r.ruleset, "5r");
   assert.equal(owlbear5e.ruleset, "5e");
@@ -84,8 +86,9 @@ test("implements device-local favorites and contains no token workflow", async (
   assert.match(appSource, /localStorage/);
   assert.match(appSource, /browser-tab/);
   assert.match(appSource, /favorite-button/);
-  assert.match(appSource, /category-filter/);
-  assert.match(appSource, /category-group/);
+  assert.match(appSource, /directory-toolbar/);
+  assert.match(appSource, /DirectoryBranch/);
+  assert.match(appSource, /catalog_path/);
   assert.doesNotMatch(appSource, /api\/tokens|buildImage|type="file"|TOKEN/);
   assert.equal(packageJson.dependencies?.["@owlbear-rodeo/sdk"], undefined);
 });

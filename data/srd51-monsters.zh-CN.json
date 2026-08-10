@@ -12,6 +12,9 @@
     "source_license": "GPL-3.0",
     "source_block": 11,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -70,6 +73,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "小型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -146,6 +152,9 @@
     "source_license": "GPL-3.0",
     "source_block": 8,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -211,6 +220,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "尤格罗斯魔",
@@ -316,6 +328,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -415,6 +430,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "巨型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -525,6 +543,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -599,6 +620,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -667,6 +691,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -744,6 +771,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "巨型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -818,6 +848,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "模板生物",
+    "catalog_path": [
+      "模板生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "人类",
@@ -900,6 +933,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "大型",
     "type": "巨人",
     "alignment": "任意混乱阵营",
@@ -964,6 +1000,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "微型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -1114,6 +1153,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "妖精",
     "alignment": "混乱中立",
@@ -1191,6 +1233,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -1319,6 +1364,9 @@
     "source_license": "GPL-3.0",
     "source_block": 14,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -1396,6 +1444,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -1473,6 +1524,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -1544,6 +1598,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -1655,6 +1712,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "subtype": "变形生物",
@@ -1746,6 +1806,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -1861,6 +1924,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -1953,6 +2019,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "啵灵蛙",
@@ -2046,6 +2115,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -2112,6 +2184,9 @@
     "source_license": "GPL-3.0",
     "source_block": 13,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -2182,6 +2257,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "尤格罗斯魔",
@@ -2295,6 +2373,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -2380,6 +2461,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -2503,6 +2587,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -2630,6 +2717,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -2752,6 +2842,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -2869,6 +2962,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -2996,6 +3092,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -3133,6 +3232,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -3250,6 +3352,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "模板生物",
+    "catalog_path": [
+      "模板生物"
+    ],
     "size": "巨型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -3396,6 +3501,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -3523,6 +3631,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -3660,6 +3771,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -3791,6 +3905,9 @@
     "source_license": "GPL-3.0",
     "source_block": 15,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -3849,6 +3966,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -3926,6 +4046,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -3997,6 +4120,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -4074,6 +4200,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "大型",
     "type": "天族",
     "alignment": "守序善良",
@@ -4221,6 +4350,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "模板生物",
+    "catalog_path": [
+      "模板生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -4330,6 +4462,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "alignment": "中立邪恶",
@@ -4416,6 +4551,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "蛇人",
@@ -4505,6 +4643,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -4594,6 +4735,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "守序邪恶",
@@ -4677,6 +4821,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "类地精",
@@ -4749,6 +4896,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "类地精",
@@ -4844,6 +4994,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "类地精",
@@ -4926,6 +5079,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -5006,6 +5162,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "小型",
     "type": "类人",
     "subtype": "狗头人",
@@ -5084,6 +5243,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "守序中立",
@@ -5161,6 +5323,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "混乱邪恶",
@@ -5267,6 +5432,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -5334,6 +5502,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "小型",
     "type": "类人",
     "subtype": "类地精",
@@ -5406,6 +5577,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "小型",
     "type": "类人",
     "subtype": "类地精",
@@ -5490,6 +5664,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "alignment": "守序邪恶",
@@ -5567,6 +5744,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "守序邪恶",
@@ -5680,6 +5860,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -5746,6 +5929,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -5828,6 +6014,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "混乱中立",
@@ -5925,6 +6114,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "尤格罗斯魔",
@@ -6030,6 +6222,9 @@
     "source_license": "GPL-3.0",
     "source_block": 10,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -6089,6 +6284,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -6190,6 +6388,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "大型",
     "type": "天族",
     "alignment": "守序善良",
@@ -6329,6 +6530,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "混乱中立",
@@ -6405,6 +6609,9 @@
     "source_license": "GPL-3.0",
     "source_block": 19,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -6471,6 +6678,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -6572,6 +6782,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "大型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -6683,6 +6896,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "巨型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -6769,6 +6985,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "alignment": "守序邪恶",
@@ -6850,6 +7069,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "大型",
     "type": "巨人",
     "alignment": "守序邪恶",
@@ -6942,6 +7164,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -7076,6 +7301,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "subtype": "变形生物，蛇人",
@@ -7224,6 +7452,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -7295,6 +7526,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "守序中立",
@@ -7376,6 +7610,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "无阵营",
@@ -7452,6 +7689,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -7519,6 +7759,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -7596,6 +7839,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -7661,6 +7907,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "混乱邪恶",
@@ -7734,6 +7983,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -7800,6 +8052,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "混乱善良",
@@ -7892,6 +8147,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "小型",
     "type": "异怪",
     "alignment": "守序善良",
@@ -7975,6 +8233,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -8033,6 +8294,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -8129,6 +8393,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "小型",
     "type": "类人",
     "subtype": "狗头人",
@@ -8206,6 +8473,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -8316,6 +8586,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "alignment": "守序中立",
@@ -8417,6 +8690,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "微型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -8537,6 +8813,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -8603,6 +8882,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "绝对中立",
@@ -8708,6 +8990,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -8793,6 +9078,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "妖精",
     "alignment": "混乱邪恶",
@@ -8874,6 +9162,9 @@
     "source_license": "GPL-3.0",
     "source_block": 21,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -8932,6 +9223,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "泥怪",
+    "catalog_path": [
+      "泥怪"
+    ],
     "size": "大型",
     "type": "泥怪",
     "alignment": "无阵营",
@@ -9045,6 +9339,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -9119,6 +9416,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -9196,6 +9496,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -9263,6 +9566,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -9339,6 +9645,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "变形生物",
@@ -9426,6 +9735,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -9492,6 +9804,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -9569,6 +9884,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "矮人",
@@ -9658,6 +9976,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "泥怪",
+    "catalog_path": [
+      "泥怪"
+    ],
     "size": "中型",
     "type": "泥怪",
     "alignment": "无阵营",
@@ -9773,6 +10094,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -9884,6 +10208,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "守序中立",
@@ -9967,6 +10294,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "守序邪恶",
@@ -10052,6 +10382,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "守序邪恶",
@@ -10123,6 +10456,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -10205,6 +10541,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "混乱中立",
@@ -10279,6 +10618,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -10371,6 +10713,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -10489,6 +10834,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "吉斯人",
@@ -10561,6 +10909,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "吉斯人",
@@ -10632,6 +10983,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "吉斯人",
@@ -10708,6 +11062,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "吉斯人",
@@ -10785,6 +11142,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "小型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -10895,6 +11255,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -10967,6 +11330,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "混乱邪恶",
@@ -11055,6 +11421,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -11113,6 +11482,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "无阵营",
@@ -11190,6 +11562,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -11272,6 +11647,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -11348,6 +11726,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -11419,6 +11800,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -11508,6 +11892,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -11608,6 +11995,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -11692,6 +12082,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -11751,6 +12144,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -11851,6 +12247,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -11922,6 +12321,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12003,6 +12405,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12074,6 +12479,9 @@
     "source_license": "GPL-3.0",
     "source_block": 12,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12133,6 +12541,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "巨型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -12226,6 +12637,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12308,6 +12722,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12379,6 +12796,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12456,6 +12876,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12515,6 +12938,9 @@
     "source_license": "GPL-3.0",
     "source_block": 9,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12580,6 +13006,9 @@
     "source_license": "GPL-3.0",
     "source_block": 13,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12656,6 +13085,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12721,6 +13153,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12791,6 +13226,9 @@
     "source_license": "GPL-3.0",
     "source_block": 11,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -12862,6 +13300,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "大型",
     "type": "巨人",
     "alignment": "混乱邪恶",
@@ -12943,6 +13384,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "巨型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -13053,6 +13497,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13124,6 +13571,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13194,6 +13644,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13275,6 +13728,9 @@
     "source_license": "GPL-3.0",
     "source_block": 8,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "中立邪恶",
@@ -13357,6 +13813,9 @@
     "source_license": "GPL-3.0",
     "source_block": 9,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13438,6 +13897,9 @@
     "source_license": "GPL-3.0",
     "source_block": 8,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13497,6 +13959,9 @@
     "source_license": "GPL-3.0",
     "source_block": 10,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13566,6 +14031,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13640,6 +14108,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13711,6 +14182,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13779,6 +14253,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "中立善良",
@@ -13856,6 +14333,9 @@
     "source_license": "GPL-3.0",
     "source_block": 7,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "绝对中立",
@@ -13921,6 +14401,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -13991,6 +14474,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -14077,6 +14563,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -14159,6 +14648,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -14228,6 +14720,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -14310,6 +14805,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -14387,6 +14885,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -14475,6 +14976,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "alignment": "任意邪恶阵营",
@@ -14568,6 +15072,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "超巨型",
     "type": "怪兽",
     "subtype": "泰坦",
@@ -14704,6 +15211,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -14813,6 +15323,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -14883,6 +15396,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "绝对中立",
@@ -14959,6 +15475,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "寇涛",
@@ -15060,6 +15579,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "寇涛",
@@ -15186,6 +15708,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "寇涛",
@@ -15285,6 +15810,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "中立邪恶",
@@ -15369,6 +15897,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "中立邪恶",
@@ -15442,6 +15973,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "小型",
     "type": "植物",
     "alignment": "中立邪恶",
@@ -15518,6 +16052,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -15595,6 +16132,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -15689,6 +16229,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -15755,6 +16298,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -15891,6 +16437,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -15973,6 +16522,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "恶魔，变形生物",
@@ -16082,6 +16634,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -16149,6 +16704,9 @@
     "source_license": "GPL-3.0",
     "source_block": 16,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -16219,6 +16777,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -16295,6 +16856,9 @@
     "source_license": "GPL-3.0",
     "source_block": 10,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -16371,6 +16935,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -16475,6 +17042,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -16564,6 +17134,9 @@
     "source_license": "GPL-3.0",
     "source_block": 12,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -16629,6 +17202,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "鬣狗人",
@@ -16707,6 +17283,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "鬣狗人",
@@ -16784,6 +17363,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "鬣狗人",
@@ -16872,6 +17454,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "小型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -16979,6 +17564,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -17094,6 +17682,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "绝对中立",
@@ -17184,6 +17775,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -17242,6 +17836,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -17331,6 +17928,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "妖精",
     "alignment": "中立邪恶",
@@ -17416,6 +18016,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -17495,6 +18098,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "alignment": "守序邪恶",
@@ -17575,6 +18181,9 @@
     "source_license": "GPL-3.0",
     "source_block": 9,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -17645,6 +18254,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -17703,6 +18315,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "大型",
     "type": "植物",
     "alignment": "无阵营",
@@ -17797,6 +18412,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -17867,6 +18485,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -17933,6 +18554,9 @@
     "source_license": "GPL-3.0",
     "source_block": 16,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -18004,6 +18628,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -18087,6 +18714,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "守序邪恶",
@@ -18169,6 +18799,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "变形生物",
@@ -18266,6 +18899,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "大型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -18383,6 +19019,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -18454,6 +19093,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "alignment": "中立邪恶",
@@ -18532,6 +19174,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -18631,6 +19276,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -18703,6 +19351,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "兽人",
@@ -18780,6 +19431,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -18876,6 +19530,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -19020,6 +19677,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "守序中立",
@@ -19155,6 +19815,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -19239,6 +19902,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "subtype": "变形生物",
@@ -19338,6 +20004,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -19413,6 +20082,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "阿兰寇拉鹰人",
@@ -19486,6 +20158,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "泥怪",
+    "catalog_path": [
+      "泥怪"
+    ],
     "size": "大型",
     "type": "泥怪",
     "alignment": "无阵营",
@@ -19586,6 +20261,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -19667,6 +20345,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -19751,6 +20432,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "守序中立",
@@ -19866,6 +20550,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "alignment": "中立邪恶",
@@ -19946,6 +20633,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -20046,6 +20736,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "超巨型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -20128,6 +20821,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "微型",
     "type": "妖精",
     "alignment": "中立善良",
@@ -20198,6 +20894,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -20257,6 +20956,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -20338,6 +21040,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -20427,6 +21132,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "小型",
     "type": "植物",
     "alignment": "无阵营",
@@ -20496,6 +21204,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "巨型",
     "type": "植物",
     "alignment": "无阵营",
@@ -20566,6 +21277,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "大型",
     "type": "植物",
     "alignment": "无阵营",
@@ -20662,6 +21376,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "混乱善良",
@@ -20747,6 +21464,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -20862,6 +21582,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "小型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -20948,6 +21671,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -21034,6 +21760,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -21103,6 +21832,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -21191,6 +21923,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -21276,6 +22011,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -21354,6 +22092,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -21442,6 +22183,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -21537,6 +22281,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -21615,6 +22362,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -21705,6 +22455,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -21800,6 +22553,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -21887,6 +22643,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "模板生物",
+    "catalog_path": [
+      "模板生物"
+    ],
     "size": "大型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -21984,6 +22743,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -22068,6 +22830,9 @@
     "source_license": "GPL-3.0",
     "source_block": 8,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -22131,6 +22896,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "巨型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -22213,6 +22981,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "微型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -22329,6 +23100,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "微型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -22406,6 +23180,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "中立善良",
@@ -22488,6 +23265,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "人鱼",
@@ -22555,6 +23335,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -22646,6 +23429,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "微型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -22727,6 +23513,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -22798,6 +23587,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -22870,6 +23662,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "鲨华鱼人",
@@ -22964,6 +23759,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "鲨华鱼人",
@@ -23058,6 +23856,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "大型",
     "type": "类人",
     "subtype": "鲨华鱼人",
@@ -23152,6 +23953,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -23223,6 +24027,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "混乱邪恶",
@@ -23292,6 +24099,9 @@
     "source_license": "GPL-3.0",
     "source_block": 10,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -23362,6 +24172,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "妖精",
     "alignment": "守序善良",
@@ -23432,6 +24245,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "小型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -23491,6 +24307,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -23557,6 +24376,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -23673,6 +24495,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -23769,6 +24594,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -23846,6 +24674,9 @@
     "source_license": "GPL-3.0",
     "source_block": 9,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -23932,6 +24763,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -24021,6 +24855,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -24102,6 +24939,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -24167,6 +25007,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "绝对中立",
@@ -24250,6 +25093,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "大型",
     "type": "构装",
     "alignment": "无阵营",
@@ -24364,6 +25210,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -24461,6 +25310,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "混乱邪恶",
@@ -24555,6 +25407,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -24626,6 +25481,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -24708,6 +25566,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "绝对中立",
@@ -24789,6 +25650,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "大型",
     "type": "巨人",
     "alignment": "混乱邪恶",
@@ -24853,6 +25717,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -24925,6 +25792,9 @@
     "source_license": "GPL-3.0",
     "source_block": 17,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -24996,6 +25866,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -25107,6 +25980,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -25186,6 +26062,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "微型",
     "type": "异怪",
     "alignment": "混乱中立",
@@ -25276,6 +26155,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "混乱中立",
@@ -25368,6 +26250,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "subtype": "变形生物",
@@ -25482,6 +26367,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "混乱中立",
@@ -25574,6 +26462,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "subtype": "变形生物",
@@ -25689,6 +26580,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "subtype": "变形生物",
@@ -25799,6 +26693,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -25866,6 +26763,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "微型",
     "type": "异怪",
     "alignment": "守序邪恶",
@@ -25953,6 +26853,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "守序善良",
@@ -26041,6 +26944,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "兽人",
@@ -26113,6 +27019,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "兽人",
@@ -26188,6 +27097,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "兽人",
@@ -26279,6 +27191,9 @@
     "source_license": "GPL-3.0",
     "source_block": 18,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -26344,6 +27259,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽的中型集群",
     "alignment": "无阵营",
@@ -26449,6 +27367,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "人类，变形生物",
@@ -26539,6 +27460,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "妖精",
     "alignment": "绝对中立",
@@ -26624,6 +27548,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "巨型",
     "type": "植物",
     "alignment": "混乱善良",
@@ -26715,6 +27642,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "大型",
     "type": "巨人",
     "alignment": "混乱邪恶",
@@ -26796,6 +27726,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "中立邪恶",
@@ -26867,6 +27800,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -26972,6 +27908,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "混乱中立",
@@ -27064,6 +28003,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -27188,6 +28130,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -27297,6 +28242,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "守序中立",
@@ -27379,6 +28327,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "超巨型",
     "type": "怪兽",
     "subtype": "泰坦",
@@ -27535,6 +28486,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "螳螂人",
@@ -27643,6 +28597,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "天狗",
@@ -27720,6 +28677,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "大型",
     "type": "天族",
     "alignment": "混乱善良",
@@ -27779,6 +28739,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "中型",
     "type": "天族",
     "alignment": "守序善良",
@@ -27887,6 +28850,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "大型",
     "type": "构装",
     "alignment": "无阵营",
@@ -28013,6 +28979,9 @@
     "source_license": "GPL-3.0",
     "source_block": 23,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -28084,6 +29053,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -28183,6 +29155,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "大型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -28286,6 +29261,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -28344,6 +29322,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -28414,6 +29395,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -28573,6 +29557,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "微型",
     "type": "龙类",
     "alignment": "中立善良",
@@ -28655,6 +29642,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -28759,6 +29749,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -28818,6 +29811,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "任意邪恶阵营",
@@ -28953,6 +29949,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -29019,6 +30018,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "模板生物",
+    "catalog_path": [
+      "模板生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "subtype": "变形生物",
@@ -29175,6 +30177,9 @@
     "source_license": "GPL-3.0",
     "source_block": 6,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -29240,6 +30245,9 @@
     "source_license": "GPL-3.0",
     "source_block": 14,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -29299,6 +30307,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "蜥蜴人",
@@ -29389,6 +30400,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "蜥蜴人",
@@ -29483,6 +30497,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "蜥蜴人",
@@ -29577,6 +30594,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -29653,6 +30673,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "巨型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -29724,6 +30747,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -29800,6 +30826,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "微型",
     "type": "邪魔",
     "subtype": "恶魔，变形生物",
@@ -29903,6 +30932,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "微型",
     "type": "邪魔",
     "subtype": "魔鬼，变形生物",
@@ -30006,6 +31038,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "微型",
     "type": "妖精",
     "alignment": "中立善良",
@@ -30081,6 +31116,9 @@
     "source_license": "GPL-3.0",
     "source_block": 20,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -30139,6 +31177,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -30216,6 +31257,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "非玩家角色",
+    "catalog_path": [
+      "非玩家角色"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "任意种族",
@@ -30282,6 +31326,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -30401,6 +31448,9 @@
     "source_license": "GPL-3.0",
     "source_block": 5,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -30467,6 +31517,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "大型",
     "type": "天族",
     "alignment": "守序善良",
@@ -30575,6 +31628,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "类地精",
@@ -30652,6 +31708,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "类地精",
@@ -30739,6 +31798,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "人类，变形生物",
@@ -30830,6 +31892,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -30905,6 +31970,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -31003,6 +32071,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "绝对中立",
@@ -31082,6 +32153,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "绝对中立",
@@ -31167,6 +32241,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "穴蜥人",
@@ -31254,6 +32331,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -31342,6 +32422,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "中型",
     "type": "构装",
     "alignment": "绝对中立",
@@ -31466,6 +32549,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -31537,6 +32623,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -31608,6 +32697,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "守序中立",
@@ -31688,6 +32780,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "大型",
     "type": "植物",
     "alignment": "守序中立",
@@ -31837,6 +32932,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "小型",
     "type": "植物",
     "alignment": "守序中立",
@@ -31912,6 +33010,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -31996,6 +33097,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "大型",
     "type": "异怪",
     "alignment": "守序邪恶",
@@ -32133,6 +33237,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "中立邪恶",
@@ -32235,6 +33342,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -32328,6 +33438,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "微型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -32414,6 +33527,9 @@
     "source_license": "GPL-3.0",
     "source_block": 2,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -32482,6 +33598,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "人类，变形生物",
@@ -32571,6 +33690,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "精类",
+    "catalog_path": [
+      "精类"
+    ],
     "size": "中型",
     "type": "邪魔",
     "alignment": "中立邪恶",
@@ -32666,6 +33788,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "中型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -32770,6 +33895,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "守序邪恶",
@@ -32845,6 +33973,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -32916,6 +34047,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "异怪",
+    "catalog_path": [
+      "异怪"
+    ],
     "size": "中型",
     "type": "异怪",
     "alignment": "绝对中立",
@@ -33002,6 +34136,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -33084,6 +34221,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "中型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -33160,6 +34300,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "中型",
     "type": "元素生物",
     "alignment": "绝对中立",
@@ -33245,6 +34388,9 @@
     "source_license": "GPL-3.0",
     "source_block": 11,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -33311,6 +34457,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "任意阵营",
@@ -33440,6 +34589,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "幽邃盲族",
@@ -33521,6 +34673,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "幽邃熊怪",
@@ -33610,6 +34765,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "无阵营",
@@ -33697,6 +34855,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "中型",
     "type": "亡灵",
     "alignment": "混乱邪恶",
@@ -33817,6 +34978,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -33935,6 +35099,9 @@
     "source_license": "GPL-3.0",
     "source_block": 24,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -34000,6 +35167,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "中型",
     "type": "天族",
     "alignment": "守序善良",
@@ -34097,6 +35267,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "小型",
     "type": "邪魔",
     "subtype": "恶魔",
@@ -34175,6 +35348,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "中型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -34245,6 +35421,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -34368,6 +35547,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -34500,6 +35682,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -34622,6 +35807,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "混乱邪恶",
@@ -34739,6 +35927,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "混乱善良",
@@ -34871,6 +36062,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -35008,6 +36202,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -35125,6 +36322,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "守序邪恶",
@@ -35252,6 +36452,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -35389,6 +36592,9 @@
     "source_license": "GPL-3.0",
     "source_block": 4,
     "catalog_category": "龙类",
+    "catalog_path": [
+      "龙类"
+    ],
     "size": "超巨型",
     "type": "龙类",
     "alignment": "守序善良",
@@ -35520,6 +36726,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "巨人",
+    "catalog_path": [
+      "巨人"
+    ],
     "size": "巨型",
     "type": "巨人",
     "alignment": "中立善良（50%）或中立邪恶（50%）",
@@ -35601,6 +36810,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "subtype": "变形生物，蛇人",
@@ -35712,6 +36924,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "构装生物",
+    "catalog_path": [
+      "构装生物"
+    ],
     "size": "大型",
     "type": "构装",
     "alignment": "无阵营",
@@ -35838,6 +37053,9 @@
     "source_license": "GPL-3.0",
     "source_block": 8,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -35908,6 +37126,9 @@
     "source_license": "GPL-3.0",
     "source_block": 3,
     "catalog_category": "不死生物",
+    "catalog_path": [
+      "不死生物"
+    ],
     "size": "大型",
     "type": "亡灵",
     "alignment": "守序邪恶",
@@ -35979,6 +37200,9 @@
     "source_license": "GPL-3.0",
     "source_block": 15,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "小型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -36065,6 +37289,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "泥怪",
+    "catalog_path": [
+      "泥怪"
+    ],
     "size": "大型",
     "type": "泥怪",
     "alignment": "无阵营",
@@ -36173,6 +37400,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "大型",
     "type": "邪魔",
     "subtype": "尤格罗斯魔",
@@ -36279,6 +37509,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "元素生物",
+    "catalog_path": [
+      "元素生物"
+    ],
     "size": "小型",
     "type": "元素生物",
     "alignment": "中立邪恶",
@@ -36363,6 +37596,9 @@
     "source_license": "GPL-3.0",
     "source_block": 22,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "微型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -36439,6 +37675,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "天界生物",
+    "catalog_path": [
+      "天界生物"
+    ],
     "size": "巨型",
     "type": "天族",
     "subtype": "泰坦",
@@ -36552,6 +37791,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "混乱邪恶",
@@ -36667,6 +37909,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "精灵",
@@ -36755,6 +38000,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "精灵",
@@ -36855,6 +38103,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "精灵",
@@ -36953,6 +38204,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "中型",
     "type": "类人",
     "subtype": "精灵",
@@ -37039,6 +38293,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "超巨型",
     "type": "怪兽",
     "alignment": "无阵营",
@@ -37116,6 +38373,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "植物",
+    "catalog_path": [
+      "植物"
+    ],
     "size": "中型",
     "type": "植物",
     "alignment": "无阵营",
@@ -37199,6 +38459,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "野兽",
+    "catalog_path": [
+      "野兽"
+    ],
     "size": "大型",
     "type": "野兽",
     "alignment": "无阵营",
@@ -37276,6 +38539,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "邪魔",
+    "catalog_path": [
+      "邪魔"
+    ],
     "size": "中型",
     "type": "邪魔",
     "subtype": "魔鬼",
@@ -37377,6 +38643,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "怪兽",
+    "catalog_path": [
+      "怪兽"
+    ],
     "size": "大型",
     "type": "怪兽",
     "alignment": "中立邪恶",
@@ -37442,6 +38711,9 @@
     "source_license": "GPL-3.0",
     "source_block": 1,
     "catalog_category": "类人生物",
+    "catalog_path": [
+      "类人生物"
+    ],
     "size": "小型",
     "type": "类人",
     "subtype": "侏儒",

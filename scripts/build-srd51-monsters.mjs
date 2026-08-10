@@ -342,7 +342,9 @@ function parseBlock(lines, block, relativePath, pageTitle, warnings) {
   if (missing.length) warnings.push({ source_path: relativePath, block: block.ordinal, name, missing });
 
   const conditionText = fields.condition_immunities || "";
-  const catalogCategory = relativePath.split(/[\\/]/)[1] || "其他";
+  const sourceSegments = relativePath.split(/[\\/]/);
+  const catalogCategory = sourceSegments[1] || "其他";
+  const catalogPath = sourceSegments.slice(1, -1);
   if (!CATALOG_CATEGORIES.has(catalogCategory)) warnings.push({ source_path: relativePath, block: block.ordinal, name, missing: ["目录分类"] });
   const sourceUrl = `https://github.com/DND5eChm/DND5e_chm/blob/${EXPECTED_COMMIT}/${relativePath.split(/[\\/]/).map(encodeURIComponent).join("/")}`;
   const record = {
@@ -358,6 +360,7 @@ function parseBlock(lines, block, relativePath, pageTitle, warnings) {
     source_license: "GPL-3.0",
     source_block: block.ordinal,
     catalog_category: catalogCategory,
+    catalog_path: catalogPath,
     ...kind,
     armor_class: [{ type: acText.replace(/^\d+\s*/, "").replace(/[（）()]/g, "") || "数值", value: ac }],
     hit_points: Number(hpMatch?.[1] ?? 0),
@@ -437,11 +440,12 @@ async function main() {
     category_counts: Object.fromEntries([...CATALOG_CATEGORIES].map((category) => [category, records.filter((record) => record.catalog_category === category).length])),
     warnings,
     pages,
-    records: records.map(({ index, name, name_en, catalog_category, source_file, source_url, source_block }) => ({
+    records: records.map(({ index, name, name_en, catalog_category, catalog_path, source_file, source_url, source_block }) => ({
       index,
       name,
       name_en,
       catalog_category,
+      catalog_path,
       source_path: source_file,
       source_url,
       source_block,

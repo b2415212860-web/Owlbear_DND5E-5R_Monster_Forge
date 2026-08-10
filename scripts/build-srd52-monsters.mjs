@@ -57,6 +57,12 @@ function catalogCategory(monster) {
   return SOURCE_CATEGORY_MAP.get(sourceRoot) ?? categoryFromType(monster.type);
 }
 
+function catalogPath(monster) {
+  const parts = monster.source_file.split("/");
+  if (parts[0] === "怪物图鉴2025") return parts.slice(1, -1);
+  return ["补译条目"];
+}
+
 const SECTION_KEYS = [
   ["传奇动作", "legendary_actions"],
   ["附赠动作", "bonus_actions"],
@@ -426,7 +432,10 @@ async function main() {
   }
 
   if (errors.length) throw new Error(`数据生成失败（${errors.length} 项）：\n${errors.join("\n")}`);
-  for (const monster of monsters) monster.catalog_category = catalogCategory(monster);
+  for (const monster of monsters) {
+    monster.catalog_category = catalogCategory(monster);
+    monster.catalog_path = catalogPath(monster);
+  }
   const uncategorized = monsters.filter((monster) => monster.catalog_category === "其他");
   if (uncategorized.length) throw new Error(`无法分类：${uncategorized.map((monster) => monster.name_en).join(", ")}`);
   monsters.sort((left, right) => left.name.localeCompare(right.name, "zh-CN"));

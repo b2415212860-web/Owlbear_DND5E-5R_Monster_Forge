@@ -5,6 +5,7 @@ import { abilityModifier, armorValue, type MonsterDetail, type MonsterListEntry,
 
 const FAVORITES_STORAGE = "bestiary-forge/favorites-v3";
 const LEGACY_FAVORITES_STORAGE = "bestiary-forge/favorites-v2";
+const DATA_SCHEMA_VERSION = "directory-tree-v1";
 const EDITIONS = {
   "5e": {
     short: "5E",
@@ -23,9 +24,10 @@ const EDITIONS = {
     license: "CC BY 4.0",
   },
 } as const;
-const CATEGORY_ORDER = [
-  "不死生物", "元素生物", "天界生物", "巨人", "异怪", "怪兽", "构装生物", "植物",
-  "模板生物", "泥怪", "类人生物", "精类", "邪魔", "野兽", "非玩家角色", "龙类",
+const DIRECTORY_ORDER = [
+  "不死生物", "亡灵", "元素生物", "元素", "天界生物", "天族", "巨人", "异怪", "怪兽",
+  "构装生物", "构装", "植物", "模板生物", "泥怪", "类人生物", "精类", "妖精", "邪魔",
+  "野兽", "非玩家角色", "类人", "龙类", "多类型", "附录A", "补译条目",
 ] as const;
 const ABILITIES = [
   ["力量", "strength"],
@@ -80,6 +82,143 @@ function FeatureList({ title, items }: { title: string; items?: MonsterDetail["a
 
 function favoriteKey(monster: Pick<MonsterListEntry, "ruleset" | "index">) {
   return `${monster.ruleset}:${monster.index}`;
+}
+
+interface DirectoryNode {
+  name: string;
+  key: string;
+  monsters: MonsterListEntry[];
+  children: DirectoryNode[];
+  total: number;
+}
+
+interface MutableDirectoryNode {
+  name: string;
+  key: string;
+  monsters: MonsterListEntry[];
+  children: Map<string, MutableDirectoryNode>;
+}
+
+function buildDirectoryTree(monsters: MonsterListEntry[]) {
+  const root: MutableDirectoryNode = { name: "", key: "", monsters: [], children: new Map() };
+  for (const monster of monsters) {
+    const path = monster.catalog_path?.length ? monster.catalog_path : [monster.catalog_category || "未分类"];
+    let current = root;
+    for (const part of path) {
+      const key = current.key ? `${current.key}/${part}` : part;
+      if (!current.children.has(part)) current.children.set(part, { name: part, key, monsters: [], children: new Map() });
+      current = current.children.get(part)!;
+    }
+    current.monsters.push(monster);
+  }
+
+  const ranks = new Map<string, number>(DIRECTORY_ORDER.map((item, index) => [item, index]));
+  function finalize(node: MutableDirectoryNode): DirectoryNode {
+    const children = [...node.children.values()]
+      .map(finalize)
+      .sort((left, right) => (ranks.get(left.name) ?? 999) - (ranks.get(right.name) ?? 999) || left.name.localeCompare(right.name, "zh-CN"));
+    return {
+      name: node.name,
+      key: node.key,
+      monsters: node.monsters,
+      children,
+      total: node.monsters.length + children.reduce((sum, child) => sum + child.total, 0),
+    };
+  }
+  return [...root.children.values()].map(finalize)
+    .sort((left, right) => (ranks.get(left.name) ?? 999) - (ranks.get(right.name) ?? 999) || left.name.localeCompare(right.name, "zh-CN"));
+}
+
+function directoryKeys(nodes: DirectoryNode[]): string[] {
+  return nodes.flatMap((node) => [node.key, ...directoryKeys(node.children)]);
+}
+
+function MonsterCatalogRow({
+  monster, number, active, favorite, onOpen, onToggleFavorite,
+}: {
+  monster: MonsterListEntry;
+  number: number;
+  active: boolean;
+  favorite: boolean;
+  onOpen: (monster: MonsterListEntry) => void;
+  onToggleFavorite: (monster: MonsterListEntry) => void;
+}) {
+  return (
+    <div className={`monster-row${active ? " active" : ""}`} role="listitem">
+      <button className="monster-name-button" type="button" onClick={() => onOpen(monster)}>
+        <span className="catalog-number">{String(number).padStart(3, "0")}</span>
+        <span className="catalog-monster-copy"><strong>{monster.name}</strong>{monster.name_en ? <small>{monster.name_en}</small> : null}</span>
+      </button>
+      <button
+        className={`favorite-button${favorite ? " favorite" : ""}`}
+        type="button"
+        aria-label={favorite ? `取消收藏 ${monster.name}` : `收藏 ${monster.name}`}
+        aria-pressed={favorite}
+        title={favorite ? "取消收藏" : "加入收藏"}
+        onClick={() => onToggleFavorite(monster)}
+      >
+        <span aria-hidden="true">{favorite ? "★" : "☆"}</span>
+      </button>
+    </div>
+  );
+}
+
+function DirectoryBranch({
+  node, expanded, forceOpen, activeKey, favoriteIndexes, visibleNumbers, onToggleDirectory, onOpenMonster, onToggleFavorite,
+}: {
+  node: DirectoryNode;
+  expanded: Set<string>;
+  forceOpen: boolean;
+  activeKey: string | null;
+  favoriteIndexes: Set<string>;
+  visibleNumbers: Map<string, number>;
+  onToggleDirectory: (key: string) => void;
+  onOpenMonster: (monster: MonsterListEntry) => void;
+  onToggleFavorite: (monster: MonsterListEntry) => void;
+}) {
+  const open = forceOpen || expanded.has(node.key);
+  return (
+    <section className={`directory-node${open ? " open" : ""}`}>
+      <button className="directory-row" type="button" aria-expanded={open} onClick={() => onToggleDirectory(node.key)}>
+        <span className="directory-caret" aria-hidden="true">›</span>
+        <span className="directory-folder" aria-hidden="true" />
+        <strong>{node.name}</strong>
+        <small>{node.total}</small>
+      </button>
+      {open ? (
+        <div className="directory-children" role="group">
+          {node.children.map((child) => (
+            <DirectoryBranch
+              node={child}
+              expanded={expanded}
+              forceOpen={forceOpen}
+              activeKey={activeKey}
+              favoriteIndexes={favoriteIndexes}
+              visibleNumbers={visibleNumbers}
+              onToggleDirectory={onToggleDirectory}
+              onOpenMonster={onOpenMonster}
+              onToggleFavorite={onToggleFavorite}
+              key={child.key}
+            />
+          ))}
+          {node.monsters.map((monster) => {
+            const key = favoriteKey(monster);
+            return (
+              <MonsterCatalogRow
+                monster={monster}
+                number={visibleNumbers.get(key) ?? 0}
+                active={activeKey === key}
+                favorite={favoriteIndexes.has(key)}
+                onOpen={onOpenMonster}
+                onToggleFavorite={onToggleFavorite}
+                key={key}
+              />
+            );
+          })}
+        </div>
+      ) : null}
+    </section>
+  );
 }
 
 function MonsterSheet({ monster }: { monster: MonsterDetail }) {
@@ -161,7 +300,7 @@ export function BestiaryApp() {
   const [ruleset, setRuleset] = useState<RulesEdition>("5r");
   const [monsters, setMonsters] = useState<MonsterListEntry[]>([]);
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState("全部分类");
+  const [expandedDirectories, setExpandedDirectories] = useState<Set<string>>(() => new Set());
   const [catalogState, setCatalogState] = useState<"loading" | "ready" | "error">("loading");
   const [favorites, setFavorites] = useState<MonsterListEntry[]>([]);
   const [activeKey, setActiveKey] = useState<string | null>(null);
@@ -172,7 +311,7 @@ export function BestiaryApp() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch(`/api/monsters?edition=${ruleset}`, { signal: controller.signal })
+    fetch(`/api/monsters?edition=${ruleset}&schema=${DATA_SCHEMA_VERSION}`, { signal: controller.signal, cache: "no-store" })
       .then(async (response) => {
         if (!response.ok) throw new Error("catalog");
         return response.json() as Promise<{ results: MonsterListEntry[] }>;
@@ -195,7 +334,7 @@ export function BestiaryApp() {
         if (Array.isArray(parsed)) {
           const safe = parsed
             .filter((item) => item && typeof item.index === "string" && typeof item.name === "string")
-            .map((item) => ({ ...item, catalog_category: item.catalog_category || "其他", ruleset: item.ruleset === "5e" ? "5e" as const : "5r" as const }));
+            .map((item) => ({ ...item, catalog_category: item.catalog_category || "其他", catalog_path: item.catalog_path || [], ruleset: item.ruleset === "5e" ? "5e" as const : "5r" as const }));
           setFavorites(safe);
           setActiveKey(safe[0] ? favoriteKey(safe[0]) : null);
         }
@@ -222,7 +361,7 @@ export function BestiaryApp() {
       if (controller.signal.aborted) return;
       setDetailState("loading");
       try {
-        const response = await fetch(`/api/monsters/${encodeURIComponent(selected.index)}?edition=${selected.ruleset}`, { signal: controller.signal });
+        const response = await fetch(`/api/monsters/${encodeURIComponent(selected.index)}?edition=${selected.ruleset}&schema=${DATA_SCHEMA_VERSION}`, { signal: controller.signal, cache: "no-store" });
         if (!response.ok) throw new Error("detail");
         const monster = await response.json() as MonsterDetail;
         setDetails((current) => ({ ...current, [selectedKey]: monster }));
@@ -242,31 +381,16 @@ export function BestiaryApp() {
   }, [notice]);
 
   const favoriteIndexes = useMemo(() => new Set(favorites.map(favoriteKey)), [favorites]);
-  const availableCategories = useMemo(() => {
-    const counts = new Map<string, number>();
-    for (const monster of monsters) counts.set(monster.catalog_category || "其他", (counts.get(monster.catalog_category || "其他") ?? 0) + 1);
-    const ordered = CATEGORY_ORDER.filter((item) => counts.has(item)).map((item) => [item, counts.get(item) ?? 0] as const);
-    const known = new Set<string>(CATEGORY_ORDER);
-    const remaining = [...counts].filter(([item]) => !known.has(item)).sort(([left], [right]) => left.localeCompare(right, "zh-CN"));
-    return [...ordered, ...remaining];
-  }, [monsters]);
   const filteredMonsters = useMemo(() => {
     const normalized = query.trim().toLocaleLowerCase();
     return monsters.filter((monster) => {
-      const matchesCategory = category === "全部分类" || monster.catalog_category === category;
-      const matchesQuery = !normalized || `${monster.name} ${monster.name_en ?? ""}`.toLocaleLowerCase().includes(normalized);
-      return matchesCategory && matchesQuery;
+      const searchable = `${monster.name} ${monster.name_en ?? ""} ${(monster.catalog_path ?? []).join(" ")}`.toLocaleLowerCase();
+      return !normalized || searchable.includes(normalized);
     });
-  }, [category, monsters, query]);
-  const groupedMonsters = useMemo(() => {
-    const groups = new Map<string, MonsterListEntry[]>();
-    for (const monster of filteredMonsters) {
-      const key = monster.catalog_category || "其他";
-      groups.set(key, [...(groups.get(key) ?? []), monster]);
-    }
-    const order = new Map<string, number>(CATEGORY_ORDER.map((item, index) => [item, index]));
-    return [...groups].sort(([left], [right]) => (order.get(left) ?? 999) - (order.get(right) ?? 999) || left.localeCompare(right, "zh-CN"));
-  }, [filteredMonsters]);
+  }, [monsters, query]);
+  const directoryTree = useMemo(() => buildDirectoryTree(filteredMonsters), [filteredMonsters]);
+  const allDirectoryKeys = useMemo(() => directoryKeys(buildDirectoryTree(monsters)), [monsters]);
+  const allDirectoriesExpanded = allDirectoryKeys.length > 0 && allDirectoryKeys.every((key) => expandedDirectories.has(key));
   const visibleNumbers = useMemo(() => new Map(filteredMonsters.map((monster, index) => [favoriteKey(monster), index + 1])), [filteredMonsters]);
   const activeFavorite = activeKey ? favorites.find((favorite) => favoriteKey(favorite) === activeKey) : undefined;
   const activeMonster = activeKey ? details[activeKey] : undefined;
@@ -282,8 +406,22 @@ export function BestiaryApp() {
     if (nextRuleset === ruleset) return;
     setCatalogState("loading");
     setMonsters([]);
-    setCategory("全部分类");
+    setExpandedDirectories(new Set());
     setRuleset(nextRuleset);
+  }
+
+  function toggleDirectory(key: string) {
+    if (query.trim()) return;
+    setExpandedDirectories((current) => {
+      const next = new Set(current);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }
+
+  function toggleAllDirectories() {
+    setExpandedDirectories(allDirectoriesExpanded ? new Set() : new Set(allDirectoryKeys));
   }
 
   function removeFavorite(key: string) {
@@ -359,46 +497,32 @@ export function BestiaryApp() {
             {query ? <button type="button" aria-label="清除搜索" onClick={() => setQuery("")}>×</button> : null}
           </label>
 
-          <label className="category-filter">
-            <span>目录分类</span>
-            <select value={category} onChange={(event) => setCategory(event.target.value)} aria-label="筛选怪物目录分类">
-              <option value="全部分类">全部分类（{monsters.length}）</option>
-              {availableCategories.map(([item, count]) => <option value={item} key={item}>{item}（{count}）</option>)}
-            </select>
-          </label>
+          <div className="directory-toolbar">
+            <span><i aria-hidden="true" />原始目录结构</span>
+            <button type="button" onClick={toggleAllDirectories} disabled={!allDirectoryKeys.length || Boolean(query.trim())}>
+              {allDirectoriesExpanded ? "全部收起" : "全部展开"}
+            </button>
+          </div>
 
-          <p className="catalog-tip">按原怪物图鉴目录分为 {availableCategories.length} 类。点击星标收藏，资料卡会在右侧新增标签页。</p>
+          <p className="catalog-tip">点击文件夹逐级展开原怪物图鉴目录；搜索时会自动展开匹配路径。</p>
 
-          <div className="monster-list" role="list">
+          <div className="monster-list" role="list" aria-label={`${EDITIONS[ruleset].short} 怪物目录树`}>
             {catalogState === "loading" ? <div className="catalog-message"><span className="spinner" />正在翻阅图鉴…</div> : null}
             {catalogState === "error" ? <div className="catalog-message error">本地中文数据库加载失败，请刷新重试。</div> : null}
             {catalogState === "ready" && !filteredMonsters.length ? <div className="catalog-message">没有找到匹配的怪物。</div> : null}
-            {groupedMonsters.map(([groupName, groupMonsters]) => (
-              <section className="category-group" aria-label={`${groupName}分类`} key={groupName}>
-                <div className="category-heading"><h3>{groupName}</h3><span>{groupMonsters.length}</span></div>
-                {groupMonsters.map((monster) => {
-                  const key = favoriteKey(monster);
-                  const favorite = favoriteIndexes.has(key);
-                  return (
-                    <div className={`monster-row${activeKey === key ? " active" : ""}`} role="listitem" key={key}>
-                      <button className="monster-name-button" type="button" onClick={() => openMonster(monster)}>
-                        <span className="catalog-number">{String(visibleNumbers.get(key) ?? 0).padStart(3, "0")}</span>
-                        <span className="catalog-monster-copy"><strong>{monster.name}</strong>{monster.name_en ? <small>{monster.name_en}</small> : null}</span>
-                      </button>
-                      <button
-                        className={`favorite-button${favorite ? " favorite" : ""}`}
-                        type="button"
-                        aria-label={favorite ? `取消收藏 ${monster.name}` : `收藏 ${monster.name}`}
-                        aria-pressed={favorite}
-                        title={favorite ? "取消收藏" : "加入收藏"}
-                        onClick={() => toggleFavorite(monster)}
-                      >
-                        <span aria-hidden="true">{favorite ? "★" : "☆"}</span>
-                      </button>
-                    </div>
-                  );
-                })}
-              </section>
+            {directoryTree.map((node) => (
+              <DirectoryBranch
+                node={node}
+                expanded={expandedDirectories}
+                forceOpen={Boolean(query.trim())}
+                activeKey={activeKey}
+                favoriteIndexes={favoriteIndexes}
+                visibleNumbers={visibleNumbers}
+                onToggleDirectory={toggleDirectory}
+                onOpenMonster={openMonster}
+                onToggleFavorite={toggleFavorite}
+                key={node.key}
+              />
             ))}
           </div>
         </aside>
