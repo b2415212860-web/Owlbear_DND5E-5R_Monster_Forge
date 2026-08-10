@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T18:54:30.748Z",
+  "generated_at": "2026-08-10T01:24:41.646Z",
   "source_repository": "https://github.com/DND5eChm/DND5e_chm",
   "source_commit": "190ba73862e65b1b7c293289beb2ef915c1803ff",
   "source_directory": "怪物图鉴",
@@ -10,6 +10,24 @@
   "records_generated": 424,
   "unique_english_names": 424,
   "duplicate_base_indexes": [],
+  "category_counts": {
+    "不死生物": 24,
+    "元素生物": 23,
+    "天界生物": 7,
+    "巨人": 13,
+    "异怪": 18,
+    "怪兽": 53,
+    "构装生物": 14,
+    "植物": 14,
+    "模板生物": 5,
+    "泥怪": 4,
+    "类人生物": 47,
+    "精类": 8,
+    "邪魔": 34,
+    "野兽": 95,
+    "非玩家角色": 21,
+    "龙类": 44
+  },
   "warnings": [],
   "pages": [
     {
@@ -1178,6 +1196,7 @@
       "index": "pony",
       "name": "矮种马",
       "name_en": "Pony",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 11
@@ -1186,6 +1205,7 @@
       "index": "darkmantle",
       "name": "暗幕魔兽",
       "name_en": "Darkmantle",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/暗幕魔兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%9A%97%E5%B9%95%E9%AD%94%E5%85%BD.htm",
       "source_block": 1
@@ -1194,6 +1214,7 @@
       "index": "mastiff",
       "name": "獒犬",
       "name_en": "Mastiff",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 8
@@ -1202,6 +1223,7 @@
       "index": "arcanaloth",
       "name": "奥法罗斯魔",
       "name_en": "Arcanaloth",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/奥法罗斯魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%A5%A5%E6%B3%95%E7%BD%97%E6%96%AF%E9%AD%94.htm",
       "source_block": 1
@@ -1210,6 +1232,7 @@
       "index": "barlgura",
       "name": "巴古拉魔",
       "name_en": "Barlgura",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/巴古拉魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B7%B4%E5%8F%A4%E6%8B%89%E9%AD%94.htm",
       "source_block": 1
@@ -1218,6 +1241,7 @@
       "index": "balor",
       "name": "巴洛炎魔",
       "name_en": "Balor",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/巴洛炎魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B7%B4%E6%B4%9B%E7%82%8E%E9%AD%94.htm",
       "source_block": 1
@@ -1226,6 +1250,7 @@
       "index": "tyrannosaurus-rex",
       "name": "霸王龙",
       "name_en": "Tyrannosaurus Rex",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/霸王龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E9%9C%B8%E7%8E%8B%E9%BE%99.htm",
       "source_block": 1
@@ -1234,6 +1259,7 @@
       "index": "white-dragon-wyrmling",
       "name": "白龙雏龙",
       "name_en": "White Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/白龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%99%BD%E9%BE%99.html",
       "source_block": 1
@@ -1242,6 +1268,7 @@
       "index": "polar-bear",
       "name": "白熊",
       "name_en": "Polar Bear",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 5
@@ -1250,6 +1277,7 @@
       "index": "remorhazes",
       "name": "百足魔兽",
       "name_en": "Remorhazes",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/百足魔兽.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%99%BE%E8%B6%B3%E9%AD%94%E5%85%BD.html",
       "source_block": 2
@@ -1258,6 +1286,7 @@
       "index": "half-red-dragon-veteran",
       "name": "半红龙老兵",
       "name_en": "Half-Red Dragon Veteran",
+      "catalog_category": "模板生物",
       "source_path": "怪物图鉴/模板生物/半龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A8%A1%E6%9D%BF%E7%94%9F%E7%89%A9/%E5%8D%8A%E9%BE%99.html",
       "source_block": 1
@@ -1266,6 +1295,7 @@
       "index": "half-ogre",
       "name": "半食人魔",
       "name_en": "Half-Ogre",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/食人魔.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E9%A3%9F%E4%BA%BA%E9%AD%94.html",
       "source_block": 2
@@ -1274,6 +1304,7 @@
       "index": "demilich",
       "name": "半巫妖",
       "name_en": "Demilich",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/半巫妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%8D%8A%E5%B7%AB%E5%A6%96.htm",
       "source_block": 1
@@ -1282,6 +1313,7 @@
       "index": "satyr",
       "name": "半羊人",
       "name_en": "Satyr",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/半羊人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E5%8D%8A%E7%BE%8A%E4%BA%BA.htm",
       "source_block": 1
@@ -1290,6 +1322,7 @@
       "index": "banshee",
       "name": "报丧妖",
       "name_en": "Banshee",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/女妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%A5%B3%E5%A6%96.htm",
       "source_block": 1
@@ -1298,6 +1331,7 @@
       "index": "panther",
       "name": "豹",
       "name_en": "Panther",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 14
@@ -1306,6 +1340,7 @@
       "index": "thug",
       "name": "暴徒",
       "name_en": "Thug",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/暴徒.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E6%9A%B4%E5%BE%92.htm",
       "source_block": 1
@@ -1314,6 +1349,7 @@
       "index": "bat",
       "name": "蝙蝠",
       "name_en": "Bat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 3
@@ -1322,6 +1358,7 @@
       "index": "swarm-of-bats",
       "name": "蝙蝠集群",
       "name_en": "Swarm of Bats",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/蝙蝠群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E8%9D%99%E8%9D%A0%E7%BE%A4.htm",
       "source_block": 1
@@ -1330,6 +1367,7 @@
       "index": "doppelganger",
       "name": "变形怪",
       "name_en": "Doppelganger",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/变形怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%8F%98%E5%BD%A2%E6%80%AA.htm",
       "source_block": 1
@@ -1338,6 +1376,7 @@
       "index": "ice-devil",
       "name": "冰魔",
       "name_en": "Ice Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/冰魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%86%B0%E9%AD%94.htm",
       "source_block": 1
@@ -1346,6 +1385,7 @@
       "index": "ice-mephit",
       "name": "冰魔蝠",
       "name_en": "Ice Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/冰魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E5%86%B0%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -1354,6 +1394,7 @@
       "index": "bullywug",
       "name": "啵灵蛙",
       "name_en": "Bullywug",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/狂蛙人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%8B%82%E8%9B%99%E4%BA%BA.htm",
       "source_block": 1
@@ -1362,6 +1403,7 @@
       "index": "tribal-warrior",
       "name": "部族武者",
       "name_en": "Tribal Warrior",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/部族武者.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E9%83%A8%E6%97%8F%E6%AD%A6%E8%80%85.htm",
       "source_block": 1
@@ -1370,6 +1412,7 @@
       "index": "jackal",
       "name": "豺狗",
       "name_en": "Jackal",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 13
@@ -1378,6 +1421,7 @@
       "index": "ultroloth",
       "name": "超等罗斯魔",
       "name_en": "Ultroloth",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/乌特罗斯魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E4%B9%8C%E7%89%B9%E7%BD%97%E6%96%AF%E9%AD%94.htm",
       "source_block": 1
@@ -1386,6 +1430,7 @@
       "index": "dust-mephit",
       "name": "尘魔蝠",
       "name_en": "Dust Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/尘魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E5%B0%98%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -1394,6 +1439,7 @@
       "index": "adult-white-dragon",
       "name": "成年白龙",
       "name_en": "Adult White Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/白龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%99%BD%E9%BE%99.html",
       "source_block": 3
@@ -1402,6 +1448,7 @@
       "index": "adult-copper-dragon",
       "name": "成年赤铜龙",
       "name_en": "Adult Copper Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/赤铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%B5%A4%E9%93%9C%E9%BE%99.html",
       "source_block": 3
@@ -1410,6 +1457,7 @@
       "index": "adult-black-dragon",
       "name": "成年黑龙",
       "name_en": "Adult Black Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黑龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%91%E9%BE%99.html",
       "source_block": 3
@@ -1418,6 +1466,7 @@
       "index": "adult-red-dragon",
       "name": "成年红龙",
       "name_en": "Adult Red Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/红龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BA%A2%E9%BE%99.html",
       "source_block": 3
@@ -1426,6 +1475,7 @@
       "index": "adult-brass-dragon",
       "name": "成年黄铜龙",
       "name_en": "Adult Brass Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黄铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%84%E9%93%9C%E9%BE%99.html",
       "source_block": 3
@@ -1434,6 +1484,7 @@
       "index": "adult-gold-dragon",
       "name": "成年金龙",
       "name_en": "Adult Gold Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/金龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%87%91%E9%BE%99.html",
       "source_block": 3
@@ -1442,6 +1493,7 @@
       "index": "adult-blue-dragon",
       "name": "成年蓝龙",
       "name_en": "Adult Blue Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/蓝龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%93%9D%E9%BE%99.html",
       "source_block": 3
@@ -1450,6 +1502,7 @@
       "index": "adult-blue-dracolich",
       "name": "成年蓝龙巫妖",
       "name_en": "Adult Blue Dracolich",
+      "catalog_category": "模板生物",
       "source_path": "怪物图鉴/模板生物/龙巫妖.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A8%A1%E6%9D%BF%E7%94%9F%E7%89%A9/%E9%BE%99%E5%B7%AB%E5%A6%96.html",
       "source_block": 1
@@ -1458,6 +1511,7 @@
       "index": "adult-green-dragon",
       "name": "成年绿龙",
       "name_en": "Adult Green Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/绿龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BB%BF%E9%BE%99.html",
       "source_block": 3
@@ -1466,6 +1520,7 @@
       "index": "adult-bronze-dragon",
       "name": "成年青铜龙",
       "name_en": "Adult Bronze Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/青铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%9D%92%E9%93%9C%E9%BE%99.html",
       "source_block": 3
@@ -1474,6 +1529,7 @@
       "index": "adult-silver-dragon",
       "name": "成年银龙",
       "name_en": "Adult Silver Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/银龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%93%B6%E9%BE%99.html",
       "source_block": 3
@@ -1482,6 +1538,7 @@
       "index": "riding-horse",
       "name": "乘用马",
       "name_en": "Riding Horse",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 15
@@ -1490,6 +1547,7 @@
       "index": "scout",
       "name": "斥候",
       "name_en": "Scout",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/斥候.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E6%96%A5%E5%80%99.htm",
       "source_block": 1
@@ -1498,6 +1556,7 @@
       "index": "elk",
       "name": "赤鹿",
       "name_en": "Elk",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 5
@@ -1506,6 +1565,7 @@
       "index": "copper-dragon-wyrmling",
       "name": "赤铜龙雏龙",
       "name_en": "Copper Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/赤铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%B5%A4%E9%93%9C%E9%BE%99.html",
       "source_block": 1
@@ -1514,6 +1574,7 @@
       "index": "solar",
       "name": "炽天神侍",
       "name_en": "Solar",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/炽天神侍.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E7%82%BD%E5%A4%A9%E7%A5%9E%E4%BE%8D.htm",
       "source_block": 1
@@ -1522,6 +1583,7 @@
       "index": "vampire-spawn",
       "name": "初生吸血鬼",
       "name_en": "Vampire Spawn",
+      "catalog_category": "模板生物",
       "source_path": "怪物图鉴/模板生物/吸血鬼.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A8%A1%E6%9D%BF%E7%94%9F%E7%89%A9/%E5%90%B8%E8%A1%80%E9%AC%BC.html",
       "source_block": 2
@@ -1530,6 +1592,7 @@
       "index": "grell",
       "name": "触须怪",
       "name_en": "Grell",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/触须怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E8%A7%A6%E9%A1%BB%E6%80%AA.htm",
       "source_block": 1
@@ -1538,6 +1601,7 @@
       "index": "yuan-ti-pureblood",
       "name": "纯血蛇人",
       "name_en": "Yuan-ti Pureblood",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/纯血蛇人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%BA%AF%E8%A1%80%E8%9B%87%E4%BA%BA.htm",
       "source_block": 1
@@ -1546,6 +1610,7 @@
       "index": "assassin",
       "name": "刺客",
       "name_en": "Assassin",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/刺客.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%88%BA%E5%AE%A2.htm",
       "source_block": 1
@@ -1554,6 +1619,7 @@
       "index": "manticore",
       "name": "刺尾狮",
       "name_en": "Manticore",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/蝎尾狮.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E8%9D%8E%E5%B0%BE%E7%8B%AE.htm",
       "source_block": 1
@@ -1562,6 +1628,7 @@
       "index": "hobgoblin",
       "name": "大地精",
       "name_en": "Hobgoblin",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/大地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%A4%A7%E5%9C%B0%E7%B2%BE.html",
       "source_block": 1
@@ -1570,6 +1637,7 @@
       "index": "hobgoblin-warlord",
       "name": "大地精军阀",
       "name_en": "Hobgoblin Warlord",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/大地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%A4%A7%E5%9C%B0%E7%B2%BE.html",
       "source_block": 3
@@ -1578,6 +1646,7 @@
       "index": "hobgoblin-captain",
       "name": "大地精长官",
       "name_en": "Hobgoblin Captain",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/大地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%A4%A7%E5%9C%B0%E7%B2%BE.html",
       "source_block": 2
@@ -1586,6 +1655,7 @@
       "index": "archmage",
       "name": "大法师",
       "name_en": "Archmage",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/大法师.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%A4%A7%E6%B3%95%E5%B8%88.htm",
       "source_block": 1
@@ -1594,6 +1664,7 @@
       "index": "winged-kobold",
       "name": "带翼狗头人",
       "name_en": "Winged Kobold",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/狗头人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%8B%97%E5%A4%B4%E4%BA%BA.html",
       "source_block": 2
@@ -1602,6 +1673,7 @@
       "index": "monodrone",
       "name": "单元冢",
       "name_en": "Monodrone",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/单元冢.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E5%8D%95%E5%85%83%E5%86%A2.htm",
       "source_block": 1
@@ -1610,6 +1682,7 @@
       "index": "scarecrow",
       "name": "稻草人",
       "name_en": "Scarecrow",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/稻草人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E7%A8%BB%E8%8D%89%E4%BA%BA.htm",
       "source_block": 1
@@ -1618,6 +1691,7 @@
       "index": "druid",
       "name": "德鲁伊",
       "name_en": "Druid",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/德鲁伊.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%BE%B7%E9%B2%81%E4%BC%8A.htm",
       "source_block": 1
@@ -1626,6 +1700,7 @@
       "index": "goblin",
       "name": "地精",
       "name_en": "Goblin",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%9C%B0%E7%B2%BE.html",
       "source_block": 1
@@ -1634,6 +1709,7 @@
       "index": "goblin-boss",
       "name": "地精老大",
       "name_en": "Goblin Boss",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%9C%B0%E7%B2%BE.html",
       "source_block": 2
@@ -1642,6 +1718,7 @@
       "index": "hell-hound",
       "name": "地狱犬",
       "name_en": "Hell Hound",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/地狱犬.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%9C%B0%E7%8B%B1%E7%8A%AC.html",
       "source_block": 1
@@ -1650,6 +1727,7 @@
       "index": "aboleth",
       "name": "底栖魔鱼",
       "name_en": "Aboleth",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/底栖魔鱼.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%BA%95%E6%A0%96%E9%AD%94%E9%B1%BC.html",
       "source_block": 1
@@ -1658,6 +1736,7 @@
       "index": "eagle",
       "name": "雕",
       "name_en": "Eagle",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 7
@@ -1666,6 +1745,7 @@
       "index": "winter-wolf",
       "name": "冬狼",
       "name_en": "Winter Wolf",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/冬狼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%86%AC%E7%8B%BC.htm",
       "source_block": 1
@@ -1674,6 +1754,7 @@
       "index": "cloaker",
       "name": "斗篷怪",
       "name_en": "Cloaker",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/蛰伏伪怪.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E8%9B%B0%E4%BC%8F%E4%BC%AA%E6%80%AA.html",
       "source_block": 1
@@ -1682,6 +1763,7 @@
       "index": "mezzoloth",
       "name": "毒虫罗斯魔",
       "name_en": "Mezzoloth",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/麦泽罗斯魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E9%BA%A6%E6%B3%BD%E7%BD%97%E6%96%AF%E9%AD%94.htm",
       "source_block": 1
@@ -1690,6 +1772,7 @@
       "index": "poisonous-snake",
       "name": "毒蛇",
       "name_en": "Poisonous Snake",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 10
@@ -1698,6 +1781,7 @@
       "index": "swarm-of-poisonous-snakes",
       "name": "毒蛇集群",
       "name_en": "Swarm of Poisonous Snakes",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/毒蛇群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E6%AF%92%E8%9B%87%E7%BE%A4.htm",
       "source_block": 1
@@ -1706,6 +1790,7 @@
       "index": "unicorn",
       "name": "独角兽",
       "name_en": "Unicorn",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/独角兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E7%8B%AC%E8%A7%92%E5%85%BD.htm",
       "source_block": 1
@@ -1714,6 +1799,7 @@
       "index": "cyclops",
       "name": "独眼巨人",
       "name_en": "Cyclops",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/独眼巨人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E7%8B%AC%E7%9C%BC%E5%B7%A8%E4%BA%BA.html",
       "source_block": 1
@@ -1722,6 +1808,7 @@
       "index": "raven",
       "name": "渡鸦",
       "name_en": "Raven",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 19
@@ -1730,6 +1817,7 @@
       "index": "swarm-of-ravens",
       "name": "渡鸦集群",
       "name_en": "Swarm of Ravens",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/渡鸦群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E6%B8%A1%E9%B8%A6%E7%BE%A4.htm",
       "source_block": 1
@@ -1738,6 +1826,7 @@
       "index": "shield-guardian",
       "name": "盾卫",
       "name_en": "Shield Guardian",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/盾卫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E7%9B%BE%E5%8D%AB.htm",
       "source_block": 1
@@ -1746,6 +1835,7 @@
       "index": "hydra",
       "name": "多头蛇",
       "name_en": "Hydra",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/多头蛇蜥.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%A4%9A%E5%A4%B4%E8%9B%87%E8%9C%A5.htm",
       "source_block": 1
@@ -1754,6 +1844,7 @@
       "index": "mind-flayer",
       "name": "夺心魔",
       "name_en": "Mind Flayer",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/夺心魔.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%A4%BA%E5%BF%83%E9%AD%94.html",
       "source_block": 1
@@ -1762,6 +1853,7 @@
       "index": "oni",
       "name": "恶鬼",
       "name_en": "Oni",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/恶鬼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E6%81%B6%E9%AC%BC.htm",
       "source_block": 1
@@ -1770,6 +1862,7 @@
       "index": "specter",
       "name": "恶灵",
       "name_en": "Specter",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/幽灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%B9%BD%E7%81%B5.htm",
       "source_block": 1
@@ -1778,6 +1871,7 @@
       "index": "yuan-ti-malison",
       "name": "恶咒蛇人",
       "name_en": "Yuan-ti Malison",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/恶咒蛇人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%81%B6%E5%92%92%E8%9B%87%E4%BA%BA.htm",
       "source_block": 1
@@ -1786,6 +1880,7 @@
       "index": "crocodile",
       "name": "鳄鱼",
       "name_en": "Crocodile",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 3
@@ -1794,6 +1889,7 @@
       "index": "duodrone",
       "name": "二元冢",
       "name_en": "Duodrone",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/二元冢.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E4%BA%8C%E5%85%83%E5%86%A2.htm",
       "source_block": 1
@@ -1802,6 +1898,7 @@
       "index": "wyvern",
       "name": "飞龙",
       "name_en": "Wyvern",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/飞龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%A3%9E%E9%BE%99.htm",
       "source_block": 1
@@ -1810,6 +1907,7 @@
       "index": "flying-snake",
       "name": "飞蛇",
       "name_en": "Flying Snake",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 4
@@ -1818,6 +1916,7 @@
       "index": "bandit-captain",
       "name": "匪帮队长",
       "name_en": "Bandit Captain",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/强盗首领.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%BC%BA%E7%9B%97%E9%A6%96%E9%A2%86.htm",
       "source_block": 1
@@ -1826,6 +1925,7 @@
       "index": "bandit",
       "name": "匪徒",
       "name_en": "Bandit",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/强盗.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%BC%BA%E7%9B%97.htm",
       "source_block": 1
@@ -1834,6 +1934,7 @@
       "index": "fomorian",
       "name": "废陋巨人",
       "name_en": "Fomorian",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/废陋巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E5%BA%9F%E9%99%8B%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -1842,6 +1943,7 @@
       "index": "baboon",
       "name": "狒狒",
       "name_en": "Baboon",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 1
@@ -1850,6 +1952,7 @@
       "index": "storm-giant",
       "name": "风暴巨人",
       "name_en": "Storm Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/风暴巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E9%A3%8E%E6%9A%B4%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -1858,6 +1961,7 @@
       "index": "flumph",
       "name": "呋噜",
       "name_en": "Flumph",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/呋噜.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%91%8B%E5%99%9C.htm",
       "source_block": 1
@@ -1866,6 +1970,7 @@
       "index": "axe-beak",
       "name": "斧嘴鸟",
       "name_en": "Axe Beak",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 1
@@ -1874,6 +1979,7 @@
       "index": "galeb-duhr",
       "name": "格莱石人",
       "name_en": "Galeb Duhr",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/格莱石人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%A0%BC%E8%8E%B1%E7%9F%B3%E4%BA%BA.html",
       "source_block": 1
@@ -1882,6 +1988,7 @@
       "index": "kobold",
       "name": "狗头人",
       "name_en": "Kobold",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/狗头人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%8B%97%E5%A4%B4%E4%BA%BA.html",
       "source_block": 1
@@ -1890,6 +1997,7 @@
       "index": "bone-devil",
       "name": "骨魔",
       "name_en": "Bone Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/骨魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E9%AA%A8%E9%AD%94.htm",
       "source_block": 1
@@ -1898,6 +2006,7 @@
       "index": "spectator",
       "name": "观察者眼魔",
       "name_en": "Spectator",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/观察者眼魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E8%A7%82%E5%AF%9F%E8%80%85%E7%9C%BC%E9%AD%94.htm",
       "source_block": 1
@@ -1906,6 +2015,7 @@
       "index": "will-o-wisp",
       "name": "鬼火",
       "name_en": "Will-o'-Wisp",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/鬼火.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%AC%BC%E7%81%AB.htm",
       "source_block": 1
@@ -1914,6 +2024,7 @@
       "index": "noble",
       "name": "贵族",
       "name_en": "Noble",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/贵族.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E8%B4%B5%E6%97%8F.htm",
       "source_block": 1
@@ -1922,6 +2033,7 @@
       "index": "revenant",
       "name": "还魂鬼",
       "name_en": "Revenant",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/还魂尸.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E8%BF%98%E9%AD%82%E5%B0%B8.htm",
       "source_block": 1
@@ -1930,6 +2042,7 @@
       "index": "bone-naga",
       "name": "骸骨纳迦",
       "name_en": "Bone Naga",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/骸骨纳迦（不死生物）.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%AA%B8%E9%AA%A8%E7%BA%B3%E8%BF%A6%EF%BC%88%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9%EF%BC%89.htm",
       "source_block": 1
@@ -1938,6 +2051,7 @@
       "index": "sea-hag",
       "name": "海鬼婆",
       "name_en": "Sea Hag",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/海鬼婆.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E6%B5%B7%E9%AC%BC%E5%A9%86.htm",
       "source_block": 1
@@ -1946,6 +2060,7 @@
       "index": "sea-horse",
       "name": "海马",
       "name_en": "Sea Horse",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 21
@@ -1954,6 +2069,7 @@
       "index": "black-pudding",
       "name": "黑布丁",
       "name_en": "Black Pudding",
+      "catalog_category": "泥怪",
       "source_path": "怪物图鉴/泥怪/黑布丁.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%B3%A5%E6%80%AA/%E9%BB%91%E5%B8%83%E4%B8%81.htm",
       "source_block": 1
@@ -1962,6 +2078,7 @@
       "index": "black-dragon-wyrmling",
       "name": "黑龙雏龙",
       "name_en": "Black Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黑龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%91%E9%BE%99.html",
       "source_block": 1
@@ -1970,6 +2087,7 @@
       "index": "black-bear",
       "name": "黑熊",
       "name_en": "Black Bear",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 2
@@ -1978,6 +2096,7 @@
       "index": "red-dragon-wyrmling",
       "name": "红龙雏龙",
       "name_en": "Red Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/红龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BA%A2%E9%BE%99.html",
       "source_block": 1
@@ -1986,6 +2105,7 @@
       "index": "killer-whale",
       "name": "虎鲸",
       "name_en": "Killer Whale",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR3.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR3.html",
       "source_block": 2
@@ -1994,6 +2114,7 @@
       "index": "jackalwere",
       "name": "化形胡狼",
       "name_en": "Jackalwere",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/化豺.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%8C%96%E8%B1%BA.htm",
       "source_block": 1
@@ -2002,6 +2123,7 @@
       "index": "badger",
       "name": "獾",
       "name_en": "Badger",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 2
@@ -2010,6 +2132,7 @@
       "index": "brass-dragon-wyrmling",
       "name": "黄铜龙雏龙",
       "name_en": "Brass Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黄铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%84%E9%93%9C%E9%BE%99.html",
       "source_block": 1
@@ -2018,6 +2141,7 @@
       "index": "duergar",
       "name": "灰矮人",
       "name_en": "Duergar",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/灰矮人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%81%B0%E7%9F%AE%E4%BA%BA.html",
       "source_block": 1
@@ -2026,6 +2150,7 @@
       "index": "gray-ooze",
       "name": "灰泥怪",
       "name_en": "Gray Ooze",
+      "catalog_category": "泥怪",
       "source_path": "怪物图鉴/泥怪/灰泥怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%B3%A5%E6%80%AA/%E7%81%B0%E6%B3%A5%E6%80%AA.htm",
       "source_block": 1
@@ -2034,6 +2159,7 @@
       "index": "animated-armor",
       "name": "活化盔甲",
       "name_en": "Animated Armor",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/活化盔甲.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E6%B4%BB%E5%8C%96%E7%9B%94%E7%94%B2.htm",
       "source_block": 1
@@ -2042,6 +2168,7 @@
       "index": "azer",
       "name": "火矮人",
       "name_en": "Azer",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火矮人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E7%9F%AE%E4%BA%BA.html",
       "source_block": 1
@@ -2050,6 +2177,7 @@
       "index": "efreeti",
       "name": "火巨灵",
       "name_en": "Efreeti",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火巨灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E5%B7%A8%E7%81%B5.htm",
       "source_block": 1
@@ -2058,6 +2186,7 @@
       "index": "fire-giant",
       "name": "火巨人",
       "name_en": "Fire Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/火巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E7%81%AB%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -2066,6 +2195,7 @@
       "index": "fire-snake",
       "name": "火蛇",
       "name_en": "Fire Snake",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火蜥蜴.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E8%9C%A5%E8%9C%B4.html",
       "source_block": 1
@@ -2074,6 +2204,7 @@
       "index": "magmin",
       "name": "火童",
       "name_en": "Magmin",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火童.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E7%AB%A5.htm",
       "source_block": 1
@@ -2082,6 +2213,7 @@
       "index": "salamander",
       "name": "火蜥蜴",
       "name_en": "Salamander",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火蜥蜴.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E8%9C%A5%E8%9C%B4.html",
       "source_block": 2
@@ -2090,6 +2222,7 @@
       "index": "fire-elemental",
       "name": "火元素",
       "name_en": "Fire Elemental",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/火元素.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%81%AB%E5%85%83%E7%B4%A0.htm",
       "source_block": 1
@@ -2098,6 +2231,7 @@
       "index": "githyanki-knight",
       "name": "吉斯洋基骑士",
       "name_en": "Githyanki Knight",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/吉斯洋基人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%90%89%E6%96%AF%E6%B4%8B%E5%9F%BA%E4%BA%BA.htm",
       "source_block": 2
@@ -2106,6 +2240,7 @@
       "index": "githyanki-warrior",
       "name": "吉斯洋基武者",
       "name_en": "Githyanki Warrior",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/吉斯洋基人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%90%89%E6%96%AF%E6%B4%8B%E5%9F%BA%E4%BA%BA.htm",
       "source_block": 1
@@ -2114,6 +2249,7 @@
       "index": "githzerai-monk",
       "name": "吉斯泽莱武僧",
       "name_en": "Githzerai Monk",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/吉斯泽莱人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%90%89%E6%96%AF%E6%B3%BD%E8%8E%B1%E4%BA%BA.htm",
       "source_block": 1
@@ -2122,6 +2258,7 @@
       "index": "githzerai-zerth",
       "name": "吉斯泽莱泽锡修士",
       "name_en": "Githzerai Zerth",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/吉斯泽莱人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%90%89%E6%96%AF%E6%B3%BD%E8%8E%B1%E4%BA%BA.htm",
       "source_block": 2
@@ -2130,6 +2267,7 @@
       "index": "spined-devil",
       "name": "棘魔",
       "name_en": "Spined Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/棘魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E6%A3%98%E9%AD%94.htm",
       "source_block": 1
@@ -2138,6 +2276,7 @@
       "index": "priest",
       "name": "祭司",
       "name_en": "Priest",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/祭司.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E7%A5%AD%E5%8F%B8.htm",
       "source_block": 1
@@ -2146,6 +2285,7 @@
       "index": "chuul",
       "name": "甲伏怪",
       "name_en": "Chuul",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/甲伏怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E7%94%B2%E4%BC%8F%E6%80%AA.htm",
       "source_block": 1
@@ -2154,6 +2294,7 @@
       "index": "ankylosaurus",
       "name": "甲龙",
       "name_en": "Ankylosaurus",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/甲龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E7%94%B2%E9%BE%99.htm",
       "source_block": 1
@@ -2162,6 +2303,7 @@
       "index": "shrieker",
       "name": "尖叫菌",
       "name_en": "Shrieker",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/尖叫蕈.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E5%B0%96%E5%8F%AB%E8%95%88.htm",
       "source_block": 1
@@ -2170,6 +2312,7 @@
       "index": "spy",
       "name": "间谍",
       "name_en": "Spy",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/密探.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%AF%86%E6%8E%A2.htm",
       "source_block": 1
@@ -2178,6 +2321,7 @@
       "index": "saber-toothed-tiger",
       "name": "剑齿虎",
       "name_en": "Saber-Toothed Tiger",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 7
@@ -2186,6 +2330,7 @@
       "index": "reef-shark",
       "name": "礁鲨",
       "name_en": "Reef Shark",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 7
@@ -2194,6 +2339,7 @@
       "index": "gladiator",
       "name": "角斗士",
       "name_en": "Gladiator",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/角斗士.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E8%A7%92%E6%96%97%E5%A3%AB.htm",
       "source_block": 1
@@ -2202,6 +2348,7 @@
       "index": "horned-devil",
       "name": "角魔",
       "name_en": "Horned Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/角魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E8%A7%92%E9%AD%94.htm",
       "source_block": 1
@@ -2210,6 +2357,7 @@
       "index": "gold-dragon-wyrmling",
       "name": "金龙雏龙",
       "name_en": "Gold Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/金龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%87%91%E9%BE%99.html",
       "source_block": 1
@@ -2218,6 +2366,7 @@
       "index": "guard",
       "name": "警卫",
       "name_en": "Guard",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/警卫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E8%AD%A6%E5%8D%AB.htm",
       "source_block": 1
@@ -2226,6 +2375,7 @@
       "index": "vrock",
       "name": "鹫魔",
       "name_en": "Vrock",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/弗洛魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%BC%97%E6%B4%9B%E9%AD%94.htm",
       "source_block": 1
@@ -2234,6 +2384,7 @@
       "index": "giant-bat",
       "name": "巨蝙蝠",
       "name_en": "Giant Bat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 7
@@ -2242,6 +2393,7 @@
       "index": "giant-toad",
       "name": "巨蟾",
       "name_en": "Giant Toad",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 7
@@ -2250,6 +2402,7 @@
       "index": "giant-elk",
       "name": "巨赤鹿",
       "name_en": "Giant Elk",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 3
@@ -2258,6 +2411,7 @@
       "index": "giant-poisonous-snake",
       "name": "巨毒蛇",
       "name_en": "Giant Poisonous Snake",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 12
@@ -2266,6 +2420,7 @@
       "index": "abominable-yeti",
       "name": "巨恶雪怪",
       "name_en": "Abominable Yeti",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/雪人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%9B%AA%E4%BA%BA.html",
       "source_block": 2
@@ -2274,6 +2429,7 @@
       "index": "giant-crocodile",
       "name": "巨鳄鱼",
       "name_en": "Giant Crocodile",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR5.html",
       "source_block": 1
@@ -2282,6 +2438,7 @@
       "index": "giant-sea-horse",
       "name": "巨海马",
       "name_en": "Giant Sea Horse",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 5
@@ -2290,6 +2447,7 @@
       "index": "giant-badger",
       "name": "巨獾",
       "name_en": "Giant Badger",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 6
@@ -2298,6 +2456,7 @@
       "index": "giant-wasp",
       "name": "巨黄蜂",
       "name_en": "Giant Wasp",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 6
@@ -2306,6 +2465,7 @@
       "index": "giant-fire-beetle",
       "name": "巨火甲虫",
       "name_en": "Giant Fire Beetle",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 9
@@ -2314,6 +2474,7 @@
       "index": "giant-wolf-spider",
       "name": "巨狼蛛",
       "name_en": "Giant Wolf Spider",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 13
@@ -2322,6 +2483,7 @@
       "index": "giant-hyena",
       "name": "巨鬣狗",
       "name_en": "Giant Hyena",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 4
@@ -2330,6 +2492,7 @@
       "index": "giant-constrictor-snake",
       "name": "巨蟒",
       "name_en": "Giant Constrictor Snake",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 2
@@ -2338,6 +2501,7 @@
       "index": "giant-owl",
       "name": "巨猫头鹰",
       "name_en": "Giant Owl",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 11
@@ -2346,6 +2510,7 @@
       "index": "troll",
       "name": "巨魔",
       "name_en": "Troll",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/巨魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E5%B7%A8%E9%AD%94.htm",
       "source_block": 1
@@ -2354,6 +2519,7 @@
       "index": "goristro",
       "name": "巨牛魔",
       "name_en": "Goristro",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/巨牛魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B7%A8%E7%89%9B%E9%AD%94.htm",
       "source_block": 1
@@ -2362,6 +2528,7 @@
       "index": "giant-shark",
       "name": "巨鲨",
       "name_en": "Giant Shark",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR5.html",
       "source_block": 2
@@ -2370,6 +2537,7 @@
       "index": "giant-goat",
       "name": "巨山羊",
       "name_en": "Giant Goat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 4
@@ -2378,6 +2546,7 @@
       "index": "giant-rat",
       "name": "巨鼠",
       "name_en": "Giant Rat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 6
@@ -2386,6 +2555,7 @@
       "index": "giant-vulture",
       "name": "巨秃鹫",
       "name_en": "Giant Vulture",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 8
@@ -2394,6 +2564,7 @@
       "index": "giant-frog",
       "name": "巨蛙",
       "name_en": "Giant Frog",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 9
@@ -2402,6 +2573,7 @@
       "index": "giant-centipede",
       "name": "巨蜈蚣",
       "name_en": "Giant Centipede",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 8
@@ -2410,6 +2582,7 @@
       "index": "giant-lizard",
       "name": "巨蜥",
       "name_en": "Giant Lizard",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 10
@@ -2418,6 +2591,7 @@
       "index": "giant-scorpion",
       "name": "巨蝎",
       "name_en": "Giant Scorpion",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR3.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR3.html",
       "source_block": 1
@@ -2426,6 +2600,7 @@
       "index": "giant-crab",
       "name": "巨蟹",
       "name_en": "Giant Crab",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 5
@@ -2434,6 +2609,7 @@
       "index": "giant-boar",
       "name": "巨野猪",
       "name_en": "Giant Boar",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 1
@@ -2442,6 +2618,7 @@
       "index": "giant-eagle",
       "name": "巨鹰",
       "name_en": "Giant Eagle",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 3
@@ -2450,6 +2627,7 @@
       "index": "giant-weasel",
       "name": "巨鼬",
       "name_en": "Giant Weasel",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 7
@@ -2458,6 +2636,7 @@
       "index": "giant-ape",
       "name": "巨猿",
       "name_en": "Giant Ape",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR7.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR7.html",
       "source_block": 1
@@ -2466,6 +2645,7 @@
       "index": "giant-octopus",
       "name": "巨章鱼",
       "name_en": "Giant Octopus",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 5
@@ -2474,6 +2654,7 @@
       "index": "giant-spider",
       "name": "巨蜘蛛",
       "name_en": "Giant Spider",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 6
@@ -2482,6 +2663,7 @@
       "index": "ankheg",
       "name": "掘地虫",
       "name_en": "Ankheg",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/掘地虫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%8E%98%E5%9C%B0%E8%99%AB.htm",
       "source_block": 1
@@ -2490,6 +2672,7 @@
       "index": "umber-hulk",
       "name": "掘土巨怪",
       "name_en": "Umber Hulk",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/土巨怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%9C%9F%E5%B7%A8%E6%80%AA.htm",
       "source_block": 1
@@ -2498,6 +2681,7 @@
       "index": "hippogriff",
       "name": "骏鹰",
       "name_en": "Hippogriff",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/鹫马.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%B9%AB%E9%A9%AC.htm",
       "source_block": 1
@@ -2506,6 +2690,7 @@
       "index": "chasme",
       "name": "喀嘶魔",
       "name_en": "Chasme",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/喀嘶魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%96%80%E5%98%B6%E9%AD%94.htm",
       "source_block": 1
@@ -2514,6 +2699,7 @@
       "index": "cambion",
       "name": "坎比翁",
       "name_en": "Cambion",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/坎比翁.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%9D%8E%E6%AF%94%E7%BF%81.htm",
       "source_block": 1
@@ -2522,6 +2708,7 @@
       "index": "kraken",
       "name": "克拉肯",
       "name_en": "Kraken",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/克拉肯.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%85%8B%E6%8B%89%E8%82%AF.htm",
       "source_block": 1
@@ -2530,6 +2717,7 @@
       "index": "helmed-horror",
       "name": "恐怖铠甲",
       "name_en": "Helmed Horror",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/恐怖铠甲.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E6%81%90%E6%80%96%E9%93%A0%E7%94%B2.htm",
       "source_block": 1
@@ -2538,6 +2726,7 @@
       "index": "dire-wolf",
       "name": "恐狼",
       "name_en": "Dire Wolf",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 2
@@ -2546,6 +2735,7 @@
       "index": "hook-horror",
       "name": "恐爪怪",
       "name_en": "Hook Horror",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/恐爪怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%81%90%E7%88%AA%E6%80%AA.htm",
       "source_block": 1
@@ -2554,6 +2744,7 @@
       "index": "kuo-toa",
       "name": "寇涛",
       "name_en": "Kuo-toa",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/寇涛鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%AF%87%E6%B6%9B%E9%B1%BC%E4%BA%BA.html",
       "source_block": 1
@@ -2562,6 +2753,7 @@
       "index": "kuo-toa-whip",
       "name": "寇涛鞭策者",
       "name_en": "Kuo-toa Whip",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/寇涛鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%AF%87%E6%B6%9B%E9%B1%BC%E4%BA%BA.html",
       "source_block": 3
@@ -2570,6 +2762,7 @@
       "index": "kuo-toa-archpriest",
       "name": "寇涛大祭司",
       "name_en": "Kuo-toa Archpriest",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/寇涛鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%AF%87%E6%B6%9B%E9%B1%BC%E4%BA%BA.html",
       "source_block": 2
@@ -2578,6 +2771,7 @@
       "index": "vine-blight",
       "name": "枯藤怪",
       "name_en": "Vine Blight",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/枯藤怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E6%9E%AF%E8%97%A4%E6%80%AA.htm",
       "source_block": 1
@@ -2586,6 +2780,7 @@
       "index": "needle-blight",
       "name": "枯针怪",
       "name_en": "Needle Blight",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/枯针怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E6%9E%AF%E9%92%88%E6%80%AA.htm",
       "source_block": 1
@@ -2594,6 +2789,7 @@
       "index": "twig-blight",
       "name": "枯枝怪",
       "name_en": "Twig Blight",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/枯枝怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E6%9E%AF%E6%9E%9D%E6%80%AA.htm",
       "source_block": 1
@@ -2602,6 +2798,7 @@
       "index": "skeleton",
       "name": "骷髅",
       "name_en": "Skeleton",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/骷髅.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%AA%B7%E9%AB%85.htm",
       "source_block": 1
@@ -2610,6 +2807,7 @@
       "index": "hezrou",
       "name": "狂蟾魔",
       "name_en": "Hezrou",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/狂战魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E7%8B%82%E6%88%98%E9%AD%94.htm",
       "source_block": 1
@@ -2618,6 +2816,7 @@
       "index": "berserker",
       "name": "狂战士",
       "name_en": "Berserker",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/狂战士.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E7%8B%82%E6%88%98%E5%A3%AB.htm",
       "source_block": 1
@@ -2626,6 +2825,7 @@
       "index": "swarm-of-insects",
       "name": "昆虫集群",
       "name_en": "Swarm of Insects",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/虫群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E8%99%AB%E7%BE%A4.htm",
       "source_block": 1
@@ -2634,6 +2834,7 @@
       "index": "lamia",
       "name": "拉迷亚",
       "name_en": "Lamia",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/拉米亚.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%8B%89%E7%B1%B3%E4%BA%9A.htm",
       "source_block": 1
@@ -2642,6 +2843,7 @@
       "index": "yochlol",
       "name": "蜡融妖",
       "name_en": "Yochlol",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/蜡融妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E8%9C%A1%E8%9E%8D%E5%A6%96.htm",
       "source_block": 1
@@ -2650,6 +2852,7 @@
       "index": "blue-dragon-wyrmling",
       "name": "蓝龙雏龙",
       "name_en": "Blue Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/蓝龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%93%9D%E9%BE%99.html",
       "source_block": 1
@@ -2658,6 +2861,7 @@
       "index": "wolf",
       "name": "狼",
       "name_en": "Wolf",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 16
@@ -2666,6 +2870,7 @@
       "index": "veteran",
       "name": "老兵",
       "name_en": "Veteran",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/老兵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E8%80%81%E5%85%B5.htm",
       "source_block": 1
@@ -2674,6 +2879,7 @@
       "index": "tiger",
       "name": "老虎",
       "name_en": "Tiger",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 10
@@ -2682,6 +2888,7 @@
       "index": "chain-devil",
       "name": "链魔",
       "name_en": "Chain Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/链魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E9%93%BE%E9%AD%94.htm",
       "source_block": 1
@@ -2690,6 +2897,7 @@
       "index": "lemure",
       "name": "劣魔",
       "name_en": "Lemure",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/劣魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%8A%A3%E9%AD%94.htm",
       "source_block": 1
@@ -2698,6 +2906,7 @@
       "index": "hyena",
       "name": "鬣狗",
       "name_en": "Hyena",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 12
@@ -2706,6 +2915,7 @@
       "index": "gnoll",
       "name": "鬣狗人",
       "name_en": "Gnoll",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/豺狼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%B1%BA%E7%8B%BC%E4%BA%BA.html",
       "source_block": 1
@@ -2714,6 +2924,7 @@
       "index": "gnoll-fang-of-yeenoghu",
       "name": "鬣狗人·耶诺古毒牙",
       "name_en": "Gnoll Fang of Yeenoghu",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/耶诺古毒牙（邪魔）.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%80%B6%E8%AF%BA%E5%8F%A4%E6%AF%92%E7%89%99%EF%BC%88%E9%82%AA%E9%AD%94%EF%BC%89.htm",
       "source_block": 1
@@ -2722,6 +2933,7 @@
       "index": "gnoll-pack-lord",
       "name": "鬣狗人头领",
       "name_en": "Gnoll Pack Lord",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/豺狼人头领.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%B1%BA%E7%8B%BC%E4%BA%BA%E5%A4%B4%E9%A2%86.htm",
       "source_block": 1
@@ -2730,6 +2942,7 @@
       "index": "flying-sword",
       "name": "凌空剑",
       "name_en": "Flying Sword",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/凌空剑.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E5%87%8C%E7%A9%BA%E5%89%91.htm",
       "source_block": 1
@@ -2738,6 +2951,7 @@
       "index": "marilith",
       "name": "六臂蛇魔",
       "name_en": "Marilith",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/六臂蛇魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%85%AD%E8%87%82%E8%9B%87%E9%AD%94.htm",
       "source_block": 1
@@ -2746,6 +2960,7 @@
       "index": "dragon-turtle",
       "name": "龙龟",
       "name_en": "Dragon Turtle",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/龙龟.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BE%99%E9%BE%9F.html",
       "source_block": 1
@@ -2754,6 +2969,7 @@
       "index": "deer",
       "name": "鹿",
       "name_en": "Deer",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 6
@@ -2762,6 +2978,7 @@
       "index": "peryton",
       "name": "鹿鹰",
       "name_en": "Peryton",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/鹿鹰.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%B9%BF%E9%B9%B0.htm",
       "source_block": 1
@@ -2770,6 +2987,7 @@
       "index": "green-hag",
       "name": "绿鬼婆",
       "name_en": "Green Hag",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/绿鬼婆.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E7%BB%BF%E9%AC%BC%E5%A9%86.htm",
       "source_block": 1
@@ -2778,6 +2996,7 @@
       "index": "green-dragon-wyrmling",
       "name": "绿龙雏龙",
       "name_en": "Green Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/绿龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BB%BF%E9%BE%99.html",
       "source_block": 1
@@ -2786,6 +3005,7 @@
       "index": "rakshasa",
       "name": "罗刹",
       "name_en": "Rakshasa",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/罗刹.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E7%BD%97%E5%88%B9.htm",
       "source_block": 1
@@ -2794,6 +3014,7 @@
       "index": "mule",
       "name": "骡子",
       "name_en": "Mule",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 9
@@ -2802,6 +3023,7 @@
       "index": "camel",
       "name": "骆驼",
       "name_en": "Camel",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 3
@@ -2810,6 +3032,7 @@
       "index": "shambling-mound",
       "name": "蔓生怪",
       "name_en": "Shambling Mound",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/蔓生怪.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E8%94%93%E7%94%9F%E6%80%AA.html",
       "source_block": 1
@@ -2818,6 +3041,7 @@
       "index": "constrictor-snake",
       "name": "蟒蛇",
       "name_en": "Constrictor Snake",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 3
@@ -2826,6 +3050,7 @@
       "index": "cat",
       "name": "猫",
       "name_en": "Cat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 4
@@ -2834,6 +3059,7 @@
       "index": "owl",
       "name": "猫头鹰",
       "name_en": "Owl",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 16
@@ -2842,6 +3068,7 @@
       "index": "merrow",
       "name": "梅洛",
       "name_en": "Merrow",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/迈罗人鱼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E8%BF%88%E7%BD%97%E4%BA%BA%E9%B1%BC.htm",
       "source_block": 1
@@ -2850,6 +3077,7 @@
       "index": "medusa",
       "name": "美杜莎",
       "name_en": "Medusa",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/美杜莎.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%BE%8E%E6%9D%9C%E8%8E%8E.htm",
       "source_block": 1
@@ -2858,6 +3086,7 @@
       "index": "incubus",
       "name": "魅魔Succubus/梦魔",
       "name_en": "Incubus",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/魅魔与梦魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E9%AD%85%E9%AD%94%E4%B8%8E%E6%A2%A6%E9%AD%94.htm",
       "source_block": 1
@@ -2866,6 +3095,7 @@
       "index": "rug-of-smothering",
       "name": "闷人毯",
       "name_en": "Rug of Smothering",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/闷人毯.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E9%97%B7%E4%BA%BA%E6%AF%AF.htm",
       "source_block": 1
@@ -2874,6 +3104,7 @@
       "index": "mammoth",
       "name": "猛犸",
       "name_en": "Mammoth",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR6.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR6.html",
       "source_block": 1
@@ -2882,6 +3113,7 @@
       "index": "nightmare",
       "name": "梦魇",
       "name_en": "Nightmare",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/梦魇.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E6%A2%A6%E9%AD%87.htm",
       "source_block": 1
@@ -2890,6 +3122,7 @@
       "index": "glabrezu",
       "name": "迷诱魔",
       "name_en": "Glabrezu",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/迷诱魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E8%BF%B7%E8%AF%B1%E9%AD%94.htm",
       "source_block": 1
@@ -2898,6 +3131,7 @@
       "index": "mage",
       "name": "魔法师",
       "name_en": "Mage",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/魔法师.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E9%AD%94%E6%B3%95%E5%B8%88.htm",
       "source_block": 1
@@ -2906,6 +3140,7 @@
       "index": "orog",
       "name": "魔兽人",
       "name_en": "Orog",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/魔兽人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E9%AD%94%E5%85%BD%E4%BA%BA.htm",
       "source_block": 1
@@ -2914,6 +3149,7 @@
       "index": "mummy",
       "name": "木乃伊",
       "name_en": "Mummy",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/木乃伊.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E6%9C%A8%E4%B9%83%E4%BC%8A.html",
       "source_block": 1
@@ -2922,6 +3158,7 @@
       "index": "mummy-lord",
       "name": "木乃伊领主",
       "name_en": "Mummy Lord",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/木乃伊领主.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E6%9C%A8%E4%B9%83%E4%BC%8A%E9%A2%86%E4%B8%BB.htm",
       "source_block": 1
@@ -2930,6 +3167,7 @@
       "index": "androsphinx",
       "name": "男面斯芬克斯",
       "name_en": "Androsphinx",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/男面斯芬克斯.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%94%B7%E9%9D%A2%E6%96%AF%E8%8A%AC%E5%85%8B%E6%96%AF.htm",
       "source_block": 1
@@ -2938,6 +3176,7 @@
       "index": "mud-mephit",
       "name": "泥魔蝠",
       "name_en": "Mud Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/泥魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B3%A5%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -2946,6 +3185,7 @@
       "index": "mimic",
       "name": "拟身怪",
       "name_en": "Mimic",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/拟身怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%8B%9F%E8%BA%AB%E6%80%AA.htm",
       "source_block": 1
@@ -2954,6 +3194,7 @@
       "index": "harpy",
       "name": "鸟妖",
       "name_en": "Harpy",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/鸟妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%B8%9F%E5%A6%96.htm",
       "source_block": 1
@@ -2962,6 +3203,7 @@
       "index": "aarakocra",
       "name": "鸟羽人",
       "name_en": "Aarakocra",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/阿兰寇拉鹰人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E9%98%BF%E5%85%B0%E5%AF%87%E6%8B%89%E9%B9%B0%E4%BA%BA.html",
       "source_block": 1
@@ -2970,6 +3212,7 @@
       "index": "gelatinous-cube",
       "name": "凝胶方块",
       "name_en": "Gelatinous Cube",
+      "catalog_category": "泥怪",
       "source_path": "怪物图鉴/泥怪/胶质方块.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%B3%A5%E6%80%AA/%E8%83%B6%E8%B4%A8%E6%96%B9%E5%9D%97.htm",
       "source_block": 1
@@ -2978,6 +3221,7 @@
       "index": "minotaur",
       "name": "牛头人",
       "name_en": "Minotaur",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/牛头人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%89%9B%E5%A4%B4%E4%BA%BA.htm",
       "source_block": 1
@@ -2986,6 +3230,7 @@
       "index": "minotaur-skeleton",
       "name": "牛头人骷髅",
       "name_en": "Minotaur Skeleton",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/骷髅.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%AA%B7%E9%AB%85.htm",
       "source_block": 2
@@ -2994,6 +3239,7 @@
       "index": "gynosphinx",
       "name": "女面斯芬克斯",
       "name_en": "Gynosphinx",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/女面斯芬克斯.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%A5%B3%E9%9D%A2%E6%96%AF%E8%8A%AC%E5%85%8B%E6%96%AF.htm",
       "source_block": 1
@@ -3002,6 +3248,7 @@
       "index": "nothic",
       "name": "诺斯怪",
       "name_en": "Nothic",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/诺斯异怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E8%AF%BA%E6%96%AF%E5%BC%82%E6%80%AA.htm",
       "source_block": 1
@@ -3010,6 +3257,7 @@
       "index": "nalfeshnee",
       "name": "判魂魔",
       "name_en": "Nalfeshnee",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/判魂魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%88%A4%E9%AD%82%E9%AD%94.htm",
       "source_block": 1
@@ -3018,6 +3266,7 @@
       "index": "roc",
       "name": "鹏鸟",
       "name_en": "Roc",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/鹏鸟.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%B9%8F%E9%B8%9F.htm",
       "source_block": 1
@@ -3026,6 +3275,7 @@
       "index": "pixie",
       "name": "皮克精",
       "name_en": "Pixie",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/皮克精.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E7%9A%AE%E5%85%8B%E7%B2%BE.htm",
       "source_block": 1
@@ -3034,6 +3284,7 @@
       "index": "commoner",
       "name": "平民",
       "name_en": "Commoner",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/平民.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E5%B9%B3%E6%B0%91.htm",
       "source_block": 1
@@ -3042,6 +3293,7 @@
       "index": "chimera",
       "name": "奇美拉",
       "name_en": "Chimera",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/奇美拉.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%A5%87%E7%BE%8E%E6%8B%89.htm",
       "source_block": 1
@@ -3050,6 +3302,7 @@
       "index": "knight",
       "name": "骑士",
       "name_en": "Knight",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/骑士.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E9%AA%91%E5%A3%AB.htm",
       "source_block": 1
@@ -3058,6 +3311,7 @@
       "index": "awakened-shrub",
       "name": "启蒙灌木",
       "name_en": "Awakened Shrub",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/启蒙灌木.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E5%90%AF%E8%92%99%E7%81%8C%E6%9C%A8.html",
       "source_block": 1
@@ -3066,6 +3320,7 @@
       "index": "awakened-tree",
       "name": "启蒙树木",
       "name_en": "Awakened Tree",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/启蒙树木.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E5%90%AF%E8%92%99%E6%A0%91%E6%9C%A8.htm",
       "source_block": 1
@@ -3074,6 +3329,7 @@
       "index": "gas-spore",
       "name": "气孢菌",
       "name_en": "Gas Spore",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/毒气孢子.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E6%AF%92%E6%B0%94%E5%AD%A2%E5%AD%90.htm",
       "source_block": 1
@@ -3082,6 +3338,7 @@
       "index": "djinni",
       "name": "气巨灵",
       "name_en": "Djinni",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/气巨灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B0%94%E5%B7%A8%E7%81%B5.htm",
       "source_block": 1
@@ -3090,6 +3347,7 @@
       "index": "air-elemental",
       "name": "气元素",
       "name_en": "Air Elemental",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/气元素.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B0%94%E5%85%83%E7%B4%A0.htm",
       "source_block": 1
@@ -3098,6 +3356,7 @@
       "index": "dretch",
       "name": "怯魔",
       "name_en": "Dretch",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/怯魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E6%80%AF%E9%AD%94.htm",
       "source_block": 1
@@ -3106,6 +3365,7 @@
       "index": "young-white-dragon",
       "name": "青年白龙",
       "name_en": "Young White Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/白龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%99%BD%E9%BE%99.html",
       "source_block": 2
@@ -3114,6 +3374,7 @@
       "index": "young-remorhazes",
       "name": "青年百足魔兽",
       "name_en": "Young Remorhazes",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/百足魔兽.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%99%BE%E8%B6%B3%E9%AD%94%E5%85%BD.html",
       "source_block": 1
@@ -3122,6 +3383,7 @@
       "index": "young-copper-dragon",
       "name": "青年赤铜龙",
       "name_en": "Young Copper Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/赤铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%B5%A4%E9%93%9C%E9%BE%99.html",
       "source_block": 2
@@ -3130,6 +3392,7 @@
       "index": "young-black-dragon",
       "name": "青年黑龙",
       "name_en": "Young Black Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黑龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%91%E9%BE%99.html",
       "source_block": 2
@@ -3138,6 +3401,7 @@
       "index": "young-red-dragon",
       "name": "青年红龙",
       "name_en": "Young Red Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/红龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BA%A2%E9%BE%99.html",
       "source_block": 2
@@ -3146,6 +3410,7 @@
       "index": "young-brass-dragon",
       "name": "青年黄铜龙",
       "name_en": "Young Brass Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黄铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%84%E9%93%9C%E9%BE%99.html",
       "source_block": 2
@@ -3154,6 +3419,7 @@
       "index": "young-gold-dragon",
       "name": "青年金龙",
       "name_en": "Young Gold Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/金龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%87%91%E9%BE%99.html",
       "source_block": 2
@@ -3162,6 +3428,7 @@
       "index": "young-blue-dragon",
       "name": "青年蓝龙",
       "name_en": "Young Blue Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/蓝龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%93%9D%E9%BE%99.html",
       "source_block": 2
@@ -3170,6 +3437,7 @@
       "index": "young-green-dragon",
       "name": "青年绿龙",
       "name_en": "Young Green Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/绿龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BB%BF%E9%BE%99.html",
       "source_block": 2
@@ -3178,6 +3446,7 @@
       "index": "young-bronze-dragon",
       "name": "青年青铜龙",
       "name_en": "Young Bronze Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/青铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%9D%92%E9%93%9C%E9%BE%99.html",
       "source_block": 2
@@ -3186,6 +3455,7 @@
       "index": "young-silver-dragon",
       "name": "青年银龙",
       "name_en": "Young Silver Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/银龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%93%B6%E9%BE%99.html",
       "source_block": 2
@@ -3194,6 +3464,7 @@
       "index": "young-red-shadow-dragon",
       "name": "青年幽影红龙",
       "name_en": "Young Red Shadow Dragon",
+      "catalog_category": "模板生物",
       "source_path": "怪物图鉴/模板生物/幽影龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A8%A1%E6%9D%BF%E7%94%9F%E7%89%A9/%E5%B9%BD%E5%BD%B1%E9%BE%99.html",
       "source_block": 1
@@ -3202,6 +3473,7 @@
       "index": "bronze-dragon-wyrmling",
       "name": "青铜龙雏龙",
       "name_en": "Bronze Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/青铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%9D%92%E9%93%9C%E9%BE%99.html",
       "source_block": 1
@@ -3210,6 +3482,7 @@
       "index": "frog",
       "name": "青蛙",
       "name_en": "Frog",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 8
@@ -3218,6 +3491,7 @@
       "index": "behir",
       "name": "青足龙蛇",
       "name_en": "Behir",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/青足龙蛇.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%9D%92%E8%B6%B3%E9%BE%99%E8%9B%87.html",
       "source_block": 1
@@ -3226,6 +3500,7 @@
       "index": "flameskull",
       "name": "燃焰之颅",
       "name_en": "Flameskull",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/燃焰之颅.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E7%87%83%E7%84%B0%E4%B9%8B%E9%A2%85.htm",
       "source_block": 1
@@ -3234,6 +3509,7 @@
       "index": "homunculus",
       "name": "人工生命体",
       "name_en": "Homunculus",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/人工生命体.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E4%BA%BA%E5%B7%A5%E7%94%9F%E5%91%BD%E4%BD%93.html",
       "source_block": 1
@@ -3242,6 +3518,7 @@
       "index": "centaur",
       "name": "人马",
       "name_en": "Centaur",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/人马.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E4%BA%BA%E9%A9%AC.htm",
       "source_block": 1
@@ -3250,6 +3527,7 @@
       "index": "merfolk",
       "name": "人鱼",
       "name_en": "Merfolk",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/人鱼.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E4%BA%BA%E9%B1%BC.html",
       "source_block": 1
@@ -3258,6 +3536,7 @@
       "index": "magma-mephit",
       "name": "熔岩魔蝠",
       "name_en": "Magma Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/熔岩魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%86%94%E5%B2%A9%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -3266,6 +3545,7 @@
       "index": "crawling-claw",
       "name": "蠕行之爪",
       "name_en": "Crawling Claw",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/蠕行之爪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E8%A0%95%E8%A1%8C%E4%B9%8B%E7%88%AA.htm",
       "source_block": 1
@@ -3274,6 +3554,7 @@
       "index": "triceratops",
       "name": "三角龙",
       "name_en": "Triceratops",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/三角龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E4%B8%89%E8%A7%92%E9%BE%99.htm",
       "source_block": 1
@@ -3282,6 +3563,7 @@
       "index": "zombies",
       "name": "丧尸",
       "name_en": "Zombies",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/僵尸.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%83%B5%E5%B0%B8.html",
       "source_block": 1
@@ -3290,6 +3572,7 @@
       "index": "sahuagin-priestess",
       "name": "鲨华女祭司",
       "name_en": "Sahuagin Priestess",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/沙华鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E6%B2%99%E5%8D%8E%E9%B1%BC%E4%BA%BA.html",
       "source_block": 2
@@ -3298,6 +3581,7 @@
       "index": "sahuagin",
       "name": "鲨华鱼人",
       "name_en": "Sahuagin",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/沙华鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E6%B2%99%E5%8D%8E%E9%B1%BC%E4%BA%BA.html",
       "source_block": 1
@@ -3306,6 +3590,7 @@
       "index": "sahuagin-baron",
       "name": "鲨华鱼人男爵",
       "name_en": "Sahuagin Baron",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/沙华鱼人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E6%B2%99%E5%8D%8E%E9%B1%BC%E4%BA%BA.html",
       "source_block": 3
@@ -3314,6 +3599,7 @@
       "index": "bulette",
       "name": "鲨蜥",
       "name_en": "Bulette",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/鲨蜥兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%B2%A8%E8%9C%A5%E5%85%BD.htm",
       "source_block": 1
@@ -3322,6 +3608,7 @@
       "index": "hill-giant",
       "name": "山丘巨人",
       "name_en": "Hill Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/山丘巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E5%B1%B1%E4%B8%98%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -3330,6 +3617,7 @@
       "index": "goat",
       "name": "山羊",
       "name_en": "Goat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 10
@@ -3338,6 +3626,7 @@
       "index": "blink-dog",
       "name": "闪现犬",
       "name_en": "Blink Dog",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/闪现犬.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E9%97%AA%E7%8E%B0%E7%8A%AC.html",
       "source_block": 1
@@ -3346,6 +3635,7 @@
       "index": "cockatrice",
       "name": "蛇鸡",
       "name_en": "Cockatrice",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/蛇鸡兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E8%9B%87%E9%B8%A1%E5%85%BD.htm",
       "source_block": 1
@@ -3354,6 +3644,7 @@
       "index": "plesiosaurus",
       "name": "蛇颈龙",
       "name_en": "Plesiosaurus",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/蛇颈龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E8%9B%87%E9%A2%88%E9%BE%99.htm",
       "source_block": 1
@@ -3362,6 +3653,7 @@
       "index": "pit-fiend",
       "name": "深狱炼魔",
       "name_en": "Pit Fiend",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/深狱炼魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E6%B7%B1%E7%8B%B1%E7%82%BC%E9%AD%94.htm",
       "source_block": 1
@@ -3370,6 +3662,7 @@
       "index": "wight",
       "name": "尸妖",
       "name_en": "Wight",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/尸妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%B0%B8%E5%A6%96.htm",
       "source_block": 1
@@ -3378,6 +3671,7 @@
       "index": "griffon",
       "name": "狮鹫",
       "name_en": "Griffon",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/狮鹫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%8B%AE%E9%B9%AB.htm",
       "source_block": 1
@@ -3386,6 +3680,7 @@
       "index": "lion",
       "name": "狮子",
       "name_en": "Lion",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 9
@@ -3394,6 +3689,7 @@
       "index": "xorn",
       "name": "石鼎兽",
       "name_en": "Xorn",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/索尔石怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%B4%A2%E5%B0%94%E7%9F%B3%E6%80%AA.htm",
       "source_block": 1
@@ -3402,6 +3698,7 @@
       "index": "gorgon",
       "name": "石化铁牛",
       "name_en": "Gorgon",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/石化牛.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%9F%B3%E5%8C%96%E7%89%9B.htm",
       "source_block": 1
@@ -3410,6 +3707,7 @@
       "index": "basilisk",
       "name": "石化蜥蜴",
       "name_en": "Basilisk",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/石化蜥蜴.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%9F%B3%E5%8C%96%E8%9C%A5%E8%9C%B4.htm",
       "source_block": 1
@@ -3418,6 +3716,7 @@
       "index": "stone-giant",
       "name": "石巨人",
       "name_en": "Stone Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/石巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E7%9F%B3%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -3426,6 +3725,7 @@
       "index": "stone-golem",
       "name": "石魔像",
       "name_en": "Stone Golem",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/石魔像.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E7%9F%B3%E9%AD%94%E5%83%8F.htm",
       "source_block": 1
@@ -3434,6 +3734,7 @@
       "index": "roper",
       "name": "石绳怪",
       "name_en": "Roper",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/树绳妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%A0%91%E7%BB%B3%E5%A6%96.htm",
       "source_block": 1
@@ -3442,6 +3743,7 @@
       "index": "gargoyle",
       "name": "石像鬼",
       "name_en": "Gargoyle",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/石像鬼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%9F%B3%E5%83%8F%E9%AC%BC.htm",
       "source_block": 1
@@ -3450,6 +3752,7 @@
       "index": "piercer",
       "name": "石锥怪",
       "name_en": "Piercer",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/穿刺者.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%A9%BF%E5%88%BA%E8%80%85.htm",
       "source_block": 1
@@ -3458,6 +3761,7 @@
       "index": "carrion-crawler",
       "name": "食腐虫",
       "name_en": "Carrion Crawler",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/食腐虫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%A3%9F%E8%85%90%E8%99%AB.htm",
       "source_block": 1
@@ -3466,6 +3770,7 @@
       "index": "otyugh",
       "name": "食腐兽",
       "name_en": "Otyugh",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/食腐兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E9%A3%9F%E8%85%90%E5%85%BD.htm",
       "source_block": 1
@@ -3474,6 +3779,7 @@
       "index": "ogre",
       "name": "食人魔",
       "name_en": "Ogre",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/食人魔.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E9%A3%9F%E4%BA%BA%E9%AD%94.html",
       "source_block": 1
@@ -3482,6 +3788,7 @@
       "index": "ogre-zombie",
       "name": "食人魔丧尸",
       "name_en": "Ogre Zombie",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/僵尸.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%83%B5%E5%B0%B8.html",
       "source_block": 2
@@ -3490,6 +3797,7 @@
       "index": "quipper",
       "name": "食人鱼",
       "name_en": "Quipper",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 17
@@ -3498,6 +3806,7 @@
       "index": "swarm-of-quippers",
       "name": "食人鱼集群",
       "name_en": "Swarm of Quippers",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/食人鱼群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E9%A3%9F%E4%BA%BA%E9%B1%BC%E7%BE%A4.htm",
       "source_block": 1
@@ -3506,6 +3815,7 @@
       "index": "ghoul",
       "name": "食尸鬼",
       "name_en": "Ghoul",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/食尸鬼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%A3%9F%E5%B0%B8%E9%AC%BC.htm",
       "source_block": 1
@@ -3514,6 +3824,7 @@
       "index": "slaad-tadpole",
       "name": "史拉蟾蝌蚪",
       "name_en": "Slaad Tadpole",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 1
@@ -3522,6 +3833,7 @@
       "index": "red-slaad",
       "name": "史拉红蟾",
       "name_en": "Red Slaad",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 2
@@ -3530,6 +3842,7 @@
       "index": "gray-slaad",
       "name": "史拉灰蟾",
       "name_en": "Gray Slaad",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 5
@@ -3538,6 +3851,7 @@
       "index": "blue-slaad",
       "name": "史拉蓝蟾",
       "name_en": "Blue Slaad",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 3
@@ -3546,6 +3860,7 @@
       "index": "green-slaad",
       "name": "史拉绿蟾",
       "name_en": "Green Slaad",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 4
@@ -3554,6 +3869,7 @@
       "index": "death-slaad",
       "name": "史拉亡蟾",
       "name_en": "Death Slaad",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/史拉蟾.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%8F%B2%E6%8B%89%E8%9F%BE.html",
       "source_block": 6
@@ -3562,6 +3878,7 @@
       "index": "acolyte",
       "name": "侍僧",
       "name_en": "Acolyte",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/侍僧.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E4%BE%8D%E5%83%A7.htm",
       "source_block": 1
@@ -3570,6 +3887,7 @@
       "index": "intellect-devourer",
       "name": "噬脑怪",
       "name_en": "Intellect Devourer",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/噬脑怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E5%99%AC%E8%84%91%E6%80%AA.htm",
       "source_block": 1
@@ -3578,6 +3896,7 @@
       "index": "guardian-naga",
       "name": "守秘纳迦",
       "name_en": "Guardian Naga",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/巡守纳迦.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%B7%A1%E5%AE%88%E7%BA%B3%E8%BF%A6.htm",
       "source_block": 1
@@ -3586,6 +3905,7 @@
       "index": "orc",
       "name": "兽人",
       "name_en": "Orc",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/兽人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%85%BD%E4%BA%BA.html",
       "source_block": 1
@@ -3594,6 +3914,7 @@
       "index": "orc-eye-of-gruumsh",
       "name": "兽人格乌什之眼",
       "name_en": "Orc Eye of Gruumsh",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/格乌什之眼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E6%A0%BC%E4%B9%8C%E4%BB%80%E4%B9%8B%E7%9C%BC.htm",
       "source_block": 1
@@ -3602,6 +3923,7 @@
       "index": "orc-war-chief",
       "name": "兽人军官",
       "name_en": "Orc War Chief",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/兽人军官.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%85%BD%E4%BA%BA%E5%86%9B%E5%AE%98.htm",
       "source_block": 1
@@ -3610,6 +3932,7 @@
       "index": "rat",
       "name": "鼠",
       "name_en": "Rat",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 18
@@ -3618,6 +3941,7 @@
       "index": "swarm-of-rats",
       "name": "鼠集群",
       "name_en": "Swarm of Rats",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/鼠群.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E9%BC%A0%E7%BE%A4.htm",
       "source_block": 1
@@ -3626,6 +3950,7 @@
       "index": "wererat",
       "name": "鼠人",
       "name_en": "Wererat",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/鼠人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E9%BC%A0%E4%BA%BA.htm",
       "source_block": 1
@@ -3634,6 +3959,7 @@
       "index": "dryad",
       "name": "树精",
       "name_en": "Dryad",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/树精.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E6%A0%91%E7%B2%BE.htm",
       "source_block": 1
@@ -3642,6 +3968,7 @@
       "index": "treant",
       "name": "树人",
       "name_en": "Treant",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/树人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E6%A0%91%E4%BA%BA.htm",
       "source_block": 1
@@ -3650,6 +3977,7 @@
       "index": "ettin",
       "name": "双头巨人",
       "name_en": "Ettin",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/双头巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E5%8F%8C%E5%A4%B4%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -3658,6 +3986,7 @@
       "index": "frost-giant",
       "name": "霜巨人",
       "name_en": "Frost Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/霜巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E9%9C%9C%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -3666,6 +3995,7 @@
       "index": "water-weird",
       "name": "水诡",
       "name_en": "Water Weird",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/水诡.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B0%B4%E8%AF%A1.htm",
       "source_block": 1
@@ -3674,6 +4004,7 @@
       "index": "marid",
       "name": "水巨灵",
       "name_en": "Marid",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/水巨灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B0%B4%E5%B7%A8%E7%81%B5.htm",
       "source_block": 1
@@ -3682,6 +4013,7 @@
       "index": "water-elemental",
       "name": "水元素",
       "name_en": "Water Elemental",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/水元素.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E6%B0%B4%E5%85%83%E7%B4%A0.htm",
       "source_block": 1
@@ -3690,6 +4022,7 @@
       "index": "death-knight",
       "name": "死亡骑士",
       "name_en": "Death Knight",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/死亡骑士.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E6%AD%BB%E4%BA%A1%E9%AA%91%E5%A3%AB.htm",
       "source_block": 1
@@ -3698,6 +4031,7 @@
       "index": "quadrone",
       "name": "四元冢",
       "name_en": "Quadrone",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/四元冢.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E5%9B%9B%E5%85%83%E5%86%A2.htm",
       "source_block": 1
@@ -3706,6 +4040,7 @@
       "index": "tarrasque",
       "name": "泰拉斯奎",
       "name_en": "Tarrasque",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/泰拉斯奎巨兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%B3%B0%E6%8B%89%E6%96%AF%E5%A5%8E%E5%B7%A8%E5%85%BD.htm",
       "source_block": 1
@@ -3714,6 +4049,7 @@
       "index": "thri-kreen",
       "name": "螳螂人",
       "name_en": "Thri-kreen",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/螳螂人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%9E%B3%E8%9E%82%E4%BA%BA.htm",
       "source_block": 1
@@ -3722,6 +4058,7 @@
       "index": "kenku",
       "name": "天狗",
       "name_en": "Kenku",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/天狗.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%A4%A9%E7%8B%97.htm",
       "source_block": 1
@@ -3730,6 +4067,7 @@
       "index": "pegasus",
       "name": "天马",
       "name_en": "Pegasus",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/飞马.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E9%A3%9E%E9%A9%AC.htm",
       "source_block": 1
@@ -3738,6 +4076,7 @@
       "index": "deva",
       "name": "天神使徒",
       "name_en": "Deva",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/天神使徒.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E5%A4%A9%E7%A5%9E%E4%BD%BF%E5%BE%92.htm",
       "source_block": 1
@@ -3746,6 +4085,7 @@
       "index": "iron-golem",
       "name": "铁魔像",
       "name_en": "Iron Golem",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/钢铁魔像.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E9%92%A2%E9%93%81%E9%AD%94%E5%83%8F.htm",
       "source_block": 1
@@ -3754,6 +4094,7 @@
       "index": "vulture",
       "name": "秃鹫",
       "name_en": "Vulture",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 23
@@ -3762,6 +4103,7 @@
       "index": "dao",
       "name": "土巨灵",
       "name_en": "Dao",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/土巨灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E5%9C%9F%E5%B7%A8%E7%81%B5.htm",
       "source_block": 1
@@ -3770,6 +4112,7 @@
       "index": "earth-elemental",
       "name": "土元素",
       "name_en": "Earth Elemental",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/土元素.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E5%9C%9F%E5%85%83%E7%B4%A0.htm",
       "source_block": 1
@@ -3778,6 +4121,7 @@
       "index": "draft-horse",
       "name": "驮用马",
       "name_en": "Draft Horse",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 4
@@ -3786,6 +4130,7 @@
       "index": "death-dog",
       "name": "亡命恶犬",
       "name_en": "Death Dog",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/亡命恶犬.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E4%BA%A1%E5%91%BD%E6%81%B6%E7%8A%AC.htm",
       "source_block": 1
@@ -3794,6 +4139,7 @@
       "index": "death-tyrant",
       "name": "亡眼暴君",
       "name_en": "Death Tyrant",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/亡眼暴君.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E4%BA%A1%E7%9C%BC%E6%9A%B4%E5%90%9B.htm",
       "source_block": 1
@@ -3802,6 +4148,7 @@
       "index": "pseudodragon",
       "name": "伪龙",
       "name_en": "Pseudodragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/伪龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E4%BC%AA%E9%BE%99.htm",
       "source_block": 1
@@ -3810,6 +4157,7 @@
       "index": "barbed-devil",
       "name": "猬魔",
       "name_en": "Barbed Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/猬魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E7%8C%AC%E9%AD%94.htm",
       "source_block": 1
@@ -3818,6 +4166,7 @@
       "index": "stirge",
       "name": "蚊蝠",
       "name_en": "Stirge",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 1
@@ -3826,6 +4175,7 @@
       "index": "lich",
       "name": "巫妖",
       "name_en": "Lich",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/巫妖.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%B7%AB%E5%A6%96.htm",
       "source_block": 1
@@ -3834,6 +4184,7 @@
       "index": "pteranodon",
       "name": "无齿翼龙",
       "name_en": "Pteranodon",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/无齿翼龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E6%97%A0%E9%BD%BF%E7%BF%BC%E9%BE%99.htm",
       "source_block": 1
@@ -3842,6 +4193,7 @@
       "index": "vampire",
       "name": "吸血鬼",
       "name_en": "Vampire",
+      "catalog_category": "模板生物",
       "source_path": "怪物图鉴/模板生物/吸血鬼.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A8%A1%E6%9D%BF%E7%94%9F%E7%89%A9/%E5%90%B8%E8%A1%80%E9%AC%BC.html",
       "source_block": 1
@@ -3850,6 +4202,7 @@
       "index": "rhinoceros",
       "name": "犀牛",
       "name_en": "Rhinoceros",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 6
@@ -3858,6 +4211,7 @@
       "index": "lizard",
       "name": "蜥蜴",
       "name_en": "Lizard",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 14
@@ -3866,6 +4220,7 @@
       "index": "lizardfolk",
       "name": "蜥蜴人",
       "name_en": "Lizardfolk",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/蜥蜴人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%9C%A5%E8%9C%B4%E4%BA%BA.html",
       "source_block": 1
@@ -3874,6 +4229,7 @@
       "index": "lizardfolk-shaman",
       "name": "蜥蜴人萨满",
       "name_en": "Lizardfolk Shaman",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/蜥蜴人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%9C%A5%E8%9C%B4%E4%BA%BA.html",
       "source_block": 2
@@ -3882,6 +4238,7 @@
       "index": "lizard-queen",
       "name": "蜥蜴之王Lizard King蜥蜴女王",
       "name_en": "Lizard Queen",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/蜥蜴人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E8%9C%A5%E8%9C%B4%E4%BA%BA.html",
       "source_block": 3
@@ -3890,6 +4247,7 @@
       "index": "phase-spider",
       "name": "相位蜘蛛",
       "name_en": "Phase Spider",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/相位蜘蛛.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%9B%B8%E4%BD%8D%E8%9C%98%E8%9B%9B.htm",
       "source_block": 1
@@ -3898,6 +4256,7 @@
       "index": "elephant",
       "name": "象",
       "name_en": "Elephant",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR4.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR4.html",
       "source_block": 1
@@ -3906,6 +4265,7 @@
       "index": "owlbear",
       "name": "枭熊",
       "name_en": "Owlbear",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/枭熊.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%9E%AD%E7%86%8A.htm",
       "source_block": 1
@@ -3914,6 +4274,7 @@
       "index": "quasit",
       "name": "小恶魔",
       "name_en": "Quasit",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/夸塞魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%A4%B8%E5%A1%9E%E9%AD%94.htm",
       "source_block": 1
@@ -3922,6 +4283,7 @@
       "index": "imp",
       "name": "小魔鬼",
       "name_en": "Imp",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/小魔鬼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B0%8F%E9%AD%94%E9%AC%BC.htm",
       "source_block": 1
@@ -3930,6 +4292,7 @@
       "index": "sprite",
       "name": "小仙灵",
       "name_en": "Sprite",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/小妖精.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E5%B0%8F%E5%A6%96%E7%B2%BE.htm",
       "source_block": 1
@@ -3938,6 +4301,7 @@
       "index": "scorpion",
       "name": "蝎子",
       "name_en": "Scorpion",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 20
@@ -3946,6 +4310,7 @@
       "index": "cult-fanatic",
       "name": "邪教狂信者",
       "name_en": "Cult Fanatic",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/邪教狂信者.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E9%82%AA%E6%95%99%E7%8B%82%E4%BF%A1%E8%80%85.htm",
       "source_block": 1
@@ -3954,6 +4319,7 @@
       "index": "cultist",
       "name": "邪教徒",
       "name_en": "Cultist",
+      "catalog_category": "非玩家角色",
       "source_path": "怪物图鉴/非玩家角色/邪教徒.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%9D%9E%E7%8E%A9%E5%AE%B6%E8%A7%92%E8%89%B2/%E9%82%AA%E6%95%99%E5%BE%92.htm",
       "source_block": 1
@@ -3962,6 +4328,7 @@
       "index": "wraith",
       "name": "邪灵",
       "name_en": "Wraith",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/缚灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E7%BC%9A%E7%81%B5.htm",
       "source_block": 1
@@ -3970,6 +4337,7 @@
       "index": "crab",
       "name": "蟹",
       "name_en": "Crab",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 5
@@ -3978,6 +4346,7 @@
       "index": "planetar",
       "name": "星天神使",
       "name_en": "Planetar",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/异界神侍.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E5%BC%82%E7%95%8C%E7%A5%9E%E4%BE%8D.htm",
       "source_block": 1
@@ -3986,6 +4355,7 @@
       "index": "bugbear",
       "name": "熊地精",
       "name_en": "Bugbear",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/熊地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%86%8A%E5%9C%B0%E7%B2%BE.html",
       "source_block": 1
@@ -3994,6 +4364,7 @@
       "index": "bugbear-chief",
       "name": "熊地精酋长",
       "name_en": "Bugbear Chief",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/熊地精.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%86%8A%E5%9C%B0%E7%B2%BE.html",
       "source_block": 2
@@ -4002,6 +4373,7 @@
       "index": "werebear",
       "name": "熊人",
       "name_en": "Werebear",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/熊人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%86%8A%E4%BA%BA.htm",
       "source_block": 1
@@ -4010,6 +4382,7 @@
       "index": "rust-monster",
       "name": "锈蚀怪",
       "name_en": "Rust Monster",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/锈蚀怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%94%88%E8%9A%80%E6%80%AA.htm",
       "source_block": 1
@@ -4018,6 +4391,7 @@
       "index": "bearded-devil",
       "name": "须魔",
       "name_en": "Bearded Devil",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/须魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E9%A1%BB%E9%AD%94.htm",
       "source_block": 1
@@ -4026,6 +4400,7 @@
       "index": "grick",
       "name": "穴居攫怪",
       "name_en": "Grick",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/穴居攫怪.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%A9%B4%E5%B1%85%E6%94%AB%E6%80%AA.html",
       "source_block": 1
@@ -4034,6 +4409,7 @@
       "index": "grick-alpha",
       "name": "穴居攫怪头领",
       "name_en": "Grick Alpha",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/穴居攫怪.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%A9%B4%E5%B1%85%E6%94%AB%E6%80%AA.html",
       "source_block": 2
@@ -4042,6 +4418,7 @@
       "index": "troglodyte",
       "name": "穴蜥人",
       "name_en": "Troglodyte",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/穴蜥人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%A9%B4%E8%9C%A5%E4%BA%BA.htm",
       "source_block": 1
@@ -4050,6 +4427,7 @@
       "index": "yeti",
       "name": "雪怪",
       "name_en": "Yeti",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/雪人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E9%9B%AA%E4%BA%BA.html",
       "source_block": 1
@@ -4058,6 +4436,7 @@
       "index": "flesh-golem",
       "name": "血肉魔像",
       "name_en": "Flesh Golem",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/肉身魔像.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E8%82%89%E8%BA%AB%E9%AD%94%E5%83%8F.htm",
       "source_block": 1
@@ -4066,6 +4445,7 @@
       "index": "blood-hawk",
       "name": "血鹰",
       "name_en": "Blood Hawk",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_8.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_8.htm",
       "source_block": 2
@@ -4074,6 +4454,7 @@
       "index": "hunter-shark",
       "name": "寻猎鲨",
       "name_en": "Hunter Shark",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR2.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR2.html",
       "source_block": 4
@@ -4082,6 +4463,7 @@
       "index": "myconid-adult",
       "name": "蕈人成体",
       "name_en": "Myconid Adult",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/蕈人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E8%95%88%E4%BA%BA.html",
       "source_block": 2
@@ -4090,6 +4472,7 @@
       "index": "myconid-sovereign",
       "name": "蕈人王",
       "name_en": "Myconid Sovereign",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/蕈人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E8%95%88%E4%BA%BA.html",
       "source_block": 3
@@ -4098,6 +4481,7 @@
       "index": "myconid-sprout",
       "name": "蕈人幼体",
       "name_en": "Myconid Sprout",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/蕈人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E8%95%88%E4%BA%BA.html",
       "source_block": 1
@@ -4106,6 +4490,7 @@
       "index": "smoke-mephit",
       "name": "烟魔蝠",
       "name_en": "Smoke Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/烟魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E7%83%9F%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -4114,6 +4499,7 @@
       "index": "beholder",
       "name": "眼魔",
       "name_en": "Beholder",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/眼魔.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E7%9C%BC%E9%AD%94.html",
       "source_block": 1
@@ -4122,6 +4508,7 @@
       "index": "beholder-zombie",
       "name": "眼魔丧尸",
       "name_en": "Beholder Zombie",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/僵尸.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%83%B5%E5%B0%B8.html",
       "source_block": 3
@@ -4130,6 +4517,7 @@
       "index": "ghast",
       "name": "妖鬼",
       "name_en": "Ghast",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/食尸鬼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%A3%9F%E5%B0%B8%E9%AC%BC.htm",
       "source_block": 2
@@ -4138,6 +4526,7 @@
       "index": "faerie-dragon",
       "name": "妖精龙",
       "name_en": "Faerie Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/妖精龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E5%A6%96%E7%B2%BE%E9%BE%99.htm",
       "source_block": 1
@@ -4146,6 +4535,7 @@
       "index": "boar",
       "name": "野猪",
       "name_en": "Boar",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1_4.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1_4.htm",
       "source_block": 2
@@ -4154,6 +4544,7 @@
       "index": "wereboar",
       "name": "野猪人",
       "name_en": "Wereboar",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/野猪人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E9%87%8E%E7%8C%AA%E4%BA%BA.htm",
       "source_block": 1
@@ -4162,6 +4553,7 @@
       "index": "night-hag",
       "name": "夜鬼婆",
       "name_en": "Night Hag",
+      "catalog_category": "精类",
       "source_path": "怪物图鉴/精类/夜鬼婆（邪魔）.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B2%BE%E7%B1%BB/%E5%A4%9C%E9%AC%BC%E5%A9%86%EF%BC%88%E9%82%AA%E9%AD%94%EF%BC%89.htm",
       "source_block": 1
@@ -4170,6 +4562,7 @@
       "index": "ettercap",
       "name": "伊特怪",
       "name_en": "Ettercap",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/伊特怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E4%BC%8A%E7%89%B9%E6%80%AA.htm",
       "source_block": 1
@@ -4178,6 +4571,7 @@
       "index": "displacer-beast",
       "name": "移位兽",
       "name_en": "Displacer Beast",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/移位兽.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%A7%BB%E4%BD%8D%E5%85%BD.htm",
       "source_block": 1
@@ -4186,6 +4580,7 @@
       "index": "allosaurus",
       "name": "异特龙",
       "name_en": "Allosaurus",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/异特龙.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/%E5%BC%82%E7%89%B9%E9%BE%99.htm",
       "source_block": 1
@@ -4194,6 +4589,7 @@
       "index": "gibbering-mouther",
       "name": "呓语之口",
       "name_en": "Gibbering Mouther",
+      "catalog_category": "异怪",
       "source_path": "怪物图鉴/异怪/惧噬体.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%BC%82%E6%80%AA/%E6%83%A7%E5%99%AC%E4%BD%93.htm",
       "source_block": 1
@@ -4202,6 +4598,7 @@
       "index": "spirit-naga",
       "name": "阴魂纳迦",
       "name_en": "Spirit Naga",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/精魂纳迦.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%B2%BE%E9%AD%82%E7%BA%B3%E8%BF%A6.htm",
       "source_block": 1
@@ -4210,6 +4607,7 @@
       "index": "silver-dragon-wyrmling",
       "name": "银龙雏龙",
       "name_en": "Silver Dragon Wyrmling",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/银龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%93%B6%E9%BE%99.html",
       "source_block": 1
@@ -4218,6 +4616,7 @@
       "index": "invisible-stalker",
       "name": "隐形追猎者",
       "name_en": "Invisible Stalker",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/隐形追猎者.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E9%9A%90%E5%BD%A2%E8%BF%BD%E7%8C%8E%E8%80%85.htm",
       "source_block": 1
@@ -4226,6 +4625,7 @@
       "index": "hawk",
       "name": "鹰",
       "name_en": "Hawk",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 11
@@ -4234,6 +4634,7 @@
       "index": "ghost",
       "name": "幽魂",
       "name_en": "Ghost",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/幽魂.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%B9%BD%E9%AD%82.htm",
       "source_block": 1
@@ -4242,6 +4643,7 @@
       "index": "grimlock",
       "name": "幽邃盲族",
       "name_en": "Grimlock",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/石盲蛮族.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E7%9F%B3%E7%9B%B2%E8%9B%AE%E6%97%8F.htm",
       "source_block": 1
@@ -4250,6 +4652,7 @@
       "index": "quaggoth",
       "name": "幽邃熊怪",
       "name_en": "Quaggoth",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/泽地熊人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E6%B3%BD%E5%9C%B0%E7%86%8A%E4%BA%BA.htm",
       "source_block": 1
@@ -4258,6 +4661,7 @@
       "index": "quaggoth-spore-servant",
       "name": "幽邃熊怪孢子奴仆",
       "name_en": "Quaggoth Spore Servant",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/蕈人.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E8%95%88%E4%BA%BA.html",
       "source_block": 4
@@ -4266,6 +4670,7 @@
       "index": "shadow",
       "name": "幽影",
       "name_en": "Shadow",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/幽影.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E5%B9%BD%E5%BD%B1.htm",
       "source_block": 1
@@ -4274,6 +4679,7 @@
       "index": "shadow-demon",
       "name": "幽影恶魔",
       "name_en": "Shadow Demon",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/幽影恶魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B9%BD%E5%BD%B1%E6%81%B6%E9%AD%94.htm",
       "source_block": 1
@@ -4282,6 +4688,7 @@
       "index": "weasel",
       "name": "鼬",
       "name_en": "Weasel",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 24
@@ -4290,6 +4697,7 @@
       "index": "couatl",
       "name": "羽蛇",
       "name_en": "Couatl",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/羽蛇.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E7%BE%BD%E8%9B%87.html",
       "source_block": 1
@@ -4298,6 +4706,7 @@
       "index": "manes",
       "name": "原魔",
       "name_en": "Manes",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/原魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%8E%9F%E9%AD%94.htm",
       "source_block": 1
@@ -4306,6 +4715,7 @@
       "index": "ape",
       "name": "猿",
       "name_en": "Ape",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 1
@@ -4314,6 +4724,7 @@
       "index": "ancient-white-dragon",
       "name": "远古白龙",
       "name_en": "Ancient White Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/白龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%99%BD%E9%BE%99.html",
       "source_block": 4
@@ -4322,6 +4733,7 @@
       "index": "ancient-copper-dragon",
       "name": "远古赤铜龙",
       "name_en": "Ancient Copper Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/赤铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%B5%A4%E9%93%9C%E9%BE%99.html",
       "source_block": 4
@@ -4330,6 +4742,7 @@
       "index": "ancient-black-dragon",
       "name": "远古黑龙",
       "name_en": "Ancient Black Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黑龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%91%E9%BE%99.html",
       "source_block": 4
@@ -4338,6 +4751,7 @@
       "index": "ancient-red-dragon",
       "name": "远古红龙",
       "name_en": "Ancient Red Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/红龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BA%A2%E9%BE%99.html",
       "source_block": 4
@@ -4346,6 +4760,7 @@
       "index": "ancient-brass-dragon",
       "name": "远古黄铜龙",
       "name_en": "Ancient Brass Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/黄铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%BB%84%E9%93%9C%E9%BE%99.html",
       "source_block": 4
@@ -4354,6 +4769,7 @@
       "index": "ancient-gold-dragon",
       "name": "远古金龙",
       "name_en": "Ancient Gold Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/金龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%87%91%E9%BE%99.html",
       "source_block": 4
@@ -4362,6 +4778,7 @@
       "index": "ancient-blue-dragon",
       "name": "远古蓝龙",
       "name_en": "Ancient Blue Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/蓝龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E8%93%9D%E9%BE%99.html",
       "source_block": 4
@@ -4370,6 +4787,7 @@
       "index": "ancient-green-dragon",
       "name": "远古绿龙",
       "name_en": "Ancient Green Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/绿龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E7%BB%BF%E9%BE%99.html",
       "source_block": 4
@@ -4378,6 +4796,7 @@
       "index": "ancient-bronze-dragon",
       "name": "远古青铜龙",
       "name_en": "Ancient Bronze Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/青铜龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%9D%92%E9%93%9C%E9%BE%99.html",
       "source_block": 4
@@ -4386,6 +4805,7 @@
       "index": "ancient-silver-dragon",
       "name": "远古银龙",
       "name_en": "Ancient Silver Dragon",
+      "catalog_category": "龙类",
       "source_path": "怪物图鉴/龙类/银龙.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%BE%99%E7%B1%BB/%E9%93%B6%E9%BE%99.html",
       "source_block": 4
@@ -4394,6 +4814,7 @@
       "index": "cloud-giant",
       "name": "云巨人",
       "name_en": "Cloud Giant",
+      "catalog_category": "巨人",
       "source_path": "怪物图鉴/巨人/云巨人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%B7%A8%E4%BA%BA/%E4%BA%91%E5%B7%A8%E4%BA%BA.htm",
       "source_block": 1
@@ -4402,6 +4823,7 @@
       "index": "yuan-ti-abomination",
       "name": "憎恶蛇人",
       "name_en": "Yuan-ti Abomination",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/憎恶蛇人.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E6%86%8E%E6%81%B6%E8%9B%87%E4%BA%BA.htm",
       "source_block": 1
@@ -4410,6 +4832,7 @@
       "index": "clay-golem",
       "name": "粘土魔像",
       "name_en": "Clay Golem",
+      "catalog_category": "构装生物",
       "source_path": "怪物图鉴/构装生物/粘土魔像.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%9E%84%E8%A3%85%E7%94%9F%E7%89%A9/%E7%B2%98%E5%9C%9F%E9%AD%94%E5%83%8F.htm",
       "source_block": 1
@@ -4418,6 +4841,7 @@
       "index": "warhorse",
       "name": "战马",
       "name_en": "Warhorse",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.5.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.5.html",
       "source_block": 8
@@ -4426,6 +4850,7 @@
       "index": "warhorse-skeleton",
       "name": "战马骷髅",
       "name_en": "Warhorse Skeleton",
+      "catalog_category": "不死生物",
       "source_path": "怪物图鉴/不死生物/骷髅.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E4%B8%8D%E6%AD%BB%E7%94%9F%E7%89%A9/%E9%AA%B7%E9%AB%85.htm",
       "source_block": 3
@@ -4434,6 +4859,7 @@
       "index": "octopus",
       "name": "章鱼",
       "name_en": "Octopus",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 15
@@ -4442,6 +4868,7 @@
       "index": "ochre-jelly",
       "name": "赭冻怪",
       "name_en": "Ochre Jelly",
+      "catalog_category": "泥怪",
       "source_path": "怪物图鉴/泥怪/赭冻怪.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%B3%A5%E6%80%AA/%E8%B5%AD%E5%86%BB%E6%80%AA.htm",
       "source_block": 1
@@ -4450,6 +4877,7 @@
       "index": "nycaloth",
       "name": "征伐罗斯魔",
       "name_en": "Nycaloth",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/尼卡罗斯魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E5%B0%BC%E5%8D%A1%E7%BD%97%E6%96%AF%E9%AD%94.htm",
       "source_block": 1
@@ -4458,6 +4886,7 @@
       "index": "steam-mephit",
       "name": "蒸汽魔蝠",
       "name_en": "Steam Mephit",
+      "catalog_category": "元素生物",
       "source_path": "怪物图鉴/元素生物/蒸汽魔蝠.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%85%83%E7%B4%A0%E7%94%9F%E7%89%A9/%E8%92%B8%E6%B1%BD%E9%AD%94%E8%9D%A0.htm",
       "source_block": 1
@@ -4466,6 +4895,7 @@
       "index": "spider",
       "name": "蜘蛛",
       "name_en": "Spider",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR0.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR0.html",
       "source_block": 22
@@ -4474,6 +4904,7 @@
       "index": "empyrean",
       "name": "至高天",
       "name_en": "Empyrean",
+      "catalog_category": "天界生物",
       "source_path": "怪物图鉴/天界生物/至高天.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E5%A4%A9%E7%95%8C%E7%94%9F%E7%89%A9/%E8%87%B3%E9%AB%98%E5%A4%A9.htm",
       "source_block": 1
@@ -4482,6 +4913,7 @@
       "index": "drider",
       "name": "蛛化卓尔",
       "name_en": "Drider",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/蛛化精灵.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E8%9B%9B%E5%8C%96%E7%B2%BE%E7%81%B5.htm",
       "source_block": 1
@@ -4490,6 +4922,7 @@
       "index": "drow",
       "name": "卓尔",
       "name_en": "Drow",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/卓尔.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%8D%93%E5%B0%94.html",
       "source_block": 1
@@ -4498,6 +4931,7 @@
       "index": "drow-elite-warrior",
       "name": "卓尔精英武者",
       "name_en": "Drow Elite Warrior",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/卓尔精英武者.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%8D%93%E5%B0%94%E7%B2%BE%E8%8B%B1%E6%AD%A6%E8%80%85.htm",
       "source_block": 1
@@ -4506,6 +4940,7 @@
       "index": "drow-priestess-of-lolth",
       "name": "卓尔罗丝女祭司",
       "name_en": "Drow Priestess of Lolth",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/卓尔罗丝女祭司.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%8D%93%E5%B0%94%E7%BD%97%E4%B8%9D%E5%A5%B3%E7%A5%AD%E5%8F%B8.htm",
       "source_block": 1
@@ -4514,6 +4949,7 @@
       "index": "drow-mage",
       "name": "卓尔魔法师",
       "name_en": "Drow Mage",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/卓尔魔法师.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%8D%93%E5%B0%94%E9%AD%94%E6%B3%95%E5%B8%88.htm",
       "source_block": 1
@@ -4522,6 +4958,7 @@
       "index": "purple-worm",
       "name": "紫虫",
       "name_en": "Purple Worm",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/紫虫.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E7%B4%AB%E8%99%AB.htm",
       "source_block": 1
@@ -4530,6 +4967,7 @@
       "index": "violet-fungus",
       "name": "紫腐菌",
       "name_en": "Violet Fungus",
+      "catalog_category": "植物",
       "source_path": "怪物图鉴/植物/紫蕈.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%A4%8D%E7%89%A9/%E7%B4%AB%E8%95%88.htm",
       "source_block": 1
@@ -4538,6 +4976,7 @@
       "index": "brown-bear",
       "name": "棕熊",
       "name_en": "Brown Bear",
+      "catalog_category": "野兽",
       "source_path": "怪物图鉴/野兽/CR1.html",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%87%8E%E5%85%BD/CR1.html",
       "source_block": 1
@@ -4546,6 +4985,7 @@
       "index": "erinyes",
       "name": "罪魔",
       "name_en": "Erinyes",
+      "catalog_category": "邪魔",
       "source_path": "怪物图鉴/邪魔/欲魔.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E9%82%AA%E9%AD%94/%E6%AC%B2%E9%AD%94.htm",
       "source_block": 1
@@ -4554,6 +4994,7 @@
       "index": "worg",
       "name": "座狼",
       "name_en": "Worg",
+      "catalog_category": "怪兽",
       "source_path": "怪物图鉴/怪兽/座狼.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E6%80%AA%E5%85%BD/%E5%BA%A7%E7%8B%BC.htm",
       "source_block": 1
@@ -4562,6 +5003,7 @@
       "index": "svirfneblin",
       "name": "Gnome（斯涅布力",
       "name_en": "Svirfneblin）",
+      "catalog_category": "类人生物",
       "source_path": "怪物图鉴/类人生物/地底侏儒.htm",
       "source_url": "https://github.com/DND5eChm/DND5e_chm/blob/190ba73862e65b1b7c293289beb2ef915c1803ff/%E6%80%AA%E7%89%A9%E5%9B%BE%E9%89%B4/%E7%B1%BB%E4%BA%BA%E7%94%9F%E7%89%A9/%E5%9C%B0%E5%BA%95%E4%BE%8F%E5%84%92.htm",
       "source_block": 1

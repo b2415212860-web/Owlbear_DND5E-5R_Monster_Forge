@@ -11,7 +11,7 @@ export async function GET(request: Request) {
   const requestedEdition = new URL(request.url).searchParams.get("edition");
   const ruleset: RulesEdition = requestedEdition === "5e" ? "5e" : "5r";
   const catalog = catalogs[ruleset];
-  const results: MonsterListEntry[] = catalog.monsters.map(({ index, name, name_en, url }) => ({ index, name, name_en, url, ruleset }));
+  const results: MonsterListEntry[] = catalog.monsters.map(({ index, name, name_en, url, catalog_category }) => ({ index, name, name_en, url, catalog_category, ruleset }));
   return Response.json(
     { count: results.length, ruleset, edition: catalog.edition, source: catalog.source, locale: "zh-CN", results },
     { headers: { "Cache-Control": "public, max-age=3600, s-maxage=86400" } },

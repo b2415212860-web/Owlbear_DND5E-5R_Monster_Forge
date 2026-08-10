@@ -50,7 +50,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "edition": "2024 / 5R",
@@ -109,7 +110,8 @@
         "name_en": "Darkness Aura (1/Day)",
         "desc": "魔法黑暗充满以暗幕魔为源点的15尺发散区域。暗幕魔维持专注期间，该效应持续存在，至多10分钟。黑暗视觉无法看穿该区域，任何光照也无法照亮它。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "mastiff",
@@ -162,7 +164,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+3，触及5尺。命中：4（1d6+1）穿刺伤害。若目标生物体型不超过中型，则其还会倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "minotaur-of-baphomet",
@@ -220,7 +223,8 @@
         "name_en": "Gore（充能5~6）",
         "desc": "近战攻击检定：+6，触及5尺。命中：18（4d6+4）穿刺伤害。若牛头人在此次攻击前立即向着目标直线移动了10+尺，且目标生物体型不超过大型，则目标额外受到10（3d6）穿刺伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "tyrannosaurus-rex",
@@ -284,7 +288,8 @@
         "name_en": "Tail",
         "desc": "近战攻击检定：+10，触及15尺。命中：25（4d8+7）钝击伤害，且若目标生物体型不超过巨型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "white-dragon-wyrmling",
@@ -360,7 +365,8 @@
         "name_en": "Cold Breath（充能5~6）",
         "desc": "体质豁免检定：DC12，15尺锥状区域内的每名生物。失败：22（5d8）寒冷伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "polar-bear",
@@ -421,7 +427,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+7，触及5尺。命中：9（1d8+5）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "remorhaz",
@@ -492,7 +499,8 @@
         "name_en": "Swallow",
         "desc": "敏捷豁免检定：DC19，单一不超过大型的正受擒于百足魔兽的生物（百足魔兽同时能吞咽的生物数上限为二）。失败：百足魔兽吞咽目标，并结束其受擒状态。被吞咽期间，目标陷入目盲和束缚状态，对百足魔兽体外的攻击或其他效应而言处于全身掩护，并在百足魔兽的回合开始时受到10（3d6）强酸伤害加10（3d6）火焰伤害。\n\n若一回合内一名百足魔兽体内的一名生物对百足魔兽造成至少30伤害，百足魔兽在该回合结束时必须成功通过一次DC15的体质豁免，否则将吐出所有生物，使其落在百足魔兽5尺内的空间并陷入倒地状态。若百足魔兽死亡，被吞咽生物不再被束缚并可以使用15尺移动力逃离尸体，以倒地状态脱离尸体。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "half-dragon",
@@ -571,7 +579,8 @@
         "name_en": "Leap",
         "desc": "半龙消耗10尺移动力跳跃至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "satyr",
@@ -636,7 +645,8 @@
         "name_en": "Mockery",
         "desc": "感知豁免检定：DC12，单一90尺内半羊人可见的生物。\n失败：5（1d6+2）心灵伤害。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "panther",
@@ -697,7 +707,8 @@
         "name_en": "Nimble Escape",
         "desc": "豹执行撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "bat",
@@ -751,7 +762,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "swarm-of-bats",
@@ -825,7 +837,8 @@
         "name_en": "Bites",
         "desc": "近战攻击检定：+4，触及5尺。\n命中：5（2d4）穿刺伤害，若蝙蝠集群处于浴血则改为2（1d4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "doppelganger",
@@ -902,7 +915,8 @@
         "name_en": "Shape-Shift",
         "desc": "变形怪变形为小型或中型的类人生物，或变回其真实形态。除体型以外，其各形态下游戏数据均相同。变形怪着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "ice-devil",
@@ -992,7 +1006,8 @@
         "name_en": "Ice Wall（充能6）",
         "desc": "冰魔施展冰墙术Ice\nWall（八环版本），无需法术成分并使用智力作为施法属性（法术豁免DC17）。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "ice-mephit",
@@ -1077,7 +1092,8 @@
         "name_en": "Frost Breath（充能6）",
         "desc": "敏捷豁免检定：DC10，15尺锥状区域内的每名生物。失败：7（3d4）寒冷伤害。成功：半伤"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "dust-mephit",
@@ -1161,7 +1177,8 @@
         "name_en": "Sleep（1/日）",
         "desc": "魔蝠施展法术睡眠术Sleep，无需法术成分并使用魅力作为施法属性（法术豁免DC10）。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "adult-white-dragon",
@@ -1263,7 +1280,8 @@
         "name_en": "Pounce",
         "desc": "白龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-copper-dragon",
@@ -1373,7 +1391,8 @@
         "name_en": "Pounce",
         "desc": "赤铜龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-black-dragon",
@@ -1483,7 +1502,8 @@
         "name_en": "Pounce",
         "desc": "黑龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-red-dragon",
@@ -1584,7 +1604,8 @@
         "name_en": "Pounce",
         "desc": "红龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-brass-dragon",
@@ -1694,7 +1715,8 @@
         "name_en": "Scorching Sands",
         "desc": "敏捷豁免检定：DC16，单一120尺内黄铜龙可见的生物。失败：27（6d8）火焰伤害，且目标速度减半直至其下个回合结束。失败或成功：黄铜龙直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-gold-dragon",
@@ -1812,7 +1834,8 @@
     ],
     "corrected_fields": [
       "hit_dice"
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-blue-dragon",
@@ -1917,7 +1940,8 @@
         "name_en": "Tail Swipe",
         "desc": "蓝龙发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-green-dragon",
@@ -2028,7 +2052,8 @@
         "name_en": "Pounce",
         "desc": "绿龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-bronze-dragon",
@@ -2143,7 +2168,8 @@
         "name_en": "Thunderclap",
         "desc": "体质豁免检定：DC17，以120尺内青铜龙可见一点为中心，半径20尺球状区域内的每个生物。失败：10（3d6）雷鸣伤害，且目标陷入耳聋状态直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "adult-silver-dragon",
@@ -2252,7 +2278,8 @@
         "name_en": "Pounce",
         "desc": "银龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "riding-horse",
@@ -2305,7 +2332,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+5，触及5尺。命中：7（1d8+3）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "scout",
@@ -2368,7 +2396,8 @@
         "name_en": "Longbow",
         "desc": "远程攻击检定：+4，射程150/600尺。命中：6（1d8+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "elk",
@@ -2421,7 +2450,8 @@
         "name_en": "Gore",
         "desc": "近战攻击检定：+5，触及5尺。命中：6（1d6+3）钝击伤害。若赤鹿在此次攻击前立即向着该目标直线移动了20+尺，且目标生物体型不超过大型，则目标额外受到3（1d6）钝击伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "copper-dragon-wyrmling",
@@ -2489,7 +2519,8 @@
         "name_en": "Slowing Breath",
         "desc": "体质豁免检定：DC11，15尺锥状区域内的每名生物。失败：直至目标的下个回合结束，目标速度减半，无法执行反应，且目标在其回合中仅可以执行一个动作或一个附赠动作，但不能同时执行二者。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "solar",
@@ -2628,7 +2659,8 @@
         "name_en": "Radiant Teleport",
         "desc": "炽天神使传送至多60尺至一处其可见的未占据空间。敏捷豁免检定：DC25，源自炽天神使目标空间10尺光环区域内的每名生物。失败：11（2d10）光耀伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "vampire-spawn",
@@ -2732,7 +2764,8 @@
         "name_en": "Deathless Agility",
         "desc": "吸血鬼执行疾走或撤离动作。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "assassin",
@@ -2811,7 +2844,8 @@
         "name_en": "Cunning Action",
         "desc": "刺客执行疾走、撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "manticore",
@@ -2875,7 +2909,8 @@
         "name_en": "Tail Spike",
         "desc": "远程攻击检定：+5，射程100/200尺。\n命中：7（1d8+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "tough",
@@ -2940,7 +2975,8 @@
         "name_en": "Heavy Crossbow",
         "desc": "远程攻击检定：+3，射程100/400尺。命中：6（1d10+1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "tough-boss",
@@ -3010,7 +3046,8 @@
         "name_en": "Heavy Crossbow",
         "desc": "远程攻击：+4，射程100/400尺。命中：13（2d10+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "hobgoblin-warrior",
@@ -3076,7 +3113,8 @@
         "name_en": "Longbow",
         "desc": "远程攻击检定：+3，射程150/600尺。\n命中：5（1d8+1）穿刺伤害外加7（3d4）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "hobgoblin-captain",
@@ -3147,7 +3185,8 @@
         "name_en": "Longbow",
         "desc": "远程攻击检定：+4，射程150/600尺。\n命中：6（1d8+2）穿刺伤害外加5（2d4）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "archmage",
@@ -3247,7 +3286,8 @@
         "name_en": "Protective Magic（3/日）",
         "desc": "大法师施展法术反制Counterspell或护盾术Shield（触发条件见这些法术），使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "swarm-of-rats",
@@ -3321,7 +3361,8 @@
         "name_en": "Bites",
         "desc": "近战攻击检定：+2，触及5尺。\n命中：5（2d4）穿刺伤害，若大鼠集群处于浴血则改为2（1d4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "druid",
@@ -3397,7 +3438,8 @@
         "name": "每项1/日：",
         "desc": "动物信使Animal Messenger，大步奔行Longstrider，月华之光Moonbeam"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "goblin-boss",
@@ -3475,7 +3517,8 @@
         "name_en": "Redirect Attack",
         "desc": "触发：一名地精可见的生物对其进行攻击检定。响应：地精选择一名位于其5尺内的小型或中型盟友。地精和该盟友交换位置，并且盟友成为这次攻击的目标。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "goblin-minion",
@@ -3536,7 +3579,8 @@
         "name_en": "Nimble Escape",
         "desc": "地精执行撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "goblin-warrior",
@@ -3602,7 +3646,8 @@
         "name_en": "Nimble Escape",
         "desc": "地精执行撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "hell-hound",
@@ -3674,7 +3719,8 @@
         "name_en": "Fire Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC12，15尺锥状区域内的每名生物。失败：17（5d6）火焰伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "aboleth",
@@ -3786,7 +3832,8 @@
         "name_en": "Psychic Drain",
         "desc": "若至少有一名生物魅惑或受擒于底栖魔鱼，其使用吞噬记忆并恢复5（1d10）生命值。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "archelon",
@@ -3853,7 +3900,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+6，触及5尺。命中：14（3d6+4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "winter-wolf",
@@ -3920,7 +3968,8 @@
         "name_en": "Cold Breath （充能 5~6）",
         "desc": "体质豁免检定：DC12，15尺锥状区域内的每名生物。\n失败：18（4d8）寒冷伤害。\n成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "cloaker",
@@ -4005,7 +4054,8 @@
         "name_en": "Phantasms（短休或长休后充能）",
         "desc": "斗篷怪施展法术镜影术Mirror\nImage\n，无需法术成分并使用感知作为施法属性。若斗篷怪在明亮光照中开始或结束其回合，法术会提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "venomous-snake",
@@ -4059,7 +4109,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）穿刺伤害外加3（1d6）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "swarm-of-venomous-snakes",
@@ -4133,7 +4184,8 @@
         "name_en": "Bites",
         "desc": "近战攻击检定：+6，触及5尺。命中：8（1d8+4）穿刺伤害——若毒蛇集群处于浴血则改为6（1d4+4）穿刺伤害——外加10（3d6）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "unicorn",
@@ -4255,7 +4307,8 @@
         "name_en": "Shimmering Shield",
         "desc": "独角兽以自身或单一其60尺内其可见的生物为目标。目标获得10（3d6）临时生命值，且其AC提升2直至独角兽的下个回合结束。独角兽直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "raven",
@@ -4316,7 +4369,8 @@
         "name_en": "Beak",
         "desc": "近战攻击检定：+4，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "swarm-of-ravens",
@@ -4395,7 +4449,8 @@
         "name_en": "Cacophony（充能6）",
         "desc": "感知豁免检定：DC10，单一位于渡鸦集群空间内的生物。\n失败：目标陷入耳聋状态，持续至渡鸦集群下个回合开始。耳聋期间，目标进行的属性检定和攻击检定还会具有劣势。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "shield-guardian",
@@ -4504,7 +4559,8 @@
         "name_en": "Protection",
         "desc": "触发：盾卫的护符携带者在盾卫的5尺内被一次攻击检定命中。响应：携带者的AC获得+5的加值，持续至盾卫的下个回合开始，这包括了对抗触发攻击的AC，并可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "hydra",
@@ -4587,7 +4643,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+8，触及10尺。\n命中：10（1d10+5）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "oni",
@@ -4680,7 +4737,8 @@
         "name_en": "Invisibility",
         "desc": "恶鬼对自身施展隐形术Invisibility，无需法术成分并使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "specter",
@@ -4795,7 +4853,8 @@
         "name_en": "Life Drain",
         "desc": "近战攻击检定：+4，触及5尺。命中：7（2d6）暗蚀伤害。若目标为生物，目标的生命值上限减少等于其受到伤害的数值。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "crocodile",
@@ -4856,7 +4915,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：6（1d8+2）穿刺伤害。若目标生物体型不超过中型，则其还会陷入受擒状态（逃脱DC15）。受擒期间，目标还会陷入束缚状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "wyvern",
@@ -4920,7 +4980,8 @@
         "name_en": "Sting",
         "desc": "近战攻击检定：+7，触及10尺。命中：11（2d6+4）穿刺伤害外加24（7d6）毒素伤害，且目标陷入中毒状态，直至飞龙的下个回合开始。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "flying-snake",
@@ -4982,7 +5043,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：1穿刺伤害外加5（2d4）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "bandit-captain",
@@ -5052,7 +5114,8 @@
         "name_en": "Parry",
         "desc": "触发：匪帮队长在持握武器期间因近战攻击检定被命中。响应：匪帮队长令其对抗那次攻击的AC+2，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "bandit",
@@ -5110,7 +5173,8 @@
         "name_en": "Light Crossbow",
         "desc": "远程攻击检定：+3，射程80/320尺。命中：5（1d8+1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "baboon",
@@ -5171,7 +5235,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+1，触及5尺。命中：1（1d4-1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "storm-giant",
@@ -5258,7 +5323,8 @@
         "name_en": "Spellcasting",
         "desc": "风暴巨人施展以下一道法术，其无需材料成分并使用感知作为施法属性（法术豁免DC18）：\n随意：侦测魔法Detect Magic，光亮术Light\n1/日：操控天气Control Weather"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "axe-beak",
@@ -5311,7 +5377,8 @@
         "name_en": "Beak",
         "desc": "近战攻击检定：+4，触及5尺。命中：6（1d8+2）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "kobold-warrior",
@@ -5379,7 +5446,8 @@
     ],
     "corrected_fields": [
       "hit_dice"
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "bone-devil",
@@ -5466,7 +5534,8 @@
         "name_en": "Infernal Sting",
         "desc": "近战攻击检定：+8，触及10尺。命中：15（2d10+4）穿刺伤害外加18（4d8）毒素伤害，且目标陷入中毒状态，直至骨魔的下个回合开始。中毒期间，目标无法恢复生命值。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "will-o-wisp",
@@ -5597,7 +5666,8 @@
         "name_en": "Vanish",
         "desc": "鬼火及其光照获得隐形状态，持续至其专注终止。隐形状态在鬼火发动攻击或使用摄食生命后立即结束。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "noble",
@@ -5657,7 +5727,8 @@
         "name_en": "Parry",
         "desc": "触发：贵族在持握武器期间因近战攻击检定被命中。响应：贵族令其对抗那次攻击的AC+2，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "pirate",
@@ -5720,7 +5791,8 @@
         "name_en": "Enthralling Panache",
         "desc": "感知豁免：DC12，单一30尺内海盗可见的生物。失败：目标陷入魅惑状态直至海盗的下个回合开始。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "pirate-captain",
@@ -5797,7 +5869,8 @@
         "name_en": "Riposte",
         "desc": "触发：海盗船长在持握武器期间因近战攻击检定被命中。响应：海盗船长令其对抗那次攻击的AC+3，可能令那次攻击改为失手。若那次攻击失手，且触发生物位于船长的触及范围内，则船长对该生物发动一次刺剑攻击。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "sea-hag",
@@ -5878,7 +5951,8 @@
         "name_en": "Illusion Appearance",
         "desc": "鬼婆施展易容术Disguise\nSelf，并使用体质作为施法属性（法术豁免DC13）。该法术的持续时间为24小时。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "seahorse",
@@ -5939,7 +6013,8 @@
         "name_en": "Bubble Dash",
         "desc": "若海马身处水下，其移动至多等于其游泳速度的距离且不会引发借机攻击。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "hippopotamus",
@@ -6005,7 +6080,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+7，触及5尺。命中：16（2d10+5）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "black-pudding",
@@ -6121,7 +6197,8 @@
         "name_en": "Black Pudding",
         "desc": "。每块新的布丁的体型都比原先的布丁小一级，且使用原布丁的先攻行动。原布丁的生命值将平均分配给新的布丁（向下取整）。"
       }
-    ]
+    ],
+    "catalog_category": "泥怪"
   },
   {
     "index": "black-dragon-wyrmling",
@@ -6196,7 +6273,8 @@
         "name_en": "Acid Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC11，15尺长、5尺宽的线状区域内的每名生物。失败：22（5d8）强酸伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "black-bear",
@@ -6256,7 +6334,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+4，触及5尺。命中：5（1d6+2）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "red-dragon-wyrmling",
@@ -6324,7 +6403,8 @@
         "name_en": "Fire Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC13，15尺锥状区域内的每名生物。失败：24（7d6）火焰伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "jackal",
@@ -6377,7 +6457,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+1，触及5尺。命中：1（1d4-1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "tiger",
@@ -6437,7 +6518,8 @@
         "name_en": "Nimble Escape",
         "desc": "虎执行撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "killer-whale",
@@ -6498,7 +6580,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+6，触及5尺。命中：21（5d6+4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "weretiger",
@@ -6584,7 +6667,8 @@
         "name_en": "Shape-Shift",
         "desc": "虎人变形为类人与虎的混合形态（大型），或虎形态（大型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。虎人着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "badger",
@@ -6640,7 +6724,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+2，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "brass-dragon-wyrmling",
@@ -6708,7 +6793,8 @@
         "name_en": "Sleep Breath",
         "desc": "体质豁免检定：DC11，15尺锥状区域内的每名生物。首次失败：目标陷入失能状态，直至其下个回合结束，此时目标重复豁免。再次失败：目标陷入昏迷状态，持续1分钟。目标身上的此效应在其受到伤害或被目标5尺内的另一生物用一个动作摇醒时提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "gray-ooze",
@@ -6787,7 +6873,8 @@
         "name_en": "Pseudopod",
         "desc": "近战攻击检定：+3，触及5尺。命中：10（2d8+1）点强酸伤害。目标着装的非魔法护甲提供的AC将承受-1的减值。若护甲的AC因减值降至10则其被摧毁。对护甲施展修复术Mending可以移除这一减值。"
       }
-    ]
+    ],
+    "catalog_category": "泥怪"
   },
   {
     "index": "animated-armor",
@@ -6877,7 +6964,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+4，触及5尺。命中：5（1d6+2）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "animated-flying-sword",
@@ -6963,7 +7051,8 @@
         "name_en": "Slash",
         "desc": "近战攻击检定：+4，触及5尺。命中：6（1d8+2）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "animated-rug-of-smothering",
@@ -7048,7 +7137,8 @@
         "name_en": "Smother",
         "desc": "近战攻击检定：+5，触及5尺。\n命中：10（2d6+3）钝击伤害。若目标生物体型不超过中型，地毯可使其陷入受擒状态（逃脱DC13）替代造成伤害。直至擒抱结束，目标陷入目盲和束缚状态，且窒息，并在其回合开始时受到10（2d6+3）钝击伤害。地毯同时能卷紧的生物数上限为一。\n\n擒抱目标期间，地毯无法执行此动作；地毯受到伤害时，其受到的伤害减半（向下取整），而受擒目标将受到相同数值的伤害。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "azer-sentinel",
@@ -7121,7 +7211,8 @@
         "name_en": "Burning Hammer",
         "desc": "近战攻击检定：+5，触及5尺。命中：8（1d10+3）钝击伤害外加3（1d6）火焰伤害。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "efreeti",
@@ -7214,7 +7305,8 @@
         "name": "每项1/日：",
         "desc": "气化形体Gaseous Form, 隐形术Invisibility, 高等幻影Major Image, 位面转移Plane Shift, 巧言术Tongues, 火墙术Wall of Fire（七环版本）"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "fire-giant",
@@ -7279,7 +7371,8 @@
         "name_en": "Hammer Throw",
         "desc": "远程攻击检定：+11，射程60/240尺。命中：23（3d10+7）钝击伤害外加4（1d8）火焰伤害，目标被火巨人直线推离至多15尺。目标下个回合结束前进行的下次攻击检定具有劣势。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "magmin",
@@ -7348,7 +7441,8 @@
         "name_en": "Ignited Illumination",
         "desc": "火童让自己变得炽热或是熄灭自己的火焰。变得炽热期间，火童散发出半径10尺的明亮光照以及额外10尺的微光光照"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "salamander",
@@ -7423,7 +7517,8 @@
         "name_en": "Constrict",
         "desc": "力量豁免检定：DC15，单一10尺内火蜥蜴可见的不超过大型的生物。失败：11（2d6+4）钝击伤害外加7（2d6）火焰伤害。目标陷入受擒状态（逃脱DC14），且目标陷入束缚状态直至擒抱结束。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "fire-elemental",
@@ -7543,7 +7638,8 @@
         "name_en": "Burn",
         "desc": "近战攻击检定：+6，触及5尺。命中：10（2d6+3）火焰伤害。若目标为生物或易燃物件，则其开始燃烧。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "priest",
@@ -7619,7 +7715,8 @@
         "name_en": "Divine Aid（3/日）",
         "desc": "祭司施展祝福术Bless、解除魔法Dispel Magic、治愈真言Healing Word或次等复原术Lesser Restoration，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "chuul",
@@ -7702,7 +7799,8 @@
         "name_en": "Paralyzing Tentacles",
         "desc": "体质豁免检定：DC13，单一受擒于甲伏怪的生物。失败：目标陷入中毒状态并在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。 中毒期间，目标陷入麻痹状态。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "ankylosaurus",
@@ -7761,7 +7859,8 @@
         "name_en": "Tail",
         "desc": "近战攻击检定：+6，触及10尺。命中：9（1d10+4）钝击伤害。若目标生物体型不超过巨型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "shrieker-fungus",
@@ -7819,7 +7918,8 @@
         "name_en": "Shriek",
         "desc": "触发：生物或明亮光照的光源移动至尖叫菌的30尺内。\n响应：尖叫菌发出300尺内都能听见的尖叫，持续1分钟或在尖叫菌死亡时提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "spy",
@@ -7885,7 +7985,8 @@
         "name_en": "Cunning Action",
         "desc": "间谍执行疾走、撤离或躲藏动作。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "saber-toothed-tiger",
@@ -7960,7 +8061,8 @@
     ],
     "corrected_fields": [
       "dexterity"
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "reef-shark",
@@ -8026,7 +8128,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：7（2d4+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "gladiator",
@@ -8096,7 +8199,8 @@
         "name_en": "Parry",
         "desc": "触发：角斗士在持握武器期间因近战攻击检定被命中。响应：角斗士令其对抗那次攻击的AC+3，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "horned-devil",
@@ -8188,7 +8292,8 @@
         "name_en": "Inferno Tail",
         "desc": "敏捷豁免检定：DC17，单一10尺内角魔可见的生物。失败：10（1d8+6）暗蚀伤害，若目标未获得地狱创口，其获得地狱创口。具有地狱创口期间，目标在其回合开始时失去10（3d6）生命值。地狱创口在1分钟后合拢或在目标被法术恢复后提前合拢。目标或其5尺内的生物可以用动作来尝试缝合创口，这么做需要成功通过一次DC17的感知（医药）检定。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "gold-dragon-wyrmling",
@@ -8268,7 +8373,8 @@
         "name_en": "Weakening Breath",
         "desc": "力量豁免检定：DC13，15尺锥状区域内未被此吐息影响的每名生物。失败：目标进行基于力量的D20检定时具有劣势，且其伤害掷骰承受2（1d4）减值。目标在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "guard",
@@ -8321,7 +8427,8 @@
         "name_en": "Spear",
         "desc": "近战或远程攻击检定：+3，触及5尺或射程20/60尺。命中：4（1d4+1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "guard-captain",
@@ -8384,7 +8491,8 @@
         "name_en": "Longsword",
         "desc": "近战攻击检定：+6，触及5尺。命中：15（2d10+4）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "vrock",
@@ -8477,7 +8585,8 @@
         "name_en": "Stunning Screech（1/日）",
         "desc": "体质豁免：DC15，源自鹫魔的20尺光环区域内的每名生物（此豁免恶魔成功）。失败：10（3d6）雷鸣伤害，且目标陷入震慑状态，直至鹫魔的下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "giant-bat",
@@ -8531,7 +8640,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：6（1d6+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-toad",
@@ -8602,7 +8712,8 @@
         "name_en": "Swallow",
         "desc": "巨蟾蜍吞下一名正被其擒抱的不超过中型的生物。被吞咽期间，目标不再受擒但会陷入目盲和束缚状态，对巨蟾蜍体外的攻击或其他效应而言处于全身掩护。此外，目标在巨蟾蜍的回合结束时受到10（3d6）强酸伤害。巨蟾蜍同时能吞咽的生物数上限为一，且吞咽目标期间，其无法使用啃咬。若巨蟾蜍死亡，被吞咽生物不再被束缚并可以使用15尺移动力逃离尸体，以倒地状态脱离。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-venomous-snake",
@@ -8656,7 +8767,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+6，触及10尺。命中：6（1d4+4）穿刺伤害外加4（1d8）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-crocodile",
@@ -8727,7 +8839,8 @@
         "name_en": "Tail",
         "desc": "近战攻击检定：+8，触及10尺。命中：18（3d8+5）钝击伤害。若目标生物体型不超过大型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-seahorse",
@@ -8795,7 +8908,8 @@
         "name_en": "Bubble Dash",
         "desc": "若巨海马身处水下，其移动至多等于其游泳速度一半的距离且不会引发借机攻击。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-badger",
@@ -8850,7 +8964,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+3，触及5尺。命中：6（2d4+1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-fire-beetle",
@@ -8913,7 +9028,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+1，触及5尺。命中：1火焰伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-wolf-spider",
@@ -8974,7 +9090,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：5（1d4+3）穿刺伤害外加5（2d4）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-hyena",
@@ -9034,7 +9151,8 @@
         "name_en": "Rampage（1/日）",
         "desc": "巨鬣狗在对一名已浴血的生物造成伤害后，可以立即移动至多等于其速度一半的距离并发动一次啃咬攻击。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-constrictor-snake",
@@ -9098,7 +9216,8 @@
         "name_en": "Constrict",
         "desc": "力量豁免检定：DC14，单一10尺内体型不超过大型且巨蟒蛇可见的生物。失败：13（2d8+4）钝击伤害，且目标陷入受擒状态（逃脱DC14）。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-owl",
@@ -9167,7 +9286,8 @@
         "name_en": "Spellcasting",
         "desc": "巨猫头鹰施展以下一道法术，无需法术成分并使用感知作为施法属性：\n随意：侦测善恶Detect Evil and Good，侦测魔法Detect Magic\n1/日：鹰眼术Clairvoyance"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "troll",
@@ -9249,7 +9369,8 @@
         "name_en": "Charge",
         "desc": "巨魔向一名其可见的敌人直线移动至多等于其速度一半的距离。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "troll-limb",
@@ -9319,7 +9440,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+6，触及5尺。命中：9（2d4+4）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "giant-shark",
@@ -9385,7 +9507,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+9（若目标生命值未满则具有优势），触及5尺。命中：22（3d10+6）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-goat",
@@ -9439,7 +9562,8 @@
         "name_en": "Ram",
         "desc": "近战攻击检定：+5，触及5尺。命中：6（1d6+3）钝击伤害。若巨山羊在此次攻击前立即向着目标直线移动了20+尺且目标生物体型不超过大型，则目标额外受到5（2d4）钝击伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-rat",
@@ -9500,7 +9624,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：5（1d4+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-vulture",
@@ -9563,7 +9688,8 @@
         "name_en": "Gouge",
         "desc": "近战攻击检定：+4，触及5尺。命中：9（2d6+2）穿刺伤害，且目标陷入中毒状态直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "giant-elk",
@@ -9619,7 +9745,8 @@
         "name_en": "Gore",
         "desc": "近战攻击检定：+6，触及10尺。命中：11（2d6+4）钝击伤害外加5（2d4）光耀伤害。若驼鹿在此次攻击前立即向着目标直线移动了20尺+且目标生物体型不超过巨型，则目标额外受到5（2d4）钝击伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "giant-frog",
@@ -9690,7 +9817,8 @@
         "name_en": "Swallow",
         "desc": "巨蛙吞下一名正被其擒抱的不超过小型的生物。被吞咽期间，目标不再受擒但会陷入目盲和束缚状态，对巨蛙体外的攻击或其他效应而言处于全身掩护。吞咽目标期间，巨蛙无法使用啃咬，且若巨蛙死亡，被吞咽生物不再被束缚并可以使用15尺移动力逃离尸体，以倒地状态脱离。\n\n在巨蛙的下个回合结束时，被吞咽的目标受到5（2d4）强酸伤害。若此伤害未杀死目标，则巨蛙将其吐出，令其以倒地脱离。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-lizard",
@@ -9751,7 +9879,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：6（1d8+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-scorpion",
@@ -9818,7 +9947,8 @@
         "name_en": "Sting",
         "desc": "近战攻击检定：+5，触及5尺。命中：7（1d8+3）穿刺伤害外加11（2d10）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-crab",
@@ -9883,7 +10013,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+3，触及5尺。命中：4（1d6+1）钝击伤害。若目标生物体型不超过中型，则其被双钳之一擒抱，陷入受擒状态（逃脱DC11）"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-boar",
@@ -9946,7 +10077,8 @@
     ],
     "corrected_fields": [
       "charisma"
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-eagle",
@@ -10008,7 +10140,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+5，触及5尺。命中：5（1d4+3）挥砍伤害外加3（1d6）光耀伤害。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "giant-weasel",
@@ -10062,7 +10195,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：5（1d4+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-ape",
@@ -10133,7 +10267,8 @@
         "name_en": "Leap",
         "desc": "巨猿消耗10尺移动力跳跃至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-octopus",
@@ -10201,7 +10336,8 @@
         "name_en": "Ink Cloud（1/日）",
         "desc": "触发：巨章鱼在水下受到伤害。响应：巨章鱼释放出墨水覆盖以自己为中心的10尺立方区域，且巨章鱼移动至多等于其游泳速度的距离。该立方区域在1分钟内变为重度遮蔽，当有强劲水流或类似效应将墨水击散时，该效应提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "giant-spider",
@@ -10272,7 +10408,8 @@
         "name_en": "Web（充能5~6）",
         "desc": "敏捷豁免检定：DC13，单一60尺内巨蜘蛛可见的生物。失败：目标陷入束缚状态直至蛛网被摧毁（AC10；HP5；火焰易伤；免疫毒素和心灵伤害）。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "ankheg",
@@ -10338,7 +10475,8 @@
         "name_en": "Acid Spray（充能6）",
         "desc": "敏捷豁免检定：DC12，30尺长，5尺宽的线状区域内的每名生物。失败：14（4d6）强酸伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "hippogriff",
@@ -10404,7 +10542,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+5，触及5尺。\n命中：7（1d8+3）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "kraken",
@@ -10532,7 +10671,8 @@
         "name_en": "Toxic Ink",
         "desc": "体质豁免检定：DC23，源自克拉肯的15尺光环区域内的每名生物。失败：目标陷入目盲和中毒状态，直至克拉肯的下个回合结束。然后克拉肯移动等于其速度的距离。失败或成功：克拉肯直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "dire-wolf",
@@ -10595,7 +10735,8 @@
     ],
     "corrected_fields": [
       "dexterity"
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "skeleton",
@@ -10666,7 +10807,8 @@
         "name_en": "Shortbow",
         "desc": "远程攻击检定：+5，射程80/320尺。命中：6（1d6+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "minotaur-skeleton",
@@ -10737,7 +10879,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+6，触及5尺。命中：15（2d10+4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "warhorse-skeleton",
@@ -10803,7 +10946,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+6，触及5尺。命中：7（1d6+4）钝击伤害。如果骷髅在此次攻击前立即向着目标直线移动了20+尺，且目标生物体型不超过大型，则目标陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "hezrou",
@@ -10897,7 +11041,8 @@
         "name_en": "Leap",
         "desc": "狂蟾魔消耗10尺移动力跳跃至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "berserker",
@@ -10957,7 +11102,8 @@
         "name_en": "Greataxe",
         "desc": "近战攻击检定：+5，触及5尺。命中：9（1d12+3）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "swarm-of-insects",
@@ -11036,7 +11182,8 @@
         "name_en": "Bites",
         "desc": "近战攻击检定：+3，触及5尺。\n命中：6（2d4+1）毒素伤害，若昆虫集群处于浴血则改为3（1d4+1）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "lamia",
@@ -11115,7 +11262,8 @@
         "name_en": "Leap",
         "desc": "拉迷亚消耗10尺移动力跳跃至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "blue-dragon-wyrmling",
@@ -11183,7 +11331,8 @@
         "name_en": "Lightning Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC12，30尺长、5尺宽的线状区域内的每名生物。失败：21（6d6）闪电伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "wolf",
@@ -11243,7 +11392,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：5（1d6+2）穿刺伤害，若目标生物体型不超过中型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "werewolf",
@@ -11331,7 +11481,8 @@
         "name_en": "Shape-Shift",
         "desc": "狼人变形为类人与狼的混合形态（大型），或狼形态（中型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。狼人着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "warrior-veteran",
@@ -11401,7 +11552,8 @@
         "name_en": "Parry",
         "desc": "触发：武者在持握武器期间因近战攻击检定被命中。响应：武者令其对抗那次攻击的AC+2，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "chain-devil",
@@ -11497,7 +11649,8 @@
         "name_en": "Unnerving Gaze",
         "desc": "触发：一名链魔可见的生物在链魔30尺内开始其回合。响应-感知豁免检定：DC15，触发生物。失败：目标陷入恐慌状态，直至其回合结束。成功：目标在24小时内免疫此链魔的可怖凝视。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "lemure",
@@ -11579,7 +11732,8 @@
     ],
     "corrected_fields": [
       "wisdom"
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "hyena",
@@ -11639,7 +11793,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+2，触及5尺。命中：3（1d6）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "gnoll-warrior",
@@ -11704,7 +11859,8 @@
         "name_en": "Rampage（1/日）",
         "desc": "鬣狗人对一名已浴血的生物造成伤害后，立即移动至多等于其速度一半的距离，并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "marilith",
@@ -11811,7 +11967,8 @@
         "name_en": "Parry",
         "desc": "触发：六臂蛇魔在持握武器期间因近战攻击检定被命中。响应：六臂蛇魔令其对抗那次攻击的AC+5，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "dragon-turtle",
@@ -11889,7 +12046,8 @@
         "name_en": "Steam Breath（充能5~6）",
         "desc": "体质豁免检定：DC19，60尺锥状区域内的每名生物。失败：56（16d6）火焰伤害。成功：半伤。失败或成功：身处水下无法获得对此火焰伤害的抗性。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "deer",
@@ -11949,7 +12107,8 @@
         "name_en": "Ram",
         "desc": "近战攻击检定：+2，触及5尺。命中：2（1d4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "green-hag",
@@ -12030,7 +12189,8 @@
         "name_en": "Spellcasting",
         "desc": "鬼婆施展以下一道法术，无需材料成分并使用感知作为施法属性（法术豁免DC12，法术攻击命中+4）：\n随意：舞光术Dancing Lights，易容术Disguise Seelf（持续24小时）， 隐身术Invisiblity（仅自身，并且鬼婆在隐形期间不会留下任何踪迹）， 次级幻象Minor Illusion， 致病射线Ray of Sickness（三环版本）"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "green-dragon-wyrmling",
@@ -12110,7 +12270,8 @@
         "name_en": "Poison Breath（充能5~6）",
         "desc": "体质豁免检定：DC11，15尺锥状区域内的每名生物。失败：21（6d6）毒素伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "rakshasa",
@@ -12199,7 +12360,8 @@
         "name": "每项1/日：",
         "desc": "飞行术Fly，隐形术Invisibility，高级幻影Major Image，位面转移Plane Shift"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "mule",
@@ -12259,7 +12421,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "camel",
@@ -12312,7 +12475,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "shambling-mound",
@@ -12397,7 +12561,8 @@
         "name_en": "Engulf",
         "desc": "力量豁免检定：DC15，单一5尺内不超过中型的生物。\n失败：目标被拉入蔓生怪所在空间并陷入受擒状态（逃脱DC14）。且目标陷入目盲和束缚状态，并在其回合开始时受到10（3d6）闪电伤害，直至擒抱解除。当蔓生怪移动时，受擒目标也会随之移动，且蔓生怪无需额外消耗移动力。蔓生怪以此动作同时令其陷入受擒状态的生物数上限为一。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "constrictor-snake",
@@ -12456,7 +12621,8 @@
         "name_en": "Constrict",
         "desc": "力量豁免检定：DC12，单一5尺内体型不超过中型且蟒蛇可见的生物。失败：7（3d4）钝击伤害，且目标陷入受擒状态（逃脱DC12）。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "cat",
@@ -12517,7 +12683,8 @@
         "name_en": "Scratch",
         "desc": "近战攻击检定：+4，触及5尺。命中：1挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "owl",
@@ -12578,7 +12745,8 @@
         "name_en": "Talons",
         "desc": "近战攻击检定：+3，触及5尺。命中：1挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "merrow",
@@ -12654,7 +12822,8 @@
         "name_en": "Harpoon",
         "desc": "近战或远程攻击检定：+6，触及5尺或射程20/60尺。命中：11（2d6+4）穿刺伤害。若目标生物体型不超过大型，则梅洛人鱼将目标直线拉近至多15尺。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "medusa",
@@ -12729,7 +12898,8 @@
         "name_en": "Petrifying Gaze（充能5~6）",
         "desc": "体质豁免检定：DC13，30尺锥状区域内的每名生物。若美杜莎在锥形区域内看到自己的倒影，其也必须进行此豁免。首次失败：目标陷入束缚状态，目标在下个回合结束时仍处于束缚则重复豁免，成功则终止其身上的该效应。再次失败：目标陷入石化状态替代其束缚状态。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "succubus",
@@ -12822,7 +12992,8 @@
         "name_en": "Shape-Shift",
         "desc": "魅魔变形为小型或中型的类人生物，或变回其真实形态。除飞行速度仅其真实形态可用以外，其各形态下游戏数据均相同。魅魔着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "mammoth",
@@ -12887,7 +13058,8 @@
         "name_en": "Trample",
         "desc": "敏捷豁免检定：DC18，单一5尺内处于倒地状态的生物。失败：29（4d10+7）钝击伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "incubus",
@@ -12979,7 +13151,8 @@
         "name_en": "Nightmare（充能6）",
         "desc": "感知豁免检定：DC15，单一60尺内梦魔可见的生物。失败：若目标的生命值为20或更低，则其陷入昏迷状态，持续1小时并在其受到伤害或被目标5尺内的另一生物用一个动作摇醒时提前结束；否则，目标受到18（4d8）心灵伤害。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "nightmare",
@@ -13052,7 +13225,8 @@
         "name_en": "Ethereal Stride",
         "desc": "梦魇和其5尺内至多三名自愿的生物一起从物质位面传送至以太位面，或反之。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "glabrezu",
@@ -13148,7 +13322,8 @@
         "name": "每项1/日：",
         "desc": "困惑术Confusion，飞行术Fly，律令震慑Power Word Stun"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "mage",
@@ -13234,7 +13409,8 @@
         "name_en": "Protective Magic（3/日）",
         "desc": "魔法师施展法术反制Counterspell或护盾术Shield（触发条件见这些法术），使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "mummy",
@@ -13323,7 +13499,8 @@
         "name_en": "Dreadful Glare",
         "desc": "感知豁免：DC11，单一60尺内木乃伊可见的生物。失败：目标陷入恐慌状态，直至木乃伊的下个回合结束。成功：目标在24小时内免疫此木乃伊的恐怖怒视。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "mummy-lord",
@@ -13472,7 +13649,8 @@
         "name_en": "Necrotic Strike",
         "desc": "木乃伊发动一次腐朽拳击或引导负能量攻击。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "mimic",
@@ -13551,7 +13729,8 @@
         "name_en": "Shape-Shift",
         "desc": "拟身怪变形为如同中型或小型物件，并保留其游戏数据；或拟身怪变回其真实斑点形态。拟身怪着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "clay-golem",
@@ -13671,7 +13850,8 @@
         "name_en": "Hasten（充能5~6）",
         "desc": "魔像执行疾走和撤离动作。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "harpy",
@@ -13729,7 +13909,8 @@
         "name_en": "Luring Song",
         "desc": "鸟妖唱出一段魔法的旋律，歌声持续至鸟妖对其的专注终止。感知豁免检定：DC11，歌声开始时位于源自鸟妖的300尺光环区域内的每名类人生物与巨人生物。\n失败：目标陷入魅惑状态，直至歌声结束。目标在其回合结束时重复豁免。魅惑期间，目标陷入失能状态并无视其他鸟妖的诱惑之歌动作。若目标与鸟妖之间的距离大于5尺，其会在自己回合中以最直接的路径向鸟妖移动，尝试到达鸟妖5尺内。此移动不会避免借机攻击；不过每当其将要移动到伤害性地形（例如岩浆或坑陷），或是每当其受到来源于魅惑其的鸟妖以外的伤害时，其都能重复豁免。\n成功：目标在24小时内免疫此鸟妖的诱惑之歌。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "gelatinous-cube",
@@ -13829,7 +14010,8 @@
     ],
     "corrected_fields": [
       "wisdom"
-    ]
+    ],
+    "catalog_category": "泥怪"
   },
   {
     "index": "nalfeshnee",
@@ -13935,7 +14117,8 @@
         "name_en": "Pursuit",
         "desc": "触发：另一名判魂魔可见的生物在判魂魔120尺内结束其移动时。响应：判魂魔使用传送，但目标空间必须位于触发生物10尺内。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "roc",
@@ -14006,7 +14189,8 @@
         "name_en": "Swoop（充能5~6）",
         "desc": "若鹏鸟已令一名生物陷入受擒，鹏鸟飞行至多等于其飞行速度一半的距离并丢下此生物，此移动不会引发借机攻击。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "commoner",
@@ -14066,7 +14250,8 @@
         "name_en": "Club",
         "desc": "近战攻击检定：+2，触及5尺。命中：2（1d4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "chimera",
@@ -14140,7 +14325,8 @@
         "name_en": "Fire Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC15，15尺锥状区域内的每名生物。\n失败：31（7d8）火焰伤害。\n成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "edition": "2024 / 5R",
@@ -14215,7 +14401,8 @@
         "name_en": "Parry",
         "desc": "触发：骑士持有武器时被一次近战攻击检定命中。响应：骑士针对该次攻击的AC增加2，可能使该攻击转为未命中。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "awakened-tree",
@@ -14273,7 +14460,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+6，触及10尺 命中：14（3d6+4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "awakened-shrub",
@@ -14330,7 +14518,8 @@
         "name_en": "Rake",
         "desc": "近战攻击检定：+1，触及5尺 命中：1挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "djinni",
@@ -14433,7 +14622,8 @@
         "name": "每项1/日：",
         "desc": "造物术Creation，气化形体Gaseous Form，隐形术Invisibility，高等幻影Major Image，位面转移Plane Shift"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "air-elemental",
@@ -14545,7 +14735,8 @@
         "name_en": "Whirlwind（充能4~6）",
         "desc": "力量豁免检定：DC13，单一位于气元素空间的不超过中型的生物。失败：24（4d10+2）雷鸣伤害，且目标被气元素直线推离至多20尺，并陷入倒地状态。成功：仅半伤。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "dretch",
@@ -14615,7 +14806,8 @@
         "name_en": "Fetid Cloud（1/日）",
         "desc": "体质豁免：DC11，源自怯魔的10尺光环区域内的每名生物。失败：目标陷入中毒状态，持续至其下个回合结束。中毒期间，该生物在其回合中可以执行一个动作或一个附赠动作，但不能同时执行二者，且其无法执行反应。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "young-white-dragon",
@@ -14691,7 +14883,8 @@
         "name_en": "Cold Breath（充能5~6）",
         "desc": "体质豁免检定：DC15，30尺锥状区域内的每名生物。失败：40（9d8）寒冷伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-copper-dragon",
@@ -14764,7 +14957,8 @@
         "name_en": "Slowing Breath",
         "desc": "体质豁免检定：DC14，30尺锥状区域内的每名生物。失败：直至目标的下个回合结束，目标速度减半，无法执行反应，且目标在其回合中仅可以执行一个动作或一个附赠动作，但不能同时执行二者。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-black-dragon",
@@ -14839,7 +15033,8 @@
         "name_en": "Acid Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC11，30尺长、5尺宽的线状区域内的每名生物。失败：46（14d6）强酸伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-red-dragon",
@@ -14907,7 +15102,8 @@
         "name_en": "Fire Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC17，30尺锥状区域内的每名生物。失败：56（16d6）火焰伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-brass-dragon",
@@ -14980,7 +15176,8 @@
         "name_en": "Sleep Breath",
         "desc": "体质豁免检定：DC14，30尺锥状区域内的每名生物。首次失败：目标陷入失能状态，直至其下个回合结束，此时目标重复豁免。再次失败：目标陷入昏迷状态，持续1分钟。目标身上的此效应在其受到伤害或被目标5尺内的另一生物用一个动作摇醒时提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-gold-dragon",
@@ -15060,7 +15257,8 @@
         "name_en": "Weakening Breath",
         "desc": "力量豁免检定：DC17，30尺锥状区域内未被此吐息影响的每名生物。失败：目标进行基于力量的D20检定时具有劣势，且其伤害掷骰承受2（1d4）减值。目标在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-blue-dragon",
@@ -15128,7 +15326,8 @@
         "name_en": "Lightning Breath（充能5~6）",
         "desc": "敏捷豁免检定：DC16，60尺长、5尺宽的线状区域内的每名生物。失败：55（10d10）闪电伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-green-dragon",
@@ -15208,7 +15407,8 @@
         "name_en": "Poison Breath（充能5~6）",
         "desc": "体质豁免检定：DC14，30尺锥状区域内的每名生物。失败：42（12d6）毒素伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-bronze-dragon",
@@ -15288,7 +15488,8 @@
         "name_en": "Repulsion Breath",
         "desc": "力量豁免检定：DC15，30尺锥状区域内的每个生物。失败：目标被青铜龙直线推离至多40尺并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "young-silver-dragon",
@@ -15360,7 +15561,8 @@
         "name_en": "Paralyzing Breath",
         "desc": "体质豁免检定：DC17，30尺锥状区域内的每名生物。首次失败：目标陷入失能状态直至其下个回合结束，此时目标重复豁免。再次失败：目标陷入麻痹状态，并在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "bronze-dragon-wyrmling",
@@ -15440,7 +15642,8 @@
         "name_en": "Repulsion Breath",
         "desc": "力量豁免检定：DC12，30尺锥状区域内的每名生物。失败：目标被青铜龙直线推离至多30尺并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "behir",
@@ -15518,7 +15721,8 @@
         "name_en": "Swallow",
         "desc": "敏捷豁免检定：DC18，单一不超过大型的正受擒于青足龙蛇的生物（青足龙蛇同时能吞咽的生物数上限为一）。\n失败：青足龙蛇吞咽目标，并结束其受擒状态。被吞咽期间，目标陷入目盲和束缚状态，对青足龙蛇体外的攻击或其他效应而言处于全身掩护\n，并在青足龙蛇的回合开始时受到21（6d6）强酸伤害。若一回合内青足龙蛇体内的一名生物对青足龙蛇造成至少30伤害，青足龙蛇在该回合结束时必须成功通过一次DC14的体质豁免，否则将吐出那名生物，使其落在青足龙蛇10尺内的空间并陷入倒地状态。若青足龙蛇死亡，被吞咽生物不再被束缚并可以使用15尺移动力逃离尸体，以倒地状态脱离。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "sphinx-of-wonder",
@@ -15590,7 +15794,8 @@
         "name_en": "Burst of\nIngenuity（2/日）",
         "desc": "触发：斯芬克斯或其30尺内另一生物进行一次属性检定或豁免检定。响应：\n斯芬克斯令其结果+2。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "homunculus",
@@ -15662,7 +15867,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。\n命中：1点穿刺伤害，且目标受以下效果影响。体质豁免检定：DC12。\n失败：目标陷入中毒状态，直至人工生命体的下个回合结束。失败差值5或更多：\n目标陷入中毒状态，持续1分钟。中毒期间，目标陷入昏迷状态，昏迷在其受到伤害时提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "centaur-trooper",
@@ -15732,7 +15938,8 @@
         "name_en": "Trampling Charge（充能5~6）",
         "desc": "人马移动至多等于其速度的距离且不会引发借机攻击，并且可以移动穿过中型或小型生物所处的空间。所处空间被人马进入的每名生物都会被选为一次以下效应的目标。力量豁免检定：DC14。失败：7（1d6+4）钝击伤害，且目标陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "magma-mephit",
@@ -15812,7 +16019,8 @@
         "name_en": "Fire Breath（充能6）",
         "desc": "敏捷豁免检定：DC11，15尺锥状区域内的每名生物。\n失败：7（2d6）火焰伤害。\n成功：半伤"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "swarm-of-crawling-claws",
@@ -15925,7 +16133,8 @@
         "name_en": "Swarm of Grasping Hands",
         "desc": "近战攻击检定：+4，触及5尺。\n命中：20（4d8+2）暗蚀伤害。若集群处于浴血则改为11（2d8+2）暗蚀伤害。若目标生物体型不超过中型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "triceratops",
@@ -15984,7 +16193,8 @@
         "name_en": "Gore",
         "desc": "近战攻击检定：+9，触及5尺。命中：19（2d12+6）穿刺伤害，若三角龙在此次攻击前立即向着目标直线移动了20+尺且目标生物体型不超过巨型，则目标额外受到9（2d8）穿刺伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "zombie",
@@ -16055,7 +16265,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+3，触及5尺。命中：5（1d8+1）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "sahuagin-warrior",
@@ -16141,7 +16352,8 @@
         "name_en": "Aquatic Charge",
         "desc": "鲨华鱼人向一名其可见的敌人直线游动至多等于其游泳速度的距离。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "bulette",
@@ -16211,7 +16423,8 @@
         "name_en": "Leap",
         "desc": "鲨蜥消耗10尺移动力跳跃至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "hill-giant",
@@ -16274,7 +16487,8 @@
         "name_en": "Trash Lob",
         "desc": "远程攻击检定：+8，射程：60/240 尺。命中：16（2d10 + 5）钝击伤害，目标陷入中毒状态直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "goat",
@@ -16328,7 +16542,8 @@
         "name_en": "Ram",
         "desc": "近战攻击检定：+2，触及5尺。命中：1钝击伤害。若山羊在此次攻击前立即向着目标直线移动了20+尺，则改为2（1d4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "blink-dog",
@@ -16388,7 +16603,8 @@
         "name_en": "Teleport（充能4~6）",
         "desc": "闪现犬传送至多40尺至一处其可见的未占据空间中。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "cockatrice",
@@ -16444,7 +16660,8 @@
         "name_en": "Petrifying Bite",
         "desc": "近战攻击检定：+3，触及5尺\n\n命中：3（1d4+1）穿刺伤害，若目标为生物，承受以下效应。\n体质豁免检定：DC11。\n首次失败：目标陷入束缚状态，在其下个回合结束时目标若仍处于束缚则重复豁免，成功则终止其身上的该效应。\n再次失败：目标陷入石化状态替代其束缚状态，持续24小时。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "plesiosaurus",
@@ -16506,7 +16723,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+6，触及10尺。命中：11（2d6+4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "pit-fiend",
@@ -16613,7 +16831,8 @@
         "name_en": "Hellfire Spellcasting（充能4~6）",
         "desc": "深狱炼魔施展两次火球术Fireball（五环版本），无需材料成分并使用魅力作为施法属性（法术豁免DC21）。其可以将其中一次火球术替换为定身怪物Hold\nMonster（七环版本）或火墙术Wall of Fire。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "wight",
@@ -16706,7 +16925,8 @@
         "name_en": "Zombie",
         "desc": "，除非该生物被复活或其石头被摧毁。尸妖以此法同时能控制的丧尸数上限为十二。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "griffon",
@@ -16765,7 +16985,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+6，触及5尺。\n\n命中：8（1d8+4）穿刺伤害，若目标生物体型不大于中型，则其被狮鹫的两只前爪擒抱，陷入受擒状态（逃脱DC14）。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "lion",
@@ -16840,7 +17061,8 @@
         "name_en": "Roar",
         "desc": "感知豁免检定：DC11，单一15尺内的生物。失败：目标陷入恐慌状态直至狮子下个回合开始。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "xorn",
@@ -16937,7 +17159,8 @@
         "name_en": "Charge",
         "desc": "石鼎兽向一名其可以感知的敌人直线移动至多等于其速度或掘穴速度的距离。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "gorgon",
@@ -17005,7 +17228,8 @@
         "name_en": "Trample",
         "desc": "敏捷豁免检定：DC16，单一5尺内处于倒地状态的生物。失败：16（2d10+5）钝击伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "basilisk",
@@ -17065,7 +17289,8 @@
         "name_en": "Petrifying Gaze（充能4~6）",
         "desc": "体质豁免检定：DC12，30尺锥状区域内的每名生物。若石化蜥蜴在锥形区域内看到自己的倒影，其也必须进行此豁免。首次失败：目标陷入束缚状态，目标在下个回合结束时仍处于束缚则重复豁免，成功则终止其身上的该效应。再次失败：目标陷入石化状态替代其束缚状态。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "stone-giant",
@@ -17135,7 +17360,8 @@
         "name_en": "Deflect Missile（充能5–6）",
         "desc": "触发：石巨人因远程攻击检定被命中，并因此受到钝击、穿刺或挥砍伤害时。响应：石巨人受到的此次攻击的伤害减少11（1d10\n+ 6）。若该伤害因此降至0，石巨人可以重定向此次攻击的部分力量。敏捷豁免检定： DC17，单一60尺内石巨人可见的生物。失败：11（1d10 + 6）力场伤害。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "stone-golem",
@@ -17252,7 +17478,8 @@
       "constitution",
       "intelligence",
       "wisdom"
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "roper",
@@ -17328,7 +17555,8 @@
         "name_en": "Reel",
         "desc": "石绳怪将受擒于其的每名生物直线拉近至多30尺。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "gargoyle",
@@ -17409,7 +17637,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+4，触及5尺。命中：7（2d4+2）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "otyugh",
@@ -17477,7 +17706,8 @@
         "name_en": "Tentacle Slam",
         "desc": "体质豁免检定：DC14，受擒于食腐兽的每名生物。失败：16（3d8+3）钝击伤害，且目标陷入震慑状态直至食腐兽的下个回合开始。成功：仅半伤。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "ogre",
@@ -17535,7 +17765,8 @@
         "name_en": "Javelin",
         "desc": "近战或远程攻击检定：+6，触及5尺或射程30/120尺。命中：11（2d6+4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "ogre-zombie",
@@ -17606,7 +17837,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+6，触及5尺。命中：13（2d8+4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "piranha",
@@ -17667,7 +17899,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5（若目标生命值未满则具有优势），触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "swarm-of-piranhas",
@@ -17746,7 +17979,8 @@
         "name_en": "Bites",
         "desc": "近战攻击检定：+5（若目标生命值未满则具有优势），触及5尺。\n命中：8（2d4+3）穿刺伤害，若食人鱼集群处于浴血则改为5（1d4+3）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "ghoul",
@@ -17824,7 +18058,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）挥砍伤害。若目标非亡灵且非精灵，其承受以下效应。体质豁免：DC10。失败：目标陷入麻痹状态，直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "priest-acolyte",
@@ -17895,7 +18130,8 @@
         "name_en": "Divine Aid（1/日）",
         "desc": "侍祭僧侣施展祝福术Bless、治愈真言Healing Word或庇护术Sanctuary，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "guardian-naga",
@@ -17995,7 +18231,8 @@
         "name": "每项1/日：",
         "desc": "鹰眼术Clairvoyance，疗伤术Cure Wounds（六环版本）， 焰击术Flame Strike（六环版本）， 指使术Geas，真知术True Seeing"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "rat",
@@ -18056,7 +18293,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+2，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "wererat",
@@ -18133,7 +18371,8 @@
         "name_en": "Shape-Shift",
         "desc": "鼠人变形为类人与鼠的混合形态（中型），或鼠形态（小型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。鼠人着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "dryad",
@@ -18224,7 +18463,8 @@
         "name_en": "Tree Stride",
         "desc": "如果树精位于一颗不小于大型的树的5尺内，则可以传送至该树60尺内的，另一颗不小于大型的树的5尺内的未占据空间。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "treant",
@@ -18309,7 +18549,8 @@
         "name_en": "Treant",
         "desc": "的数据卡，但有以下区别：树木的智力和魅力值为1且无法说话，并缺少活化树木动作。树木服从树人的命令，使用与树人一样的先攻并在其回合结束后立即执行回合。树木的活化持续1日，或在以下情况提前结束：其死亡时、该树人死亡时或其与该树人之间的距离超过120尺时。解除活化后，若条件允许，树木重新扎根。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "ettin",
@@ -18372,7 +18613,8 @@
         "name_en": "Morningstar",
         "desc": "近战攻击检定：+7，触及5尺。命中：14（2d8+5）穿刺伤害，并且在在目标的下个回合结束前，其进行的下次攻击检定具有劣势。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "frost-giant",
@@ -18444,7 +18686,8 @@
         "name_en": "War Cry（充能5~6）",
         "desc": "霜巨人或其选择的一名可以看见或听见其的生物获得16（2d10 +\n5）临时生命值，且目标进行攻击检定时具有优势，直至霜巨人的下个回合开始。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "water-elemental",
@@ -18558,7 +18801,8 @@
         "name_en": "Whelm（充能4~6）",
         "desc": "力量豁免检定：DC15，位于水元素空间内的每名生物。失败：22（4d8+4）钝击伤害，若目标生物体型不超过大型，则其陷入受擒状态（逃脱DC14）。直至擒抱结束，目标陷入束缚状态，目标窒息除非其能在水中呼吸，且目标在水元素的回合开始时受到9（2d8）点钝击伤害。水元素同时能通过淹没擒抱的大型生物数上限为一，若生物不超过中型则上限为二。以一个动作，水元素5尺内的生物可以通过一次成功的DC14的力量（运动）检定将一名生物拉出来。成功：仅半伤。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "hawk",
@@ -18612,7 +18856,8 @@
         "name_en": "Talons",
         "desc": "近战攻击检定：+5，触及5尺。命中：1挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "tarrasque",
@@ -18761,7 +19006,8 @@
         "name_en": "World-Shaking Movement",
         "desc": "泰拉斯奎移动至多等于其速度的距离。在此次移动结束时，泰拉斯奎制造一道骤然爆发的震波，覆盖源自其的60尺光环区域。位于该区域内的生物失去其专注，且若其不超过中型，则其陷入倒地状态。泰拉斯奎直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "pegasus",
@@ -18815,7 +19061,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+6，触及5尺。命中：7（1d6+4）钝击伤害外加5（2d4）光耀伤害。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "deva",
@@ -18909,7 +19156,8 @@
         "name_en": "Divine Aid（2/日）",
         "desc": "天神使徒施展疗伤术Cure Wound、次等复原术Lesser\nRestoration或移除诅咒Remove Curse\n，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "iron-golem",
@@ -19023,7 +19271,8 @@
         "name_en": "Poison Breath（充能6）",
         "desc": "体质豁免检定：DC18，60尺锥状区域内的每名生物。\n失败：55（10d10）毒素伤害。\n成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "vulture",
@@ -19084,7 +19333,8 @@
         "name_en": "Beak",
         "desc": "近战攻击检定：+2，触及5尺。命中：2（1d4）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "earth-elemental",
@@ -19185,7 +19435,8 @@
         "name_en": "Rock Launch",
         "desc": "远程攻击检定：+8，射程60尺。命中：8（1d6+5）钝击伤害。若目标生物体型不超过大型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "draft-horse",
@@ -19238,7 +19489,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+6，触及5尺。命中：6（1d4+4）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "frog",
@@ -19304,7 +19556,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+3，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "death-dog",
@@ -19362,7 +19615,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）穿刺伤害。若目标生物体型不超过大型，其承受以下效应。体质豁免检定：DC12。首次失败：目标陷入中毒状态。中毒期间，目标的生命值上限在完成长休时无法恢复。此后每24小时目标重复豁免，成功则终止其身上的该效应。后续失败：中毒目标的生命值上限减少5（1d10）。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "pseudodragon",
@@ -19433,7 +19687,8 @@
         "name_en": "Sting",
         "desc": "体质豁免检定：DC12，单一5尺内伪龙可见的生物。失败：5（2d4）毒素伤害，且目标陷入中毒状态，持续1小时。失败差值5或更多：目标在中毒期间还会陷入昏迷状态，昏迷在其受到伤害或被目标5尺内的另一生物用一个动作摇醒时提前结束。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "barbed-devil",
@@ -19530,7 +19785,8 @@
         "name_en": "Hurl Flame",
         "desc": "远程攻击检定：+6，射程150尺。命中：17（5d6）火焰伤害，若目标为未被着装或携带的可燃物件，则目标开始燃烧。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "stirge",
@@ -19584,7 +19840,8 @@
         "name_en": "Proboscis",
         "desc": "近战攻击检定：+5，触及5尺。命中：6（1d6+3）穿刺伤害，且蚊蝠会吸附在目标身上。蚊蝠吸附期间，其无法发动长喙攻击，且目标在蚊蝠回合开始时受到5（2d4）暗蚀伤害。\n\n蚊蝠可以消耗5尺移动力解除依附。目标或其5尺内的生物可以用动作来解除蚊蝠的依附。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "lich",
@@ -19728,7 +19985,8 @@
         "name_en": "Frightful Gaze",
         "desc": "巫妖施展恐惧术Fear，使用与施法动作相同的施法属性。巫妖直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "pteranodon",
@@ -19790,7 +20048,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：6（1d8+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "vampire",
@@ -19926,7 +20185,8 @@
         "name_en": "Deathless\nStrike",
         "desc": "吸血鬼移动等于其速度一半的距离，并发动一次葬送打击攻击。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "rhinoceros",
@@ -19979,7 +20239,8 @@
         "name_en": "Gore",
         "desc": "近战攻击检定：+7，触及5尺。命中：14（2d8+5）穿刺伤害。若犀牛在此次攻击前立即向着目标直线移动20+尺且目标生物体型不超过大型，则目标额外受到9（2d8）穿刺伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "lizard",
@@ -20040,7 +20301,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+2，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "phase-spider",
@@ -20123,7 +20385,8 @@
         "name_en": "Ethereal Jaunt",
         "desc": "相位蜘蛛自物质位面传送至以太位面，或反之。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "elephant",
@@ -20188,7 +20451,8 @@
         "name_en": "Trample",
         "desc": "敏捷豁免检定：DC16，单一5尺内处于倒地状态的生物。失败：17（2d10+6）钝击伤害。成功：半伤。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "owlbear",
@@ -20247,7 +20511,8 @@
         "name_en": "Rend",
         "desc": "近战攻击检定：+7，触及5尺。\n命中：14（2d8+5）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "quasit",
@@ -20334,7 +20599,8 @@
         "name_en": "Shape-Shift",
         "desc": "小恶魔变形为蝙蝠（速度10尺，飞行40尺）、蜈蚣（40尺，攀爬40尺）、蟾蜍（40尺，游泳40尺）的形态，或变回其真实形态。除速度外，其各形态下游戏数据均相同。小恶魔着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "imp",
@@ -20416,7 +20682,8 @@
         "name_en": "Shape-Shift",
         "desc": "小魔鬼变形为老鼠（速度20尺）、渡鸦（速度20尺，飞行速度60尺）、蜘蛛（速度20尺，攀爬速度20尺），或变回其真实形态。除速度外，其各形态下游戏数据均相同。小魔鬼着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "sprite",
@@ -20484,7 +20751,8 @@
         "name_en": "Invisibility",
         "desc": "小仙灵对自身施展隐形术Invisibility，无需法术成分并使用魅力作为施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "sphinx-of-lore",
@@ -20603,7 +20871,8 @@
     "corrected_fields": [
       "strength",
       "hit_dice"
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "scorpion",
@@ -20656,7 +20925,8 @@
         "name_en": "Sting",
         "desc": "近战攻击检定：+2，触及5尺。命中：1穿刺伤害外加3（1d6）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "cultist-fanatic",
@@ -20721,7 +20991,8 @@
         "name_en": "Spiritual Weapon（2/日）",
         "desc": "邪教狂信者施展法术灵体武器Spiritual Weapon，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "cultist",
@@ -20774,7 +21045,8 @@
         "name_en": "Ritual Sickle",
         "desc": "近战攻击：+3，触及5尺。命中：3（1d4+1）挥砍伤害外加1暗蚀伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "wraith",
@@ -20897,7 +21169,8 @@
         "name_en": "Specter",
         "desc": "出现在尸体所处的空间或最近的一处未占据空间。恶灵受邪灵的控制，邪灵以此发同时能控制的恶灵数上限为七。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "crab",
@@ -20958,7 +21231,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+2，触及5尺。命中：1钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "warrior-infantry",
@@ -21018,7 +21292,8 @@
         "name_en": "Spear",
         "desc": "近战或远程攻击检定：+3，触及5尺或射程20/60尺。命中：4（1d6+1）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "非玩家角色"
   },
   {
     "index": "planetar",
@@ -21122,7 +21397,8 @@
         "name_en": "Divine Aid（2/日）",
         "desc": "星天神使施展疗伤术Cure Wound、隐形术Invisibility、次等复原术Lesser\nRestoration或移除诅咒Remove\nCurse，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "bugbear-warrior",
@@ -21188,7 +21464,8 @@
         "name_en": "Light Hammer",
         "desc": "近战或远程攻击检定：+4（若目标因该熊地精而受擒则具有优势），触及10尺或射程20/60尺。命中：9（3d4+2）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "bugbear-stalker",
@@ -21266,7 +21543,8 @@
         "name_en": "Quick Grapple",
         "desc": "敏捷豁免检定：DC13，单一10尺内体型不超过中型且熊地精可见的生物。失败：目标陷入受擒状态（逃脱DC13）。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   },
   {
     "index": "werebear",
@@ -21348,7 +21626,8 @@
         "name_en": "Shape-Shift",
         "desc": "熊人变形为类人与熊的混合形态（大型），或熊形态（大型），或变回其真实的人形态。除体型以外，其各形态下游戏数据均相同。熊人着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "rust-monster",
@@ -21430,7 +21709,8 @@
         "name_en": "Reflexive Antennae",
         "desc": "触发：锈蚀怪被一次攻击检定命中。\n响应：锈蚀怪使用触角。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "bearded-devil",
@@ -21515,7 +21795,8 @@
         "name_en": "Infernal Glaive",
         "desc": "近战攻击检定：+5，触及10尺。命中：8（1d10+3）挥砍伤害。若目标是生物且其未获得地狱创口，承受以下效应。体质豁免检定：DC12。失败：目标获得地狱创口。具有地狱创口期间，目标在其回合开始时失去5（1d10）生命值。地狱创口在1分钟后合拢或在目标被法术恢复后提前合拢。目标或其5尺内的生物可以用动作来尝试缝合创口，这么做需要成功通过一次DC12的感知（医药）检定。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "grick",
@@ -21582,7 +21863,8 @@
     ],
     "corrected_fields": [
       "strength"
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "vampire-familiar",
@@ -21659,7 +21941,8 @@
         "name_en": "Deathless Agility",
         "desc": "血仆执行疾走或撤离动作。"
       }
-    ]
+    ],
+    "catalog_category": "类人生物"
   },
   {
     "index": "flesh-golem",
@@ -21772,7 +22055,8 @@
         "name_en": "Slam",
         "desc": "近战攻击检定：+7，触及5尺。\n\n命中：13（2d8+4）钝击伤害外加4（1d8）闪电伤害。"
       }
-    ]
+    ],
+    "catalog_category": "构装生物"
   },
   {
     "index": "blood-hawk",
@@ -21833,7 +22117,8 @@
         "name_en": "Beak",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）穿刺伤害，若目标处于浴血则改为6（1d8+2）穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "hunter-shark",
@@ -21897,7 +22182,8 @@
     ],
     "corrected_fields": [
       "strength"
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "merfolk-skirmisher",
@@ -21958,7 +22244,8 @@
         "name_en": "Ocean Spear",
         "desc": "近战或远程攻击检定：+2，触及5尺或射程20/60尺。命中：3（1d6）穿刺伤害外加2（1d4）寒冷伤害。若目标为生物，则其速度降低10尺直至其下个回合结束。命中或失手：瀚海之矛会在被用于一次远程攻击后立即魔法性地回到人鱼手中。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "balor",
@@ -22074,7 +22361,8 @@
     ],
     "corrected_fields": [
       "intelligence"
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "ghast",
@@ -22156,7 +22444,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+5，触及5尺。命中：10（2d6+3）挥砍伤害。若目标为非亡灵生物，承受以下效应。体质豁免检定：DC10。失败：目标陷入麻痹状态，直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "boar",
@@ -22216,7 +22505,8 @@
         "name_en": "Gore",
         "desc": "近战攻击检定：+3，触及5尺。命中：4（1d6+1）穿刺伤害。若野猪在此次攻击前立即向着该目标直线移动了20+尺，且目标生物体型不超过中型，则目标额外受到3（1d6）穿刺伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "wereboar",
@@ -22297,7 +22587,8 @@
         "name_en": "Shape-Shift",
         "desc": "野猪人变形为类人与猪的混合形态（中型），或野猪形态（小型），或变回其真实的类人形态。除体型以外，其各形态下游戏数据均相同。野猪人着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "night-hag",
@@ -22398,7 +22689,8 @@
         "name_en": "Shape-Shift",
         "desc": "鬼婆变形为小型或中型的类人生物，或变回其真实形态。除体型外，其各形态下游戏数据均相同。鬼婆着装或携带的任何装备都不会随之变化。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "ettercap",
@@ -22486,7 +22778,8 @@
         "name_en": "Reel",
         "desc": "伊特怪将30尺内因其绞网动作陷入束缚的一名生物向直线拉近至多25尺。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "allosaurus",
@@ -22545,7 +22838,8 @@
         "name_en": "Claws",
         "desc": "近战攻击检定：+6，触及5尺。命中：8（1d8+4）挥砍伤害。若异特龙在此次攻击前立即向着目标直线移动了30+尺，且目标生物体型不超过大型，则目标陷入倒地状态，同时异特龙可以对其发动一次啃咬攻击。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "gibbering-mouther",
@@ -22630,7 +22924,8 @@
         "name_en": "Blinding Spittle（充能5~6）",
         "desc": "敏捷豁免检定：DC10，以30尺内一点为中心，半径10尺球状区域内的每名生物。失败：7（2d6）光耀伤害，且目标陷入目盲状态直至呓语之口的下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "spirit-naga",
@@ -22720,7 +23015,8 @@
         "name": "每项2/日：",
         "desc": "侦测思想Detect Thoughts，任意门Dimension Door，定身类人Hold Person（三环版本）， 闪电束Lightning Bolt（四环版本）"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "silver-dragon-wyrmling",
@@ -22792,7 +23088,8 @@
         "name_en": "Paralyzing Breath",
         "desc": "体质豁免检定：DC13，15尺锥状区域内的每名生物。首次失败：目标陷入失能状态直至其下个回合结束，此时目标重复豁免。再次失败：目标陷入麻痹状态，并在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "invisible-stalker",
@@ -22906,7 +23203,8 @@
         "name_en": "Vortex",
         "desc": "体质豁免检定：DC14，单一位于追猎者空间内体型不超过大型的生物。\n失败：7（1d8+3）雷鸣伤害，且目标陷入受擒状态（逃脱DC13）。目标无法施展需要言语成分的法术，且在追猎者的回合开始时受到7（2d6）雷鸣伤害，直至擒抱结束。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "eagle",
@@ -22960,7 +23258,8 @@
         "name_en": "Talons",
         "desc": "近战攻击检定：+4，触及5尺。命中：4（1d4+2）挥砍伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "sphinx-of-valor",
@@ -23090,7 +23389,8 @@
         "name_en": "Weight of Years",
         "desc": "体质豁免检定：DC16，单一120尺内斯芬克斯可见的生物。\n失败：目标获得1级力竭。目标具有任意力竭等级期间，其容貌衰老3d10岁。\n失败或成功：斯芬克斯直至其下个回合开始都无法再执行此动作。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "ghost",
@@ -23225,7 +23525,8 @@
         "name_en": "Possession（充能6）",
         "desc": "魅力豁免：DC13，单一5尺内幽魂可见的类人生物。\n\n失败：目标被幽魂附身。幽魂消失，目标陷入失能\n状态并失去对身体的控制。现在由幽魂控制身体，但目标仍然保留自我意识。幽魂不能成为任意攻击、法术或其他效应的目标，针对不死生物的效应除外。幽魂仍然保留自己的游戏数据，但是使用附身目标的速度，以及力量、敏捷与体质调整值。附身持续至身体的生命值降至0，或在幽魂以附赠动作解除附身时结束。附身结束时，幽魂会出现在目标5尺内一处未占据空间，且目标在24小时内免疫此幽魂的附身。\n成功：目标在接下来24小时内免疫幽魂的附身。"
       }
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "grimlock",
@@ -23279,7 +23580,8 @@
         "name_en": "Bone Cudgel",
         "desc": "近战攻击检定：+5，触及5尺。命中：6（1d6+3）钝击伤害，外加2（1d4）心灵伤害。"
       }
-    ]
+    ],
+    "catalog_category": "异怪"
   },
   {
     "index": "shadow",
@@ -23402,7 +23704,8 @@
     ],
     "corrected_fields": [
       "intelligence"
-    ]
+    ],
+    "catalog_category": "不死生物"
   },
   {
     "index": "weasel",
@@ -23456,7 +23759,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：1穿刺伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "couatl",
@@ -23545,7 +23849,8 @@
         "name_en": "Divine Aid （2/日）",
         "desc": "羽蛇施展祝福术Bless，次等复原术Lesser\nRestoration或庇护术Sanctuary，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "天界生物"
   },
   {
     "index": "ape",
@@ -23609,7 +23914,8 @@
         "name_en": "Rock（充能6）",
         "desc": "远程攻击检定：+5，射程25/50尺。命中：10（2d6+3）钝击伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "ancient-white-dragon",
@@ -23711,7 +24017,8 @@
         "name_en": "Pounce",
         "desc": "白龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-copper-dragon",
@@ -23821,7 +24128,8 @@
         "name_en": "Pounce",
         "desc": "赤铜龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-black-dragon",
@@ -23931,7 +24239,8 @@
         "name_en": "Pounce",
         "desc": "黑龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-red-dragon",
@@ -24036,7 +24345,8 @@
         "name_en": "Pounce",
         "desc": "红龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-brass-dragon",
@@ -24149,7 +24459,8 @@
     ],
     "corrected_fields": [
       "strength"
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-gold-dragon",
@@ -24264,7 +24575,8 @@
         "name_en": "Pounce",
         "desc": "金龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-blue-dragon",
@@ -24369,7 +24681,8 @@
         "name_en": "Tail Swipe",
         "desc": "蓝龙发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-green-dragon",
@@ -24484,7 +24797,8 @@
         "name_en": "Pounce",
         "desc": "绿龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-bronze-dragon",
@@ -24599,7 +24913,8 @@
         "name_en": "Thunderclap",
         "desc": "体质豁免检定：DC22，以120尺内青铜龙可见一点为中心，半径20尺球状区域内的每名生物。失败：13（3d8）雷鸣伤害，且目标陷入耳聋状态直至其下个回合结束。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "ancient-silver-dragon",
@@ -24708,7 +25023,8 @@
         "name_en": "Pounce",
         "desc": "银龙移动至多等于其速度一半的距离并发动一次撕裂攻击。"
       }
-    ]
+    ],
+    "catalog_category": "龙类"
   },
   {
     "index": "cloud-giant",
@@ -24784,7 +25100,8 @@
         "name_en": "Misty Step",
         "desc": "云巨人施展迷踪步Misty\nStep，使用与施法动作相同的施法属性。"
       }
-    ]
+    ],
+    "catalog_category": "巨人"
   },
   {
     "index": "warhorse",
@@ -24837,7 +25154,8 @@
         "name_en": "Hooves",
         "desc": "近战攻击检定：+6，触及5尺。命中：9（2d4+4）钝击伤害。若战马在此次攻击前立即向着目标移动了20+尺且目标生物体型不超过大型，则目标额外受到5（2d4）钝击伤害并陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "octopus",
@@ -24913,7 +25231,8 @@
     ],
     "corrected_fields": [
       "intelligence"
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "ochre-jelly",
@@ -25024,7 +25343,8 @@
         "name_en": "Ochre\nJelly",
         "desc": "。每个新的果冻的体型都比原先的果冻小一级，且使用原果冻的先攻行动。原果冻的生命值将平均分配给新的果冻（向下取整）。"
       }
-    ]
+    ],
+    "catalog_category": "泥怪"
   },
   {
     "index": "steam-mephit",
@@ -25107,7 +25427,8 @@
         "name_en": "Steam Breath（充能6）",
         "desc": "体质豁免检定：DC10，15尺锥状区域内的每名生物。\n失败：5（2d4）火焰伤害，且目标的速度降低10尺，持续至魔蝠的下个回合结束。\n成功：仅半伤。\n失败或成功：身处水下无法获得对此火焰伤害的抗性。"
       }
-    ]
+    ],
+    "catalog_category": "元素生物"
   },
   {
     "index": "spider",
@@ -25173,7 +25494,8 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+4，触及5尺。命中：1穿刺伤害外加2（1d4）毒素伤害。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "drider",
@@ -25261,7 +25583,8 @@
         "name_en": "Magic of the Spider Queen（充能5~6）",
         "desc": "蛛化卓尔施展黑暗术Darkness，妖火Faerie\nFire或蛛网术Web，无需材料成分并使用感知作为施法属性（法术豁免DC\n14）。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "purple-worm",
@@ -25338,7 +25661,8 @@
         "name_en": "Swallow",
         "desc": "敏捷豁免检定：DC19，单一不超过大型的正受擒于紫虫的生物（紫虫同时能吞咽的生物数上限为三）。\n失败：紫虫吞咽目标，并结束其受擒状态。被吞咽期间，目标陷入目盲和束缚状态，对紫虫体外的攻击或其他效应而言处于全身掩护\n，并在紫虫的回合开始时受到17（5d6）强酸伤害。若一回合内紫虫体内的一名生物对紫虫造成至少30伤害，紫虫在该回合结束时必须成功通过一次DC21的体质豁免，否则将吐出所有生物，使其落在紫虫5尺内的空间并陷入倒地状态。若紫虫死亡，被吞咽生物不再被束缚并可以使用20尺移动力以倒地状态脱离尸体。"
       }
-    ]
+    ],
+    "catalog_category": "怪兽"
   },
   {
     "index": "violet-fungus",
@@ -25401,7 +25725,8 @@
         "name_en": "Rotting Touch",
         "desc": "近战攻击检定：+2，触及10尺。\n\n命中：4（1d8）暗蚀伤害。"
       }
-    ]
+    ],
+    "catalog_category": "植物"
   },
   {
     "index": "brown-bear",
@@ -25465,7 +25790,8 @@
         "name_en": "Claw",
         "desc": "近战攻击检定：+5，触及5尺。命中：5（1d4+3）挥砍伤害。若目标生物体型不超过大型，则其陷入倒地状态。"
       }
-    ]
+    ],
+    "catalog_category": "野兽"
   },
   {
     "index": "erinyes",
@@ -25564,7 +25890,8 @@
         "name_en": "Parry",
         "desc": "触发：罪魔在持握武器期间因近战攻击检定被命中。响应：罪魔令其对抗那次攻击的AC+4，可能令那次攻击改为失手。"
       }
-    ]
+    ],
+    "catalog_category": "邪魔"
   },
   {
     "index": "worg",
@@ -25617,6 +25944,7 @@
         "name_en": "Bite",
         "desc": "近战攻击检定：+5，触及5尺。命中：7（1d8+3）穿刺伤害，并且在座狼的下个回合开始前，对目标进行的下次攻击检定具有优势。"
       }
-    ]
+    ],
+    "catalog_category": "精类"
   }
 ]

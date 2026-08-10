@@ -16,6 +16,47 @@ const NAME_ALIASES = new Map([
 
 const EXCLUDED_NON_SRD = new Set(["Giant Squid", "Giant Centipede", "Giant Wasp"]);
 
+const SOURCE_CATEGORY_MAP = new Map([
+  ["亡灵", "不死生物"],
+  ["元素", "元素生物"],
+  ["天族", "天界生物"],
+  ["巨人", "巨人"],
+  ["异怪", "异怪"],
+  ["怪兽", "怪兽"],
+  ["构装", "构装生物"],
+  ["植物", "植物"],
+  ["泥怪", "泥怪"],
+  ["妖精", "精类"],
+  ["邪魔", "邪魔"],
+  ["龙类", "龙类"],
+  ["类人", "非玩家角色"],
+]);
+
+function categoryFromType(type) {
+  if (type.includes("亡灵")) return "不死生物";
+  if (type.includes("元素")) return "元素生物";
+  if (type.includes("天族")) return "天界生物";
+  if (type.includes("巨人")) return "巨人";
+  if (type.includes("异怪")) return "异怪";
+  if (type.includes("怪兽")) return "怪兽";
+  if (type.includes("构装")) return "构装生物";
+  if (type.includes("植物")) return "植物";
+  if (type.includes("泥怪")) return "泥怪";
+  if (type.includes("类人")) return "类人生物";
+  if (type.includes("妖精")) return "精类";
+  if (type.includes("邪魔")) return "邪魔";
+  if (type.includes("野兽")) return "野兽";
+  if (type.includes("龙")) return "龙类";
+  return "其他";
+}
+
+function catalogCategory(monster) {
+  if (monster.name_en === "Knight") return "非玩家角色";
+  const parts = monster.source_file.split("/");
+  const sourceRoot = parts[0] === "怪物图鉴2025" ? parts[1] : "";
+  return SOURCE_CATEGORY_MAP.get(sourceRoot) ?? categoryFromType(monster.type);
+}
+
 const SECTION_KEYS = [
   ["传奇动作", "legendary_actions"],
   ["附赠动作", "bonus_actions"],
@@ -385,6 +426,9 @@ async function main() {
   }
 
   if (errors.length) throw new Error(`数据生成失败（${errors.length} 项）：\n${errors.join("\n")}`);
+  for (const monster of monsters) monster.catalog_category = catalogCategory(monster);
+  const uncategorized = monsters.filter((monster) => monster.catalog_category === "其他");
+  if (uncategorized.length) throw new Error(`无法分类：${uncategorized.map((monster) => monster.name_en).join(", ")}`);
   monsters.sort((left, right) => left.name.localeCompare(right.name, "zh-CN"));
   const duplicateIndexes = monsters.map((item) => item.index).filter((value, index, all) => all.indexOf(value) !== index);
   if (duplicateIndexes.length) throw new Error(`重复索引：${[...new Set(duplicateIndexes)].join(", ")}`);

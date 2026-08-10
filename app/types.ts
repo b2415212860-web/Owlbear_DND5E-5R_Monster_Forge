@@ -6,6 +6,7 @@ export interface MonsterListEntry {
   name_en?: string;
   url: string;
   ruleset: RulesEdition;
+  catalog_category: string;
 }
 
 export interface ArmorClassEntry {

@@ -7,6 +7,10 @@ const EXPECTED_COMMIT = "190ba73862e65b1b7c293289beb2ef915c1803ff";
 const EXPECTED_HTML_FILES = 344;
 const EXPECTED_STATBLOCK_PAGES = 290;
 const EXPECTED_RECORDS = 424;
+const CATALOG_CATEGORIES = new Set([
+  "不死生物", "元素生物", "天界生物", "巨人", "异怪", "怪兽", "构装生物", "植物",
+  "模板生物", "泥怪", "类人生物", "精类", "邪魔", "野兽", "非玩家角色", "龙类",
+]);
 const workspace = process.cwd();
 const sourceRepo = path.resolve(process.argv[2] ?? path.join(workspace, "work", "dnd5e-chm-190ba7"));
 const sourceRoot = path.join(sourceRepo, "怪物图鉴");
@@ -338,6 +342,8 @@ function parseBlock(lines, block, relativePath, pageTitle, warnings) {
   if (missing.length) warnings.push({ source_path: relativePath, block: block.ordinal, name, missing });
 
   const conditionText = fields.condition_immunities || "";
+  const catalogCategory = relativePath.split(/[\\/]/)[1] || "其他";
+  if (!CATALOG_CATEGORIES.has(catalogCategory)) warnings.push({ source_path: relativePath, block: block.ordinal, name, missing: ["目录分类"] });
   const sourceUrl = `https://github.com/DND5eChm/DND5e_chm/blob/${EXPECTED_COMMIT}/${relativePath.split(/[\\/]/).map(encodeURIComponent).join("/")}`;
   const record = {
     index: slugify(nameEn || `${pageTitle}-${block.ordinal}`),
@@ -351,6 +357,7 @@ function parseBlock(lines, block, relativePath, pageTitle, warnings) {
     source_commit: EXPECTED_COMMIT,
     source_license: "GPL-3.0",
     source_block: block.ordinal,
+    catalog_category: catalogCategory,
     ...kind,
     armor_class: [{ type: acText.replace(/^\d+\s*/, "").replace(/[（）()]/g, "") || "数值", value: ac }],
     hit_points: Number(hpMatch?.[1] ?? 0),
@@ -427,12 +434,14 @@ async function main() {
     records_generated: records.length,
     unique_english_names: new Set(records.map((record) => record.name_en).filter(Boolean)).size,
     duplicate_base_indexes: [...duplicateIndexes].filter(([, count]) => count > 1).map(([index, count]) => ({ index, count })),
+    category_counts: Object.fromEntries([...CATALOG_CATEGORIES].map((category) => [category, records.filter((record) => record.catalog_category === category).length])),
     warnings,
     pages,
-    records: records.map(({ index, name, name_en, source_file, source_url, source_block }) => ({
+    records: records.map(({ index, name, name_en, catalog_category, source_file, source_url, source_block }) => ({
       index,
       name,
       name_en,
+      catalog_category,
       source_path: source_file,
       source_url,
       source_block,
