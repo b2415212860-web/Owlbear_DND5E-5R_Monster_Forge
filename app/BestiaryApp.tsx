@@ -551,7 +551,7 @@ export function BestiaryApp() {
       <header className="app-header">
         <div className="brand-mark" aria-hidden="true">BF</div>
         <div className="brand-copy">
-          <h1>Bestiary Forge</h1>
+          <h1>Bestiary Forge <span className="brand-context">怪物目录</span></h1>
           <p>D&amp;D 2014 / 5E + 2024 / 5R 中文怪物图鉴</p>
         </div>
         <a className="source-link" href="/sources" target="_blank" rel="noreferrer">来源与许可</a>
@@ -561,11 +561,18 @@ export function BestiaryApp() {
       <div className="bestiary-workspace">
         <aside className="catalog-panel" aria-label="怪物目录">
           <div className="catalog-heading">
-            <div>
-              <p className="eyebrow">{EDITIONS[ruleset].source} · ZH-CN</p>
-              <h2>怪物目录</h2>
+            <p className="eyebrow">{EDITIONS[ruleset].source} · ZH-CN</p>
+            <div className="catalog-heading-actions">
+              <span className="catalog-count">{filteredMonsters.length} / {monsters.length}</span>
+              <button
+                className="catalog-expand-button"
+                type="button"
+                onClick={toggleAllDirectories}
+                disabled={!allDirectoryKeys.length || Boolean(query.trim())}
+              >
+                {allDirectoriesExpanded ? "全部收起" : "全部展开"}
+              </button>
             </div>
-            <span>{filteredMonsters.length} / {monsters.length}</span>
           </div>
 
           <div className="edition-switch" role="group" aria-label="切换怪物图鉴规则版本">
@@ -592,9 +599,6 @@ export function BestiaryApp() {
 
           <div className="directory-toolbar">
             <span><i aria-hidden="true" />目录分类 <b>{directoryTree.length} 类</b></span>
-            <button type="button" onClick={toggleAllDirectories} disabled={!allDirectoryKeys.length || Boolean(query.trim())}>
-              {allDirectoriesExpanded ? "全部收起" : "全部展开"}
-            </button>
           </div>
 
           <p className="catalog-tip">怪物已按原图鉴目录分类。一级分类默认展开；5R 的分类内可继续展开原有子目录。</p>

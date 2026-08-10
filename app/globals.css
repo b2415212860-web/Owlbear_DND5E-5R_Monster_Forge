@@ -2971,3 +2971,91 @@ body {
     padding: 8px;
   }
 }
+
+/* Compact Owlbear catalog controls. */
+.brand-copy h1 {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.brand-context {
+  color: var(--apple-blue);
+  font-size: 0.64em;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.catalog-heading {
+  align-items: center;
+  min-height: 34px;
+  padding: 0 2px 7px;
+}
+
+.catalog-heading .eyebrow { margin: 0; }
+
+.catalog-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.catalog-count {
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(93, 133, 170, 0.11);
+  color: var(--apple-blue);
+  font: 650 9px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", monospace;
+  white-space: nowrap;
+}
+
+.catalog-expand-button {
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 252, 247, 0.78);
+  color: var(--apple-blue);
+  font: 600 10px/1 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(93, 133, 170, 0.12);
+}
+
+.catalog-expand-button:hover:not(:disabled) { background: #fffaf3; }
+.catalog-expand-button:disabled { opacity: 0.42; cursor: default; }
+
+.edition-switch { margin-top: 3px; }
+
+.edition-switch button {
+  min-height: 38px;
+  padding: 6px 9px;
+}
+
+.search-box { margin-top: 9px; }
+
+.directory-toolbar {
+  justify-content: flex-start;
+  min-height: 32px;
+  margin-top: 6px;
+  padding: 4px 9px;
+}
+
+.catalog-tip { margin-block: 7px 6px; }
+
+@media (max-width: 900px) {
+  .bestiary-workspace {
+    grid-template-rows: minmax(340px, 42dvh) minmax(620px, 72dvh);
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-copy h1 { gap: 6px; }
+  .brand-context { font-size: 0.62em; }
+  .catalog-heading-actions { gap: 4px; }
+  .catalog-count { padding-inline: 7px; }
+  .catalog-expand-button { padding-inline: 8px; }
+  .bestiary-workspace {
+    grid-template-rows: minmax(330px, 46dvh) minmax(600px, 78dvh);
+  }
+}
