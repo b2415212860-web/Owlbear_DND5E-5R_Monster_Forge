@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "Bestiary Forge · Owlbear Rodeo 5e 怪物收藏图鉴";
-const description = "浏览并收藏 D&D 5e SRD 怪物，在浏览器式标签页中快速切换完整资料卡。";
+const title = "Bestiary Forge · D&D 5E / 5R 中文怪物图鉴";
+const description = "切换浏览并收藏 424 张 D&D 2014 / 5E 不全书中文资料卡与 328 张 2024 / 5R SRD 5.2 中文资料卡。";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
   const host = requestHeaders.get("host") ?? "localhost:3000";
   const protocol = requestHeaders.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const imageUrl = `${protocol}://${host}/og-favorites.png`;
+  const imageUrl = `${protocol}://${host}/og-dual-srd.png`;
   return {
     title,
     description,
@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       type: "website",
-      images: [{ url: imageUrl, width: 1674, height: 941, alt: "Bestiary Forge 怪物收藏与标签页资料卡" }],
+      images: [{ url: imageUrl, width: 1536, height: 1024, alt: "Bestiary Forge D&D 5E / 5R 中文怪物图鉴" }],
     },
     twitter: {
       card: "summary_large_image",
