@@ -224,10 +224,16 @@ function directoryKeys(nodes: DirectoryNode[]): string[] {
 }
 
 function MonsterCatalogRow({
+<<<<<<< HEAD
   monster, number, active, favorite, onOpen, onToggleFavorite,
 }: {
   monster: MonsterListEntry;
   number: number;
+=======
+  monster, active, favorite, onOpen, onToggleFavorite,
+}: {
+  monster: MonsterListEntry;
+>>>>>>> Docker-add
   active: boolean;
   favorite: boolean;
   onOpen: (monster: MonsterListEntry) => void;
@@ -236,7 +242,10 @@ function MonsterCatalogRow({
   return (
     <div className={`monster-row${active ? " active" : ""}`} role="listitem">
       <button className="monster-name-button" type="button" onClick={() => onOpen(monster)}>
+<<<<<<< HEAD
         <span className="catalog-number">{String(number).padStart(3, "0")}</span>
+=======
+>>>>>>> Docker-add
         <span className="catalog-monster-copy"><strong>{monster.name}</strong>{monster.name_en ? <small>{monster.name_en}</small> : null}</span>
       </button>
       <button
@@ -254,7 +263,11 @@ function MonsterCatalogRow({
 }
 
 function DirectoryBranch({
+<<<<<<< HEAD
   node, depth, expanded, forceOpen, activeKey, favoriteIndexes, visibleNumbers, onToggleDirectory, onOpenMonster, onToggleFavorite,
+=======
+  node, depth, expanded, forceOpen, activeKey, favoriteIndexes, onToggleDirectory, onOpenMonster, onToggleFavorite,
+>>>>>>> Docker-add
 }: {
   node: DirectoryNode;
   depth: number;
@@ -262,7 +275,10 @@ function DirectoryBranch({
   forceOpen: boolean;
   activeKey: string | null;
   favoriteIndexes: Set<string>;
+<<<<<<< HEAD
   visibleNumbers: Map<string, number>;
+=======
+>>>>>>> Docker-add
   onToggleDirectory: (key: string) => void;
   onOpenMonster: (monster: MonsterListEntry) => void;
   onToggleFavorite: (monster: MonsterListEntry) => void;
@@ -286,7 +302,10 @@ function DirectoryBranch({
               forceOpen={forceOpen}
               activeKey={activeKey}
               favoriteIndexes={favoriteIndexes}
+<<<<<<< HEAD
               visibleNumbers={visibleNumbers}
+=======
+>>>>>>> Docker-add
               onToggleDirectory={onToggleDirectory}
               onOpenMonster={onOpenMonster}
               onToggleFavorite={onToggleFavorite}
@@ -298,7 +317,10 @@ function DirectoryBranch({
             return (
               <MonsterCatalogRow
                 monster={monster}
+<<<<<<< HEAD
                 number={visibleNumbers.get(key) ?? 0}
+=======
+>>>>>>> Docker-add
                 active={activeKey === key}
                 favorite={favoriteIndexes.has(key)}
                 onOpen={onOpenMonster}
@@ -484,7 +506,10 @@ export function BestiaryApp() {
   const directoryTree = useMemo(() => buildDirectoryTree(filteredMonsters), [filteredMonsters]);
   const allDirectoryKeys = useMemo(() => directoryKeys(buildDirectoryTree(monsters)), [monsters]);
   const allDirectoriesExpanded = allDirectoryKeys.length > 0 && allDirectoryKeys.every((key) => expandedDirectories.has(key));
+<<<<<<< HEAD
   const visibleNumbers = useMemo(() => new Map(filteredMonsters.map((monster, index) => [favoriteKey(monster), index + 1])), [filteredMonsters]);
+=======
+>>>>>>> Docker-add
   const activeFavorite = activeKey ? favorites.find((favorite) => favoriteKey(favorite) === activeKey) : undefined;
   const activeMonster = activeKey ? details[activeKey] : undefined;
 
@@ -551,7 +576,11 @@ export function BestiaryApp() {
       <header className="app-header">
         <div className="brand-mark" aria-hidden="true">BF</div>
         <div className="brand-copy">
+<<<<<<< HEAD
           <h1>Bestiary Forge</h1>
+=======
+          <h1>Bestiary Forge <span className="brand-context">怪物目录</span></h1>
+>>>>>>> Docker-add
           <p>D&amp;D 2014 / 5E + 2024 / 5R 中文怪物图鉴</p>
         </div>
         <a className="source-link" href="/sources" target="_blank" rel="noreferrer">来源与许可</a>
@@ -561,11 +590,39 @@ export function BestiaryApp() {
       <div className="bestiary-workspace">
         <aside className="catalog-panel" aria-label="怪物目录">
           <div className="catalog-heading">
+<<<<<<< HEAD
             <div>
               <p className="eyebrow">{EDITIONS[ruleset].source} · ZH-CN</p>
               <h2>怪物目录</h2>
+=======
+            <p className="eyebrow">{EDITIONS[ruleset].source} · ZH-CN</p>
+            <div className="catalog-heading-actions">
+              <span className="catalog-count">{filteredMonsters.length} / {monsters.length}</span>
+              <button
+                className="catalog-expand-button"
+                type="button"
+                onClick={toggleAllDirectories}
+                disabled={!allDirectoryKeys.length || Boolean(query.trim())}
+              >
+                {allDirectoriesExpanded ? "全部收起" : "全部展开"}
+              </button>
+>>>>>>> Docker-add
             </div>
-            <span>{filteredMonsters.length} / {monsters.length}</span>
+          </div>
+
+          <div className="edition-switch" role="group" aria-label="切换怪物图鉴规则版本">
+            {(Object.keys(EDITIONS) as RulesEdition[]).map((editionKey) => (
+              <button
+                type="button"
+                className={ruleset === editionKey ? "active" : ""}
+                aria-pressed={ruleset === editionKey}
+                onClick={() => changeRuleset(editionKey)}
+                key={editionKey}
+              >
+                <strong>{EDITIONS[editionKey].short}</strong>
+                <span>{EDITIONS[editionKey].switchLabel}</span>
+              </button>
+            ))}
           </div>
 
           <div className="edition-switch" role="group" aria-label="切换怪物图鉴规则版本">
@@ -590,6 +647,7 @@ export function BestiaryApp() {
             {query ? <button type="button" aria-label="清除搜索" onClick={() => setQuery("")}>×</button> : null}
           </label>
 
+<<<<<<< HEAD
           <div className="directory-toolbar">
             <span><i aria-hidden="true" />目录分类 <b>{directoryTree.length} 类</b></span>
             <button type="button" onClick={toggleAllDirectories} disabled={!allDirectoryKeys.length || Boolean(query.trim())}>
@@ -599,6 +657,8 @@ export function BestiaryApp() {
 
           <p className="catalog-tip">怪物已按原图鉴目录分类。一级分类默认展开；5R 的分类内可继续展开原有子目录。</p>
 
+=======
+>>>>>>> Docker-add
           <div className="monster-list" role="list" aria-label={`${EDITIONS[ruleset].short} 怪物目录树`}>
             {catalogState === "loading" ? <div className="catalog-message"><span className="spinner" />正在翻阅图鉴…</div> : null}
             {catalogState === "error" ? <div className="catalog-message error">本地中文数据库加载失败，请刷新重试。</div> : null}
@@ -611,7 +671,10 @@ export function BestiaryApp() {
                 forceOpen={Boolean(query.trim())}
                 activeKey={activeKey}
                 favoriteIndexes={favoriteIndexes}
+<<<<<<< HEAD
                 visibleNumbers={visibleNumbers}
+=======
+>>>>>>> Docker-add
                 onToggleDirectory={toggleDirectory}
                 onOpenMonster={openMonster}
                 onToggleFavorite={toggleFavorite}

@@ -1,0 +1,15 @@
+services:
+  bestiary-forge:
+    image: bestiary-forge:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bestiary-forge
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3000
+    ports:
+      # Only expose the application to Nginx on this server.
+      - "127.0.0.1:3001:3000"

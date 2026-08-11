@@ -87,10 +87,17 @@ test("implements device-local favorites and contains no token workflow", async (
   assert.match(appSource, /localStorage/);
   assert.match(appSource, /browser-tab/);
   assert.match(appSource, /favorite-button/);
+<<<<<<< HEAD
   assert.match(appSource, /directory-toolbar/);
   assert.match(appSource, /DirectoryBranch/);
   assert.match(appSource, /catalog_path/);
   assert.match(appSource, /目录分类/);
+=======
+  assert.match(appSource, /DirectoryBranch/);
+  assert.match(appSource, /catalog_path/);
+  assert.doesNotMatch(appSource, /directory-toolbar|目录分类|怪物已按原图鉴目录分类/);
+  assert.doesNotMatch(appSource, /catalog-number/);
+>>>>>>> Docker-add
   assert.match(appSource, /setExpandedDirectories\(new Set\(buildDirectoryTree\(payload\.results\)\.map/);
   assert.match(appSource, /ABILITY_GROUPS/);
   assert.match(appSource, /savingThrowValue/);
