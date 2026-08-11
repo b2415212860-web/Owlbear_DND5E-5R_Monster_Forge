@@ -8,7 +8,7 @@ export const extensionManifest = {
     title: "怪物收藏图鉴",
     icon: "/extension-icon.svg",
     popover: "/",
-    width: 460,
-    height: 700,
+    width: 720,
+    height: 850,
   },
 } as const;

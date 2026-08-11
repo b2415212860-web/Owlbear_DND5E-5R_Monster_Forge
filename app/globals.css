@@ -2409,7 +2409,7 @@ body {
 
 .bestiary-workspace {
   height: calc(100dvh - 78px);
-  grid-template-columns: minmax(310px, 370px) minmax(0, 1fr);
+  grid-template-columns: clamp(240px, 28vw, 340px) minmax(0, 1fr);
   gap: 14px;
   padding: 14px;
 }
@@ -2908,13 +2908,18 @@ body {
 
 .monster-row { min-height: 59px; }
 
+.monster-name-button {
+  gap: 0;
+  padding-left: 10px;
+}
+
 .catalog-monster-copy strong {
-  font-size: 14px;
+  font-size: 12.5px;
   line-height: 1.25;
 }
 
 .catalog-monster-copy small {
-  font-size: 10.5px;
+  font-size: 9.5px;
   line-height: 1.2;
 }
 
@@ -2925,15 +2930,15 @@ body {
   .edition-switch span { font-size: 11px; }
   .directory-row strong,
   .directory-category > .directory-row strong { font-size: 13px; }
-  .catalog-monster-copy strong { font-size: 13.5px; }
+  .catalog-monster-copy strong { font-size: 12px; }
 }
 
-/* Owlbear popovers commonly render between phone and desktop widths.
-   Stack both panes before the two-column grid can squeeze the card viewport. */
+/* Owlbear's 720 x 850 popover keeps the directory on the left and gives the
+   character sheet most of the width. Only phone-sized viewports stack. */
 @media (max-width: 900px) {
   .bestiary-app {
     min-height: 100dvh;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .app-header {
@@ -2944,10 +2949,10 @@ body {
   .source-link { display: none; }
 
   .bestiary-workspace {
-    height: auto;
-    min-height: calc(100dvh - 70px);
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(420px, 48dvh) minmax(620px, 72dvh);
+    height: calc(100dvh - 70px);
+    min-height: 0;
+    grid-template-columns: clamp(215px, 30vw, 260px) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
     gap: 10px;
     padding: 10px;
   }
@@ -2966,7 +2971,11 @@ body {
 @media (max-width: 520px) {
   .brand-copy h1 { font-size: 17px; }
   .header-badge { padding-inline: 10px; }
+  .bestiary-app { overflow: auto; }
   .bestiary-workspace {
+    height: auto;
+    min-height: calc(100dvh - 70px);
+    grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(400px, 52dvh) minmax(600px, 78dvh);
     padding: 8px;
   }
@@ -3025,11 +3034,18 @@ body {
 .catalog-expand-button:hover:not(:disabled) { background: #fffaf3; }
 .catalog-expand-button:disabled { opacity: 0.42; cursor: default; }
 
-.edition-switch { margin-top: 3px; }
+.edition-switch {
+  gap: 2px;
+  margin-top: 3px;
+  padding: 2px;
+  border-radius: 11px;
+}
 
 .edition-switch button {
-  min-height: 38px;
-  padding: 6px 9px;
+  min-height: 32px;
+  gap: 5px;
+  padding: 3px 6px;
+  border-radius: 9px;
 }
 
 .search-box { margin-top: 9px; }
@@ -3045,7 +3061,7 @@ body {
 
 @media (max-width: 900px) {
   .bestiary-workspace {
-    grid-template-rows: minmax(340px, 42dvh) minmax(620px, 72dvh);
+    grid-template-rows: minmax(0, 1fr);
   }
 }
 
@@ -3056,6 +3072,7 @@ body {
   .catalog-count { padding-inline: 7px; }
   .catalog-expand-button { padding-inline: 8px; }
   .bestiary-workspace {
+    grid-template-columns: minmax(0, 1fr);
     grid-template-rows: minmax(330px, 46dvh) minmax(600px, 78dvh);
   }
 }

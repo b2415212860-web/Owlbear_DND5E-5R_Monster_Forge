@@ -224,10 +224,9 @@ function directoryKeys(nodes: DirectoryNode[]): string[] {
 }
 
 function MonsterCatalogRow({
-  monster, number, active, favorite, onOpen, onToggleFavorite,
+  monster, active, favorite, onOpen, onToggleFavorite,
 }: {
   monster: MonsterListEntry;
-  number: number;
   active: boolean;
   favorite: boolean;
   onOpen: (monster: MonsterListEntry) => void;
@@ -236,7 +235,6 @@ function MonsterCatalogRow({
   return (
     <div className={`monster-row${active ? " active" : ""}`} role="listitem">
       <button className="monster-name-button" type="button" onClick={() => onOpen(monster)}>
-        <span className="catalog-number">{String(number).padStart(3, "0")}</span>
         <span className="catalog-monster-copy"><strong>{monster.name}</strong>{monster.name_en ? <small>{monster.name_en}</small> : null}</span>
       </button>
       <button
@@ -254,7 +252,7 @@ function MonsterCatalogRow({
 }
 
 function DirectoryBranch({
-  node, depth, expanded, forceOpen, activeKey, favoriteIndexes, visibleNumbers, onToggleDirectory, onOpenMonster, onToggleFavorite,
+  node, depth, expanded, forceOpen, activeKey, favoriteIndexes, onToggleDirectory, onOpenMonster, onToggleFavorite,
 }: {
   node: DirectoryNode;
   depth: number;
@@ -262,7 +260,6 @@ function DirectoryBranch({
   forceOpen: boolean;
   activeKey: string | null;
   favoriteIndexes: Set<string>;
-  visibleNumbers: Map<string, number>;
   onToggleDirectory: (key: string) => void;
   onOpenMonster: (monster: MonsterListEntry) => void;
   onToggleFavorite: (monster: MonsterListEntry) => void;
@@ -286,7 +283,6 @@ function DirectoryBranch({
               forceOpen={forceOpen}
               activeKey={activeKey}
               favoriteIndexes={favoriteIndexes}
-              visibleNumbers={visibleNumbers}
               onToggleDirectory={onToggleDirectory}
               onOpenMonster={onOpenMonster}
               onToggleFavorite={onToggleFavorite}
@@ -298,7 +294,6 @@ function DirectoryBranch({
             return (
               <MonsterCatalogRow
                 monster={monster}
-                number={visibleNumbers.get(key) ?? 0}
                 active={activeKey === key}
                 favorite={favoriteIndexes.has(key)}
                 onOpen={onOpenMonster}
@@ -484,7 +479,6 @@ export function BestiaryApp() {
   const directoryTree = useMemo(() => buildDirectoryTree(filteredMonsters), [filteredMonsters]);
   const allDirectoryKeys = useMemo(() => directoryKeys(buildDirectoryTree(monsters)), [monsters]);
   const allDirectoriesExpanded = allDirectoryKeys.length > 0 && allDirectoryKeys.every((key) => expandedDirectories.has(key));
-  const visibleNumbers = useMemo(() => new Map(filteredMonsters.map((monster, index) => [favoriteKey(monster), index + 1])), [filteredMonsters]);
   const activeFavorite = activeKey ? favorites.find((favorite) => favoriteKey(favorite) === activeKey) : undefined;
   const activeMonster = activeKey ? details[activeKey] : undefined;
 
@@ -597,12 +591,6 @@ export function BestiaryApp() {
             {query ? <button type="button" aria-label="清除搜索" onClick={() => setQuery("")}>×</button> : null}
           </label>
 
-          <div className="directory-toolbar">
-            <span><i aria-hidden="true" />目录分类 <b>{directoryTree.length} 类</b></span>
-          </div>
-
-          <p className="catalog-tip">怪物已按原图鉴目录分类。一级分类默认展开；5R 的分类内可继续展开原有子目录。</p>
-
           <div className="monster-list" role="list" aria-label={`${EDITIONS[ruleset].short} 怪物目录树`}>
             {catalogState === "loading" ? <div className="catalog-message"><span className="spinner" />正在翻阅图鉴…</div> : null}
             {catalogState === "error" ? <div className="catalog-message error">本地中文数据库加载失败，请刷新重试。</div> : null}
@@ -615,7 +603,6 @@ export function BestiaryApp() {
                 forceOpen={Boolean(query.trim())}
                 activeKey={activeKey}
                 favoriteIndexes={favoriteIndexes}
-                visibleNumbers={visibleNumbers}
                 onToggleDirectory={toggleDirectory}
                 onOpenMonster={openMonster}
                 onToggleFavorite={toggleFavorite}
